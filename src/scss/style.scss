@@ -1,8 +1,8 @@
-//variable
+@import "partials/grid";
 @import "variables";
 @import "mixins";
 
-//reset, normalize, helper-class
-@import "partials/normalize";
 
+@import "partials/normalize";
+@import "partials/print";
 

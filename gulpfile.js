@@ -57,7 +57,7 @@ const css = function () {
             suffix: ".min",
             basename: "style"
         }))
-        .pipe(csso())
+        // .pipe(csso())
         .pipe(sourcemaps.write("."))
         .pipe(gulp.dest("dist/css"))
         .pipe(browserSync.stream({

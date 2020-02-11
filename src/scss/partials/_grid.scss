@@ -1,0 +1,40 @@
+$gap: 15px !default;
+$columns: 12;
+$mediaBp: 768px;
+
+.container {
+    padding-right: $gap;
+    padding-left: $gap;
+    max-width: 1140px;
+    margin: 0 auto;
+
+
+
+}
+
+.row {
+    margin-left: -$gap;
+    margin-right: -$gap;
+
+
+    [class ^="col-"] {
+        box-sizing: border-box;
+        padding-left: $gap;
+        padding-right: $gap;
+        margin-bottom: 2*$gap;
+
+
+    }
+
+
+    @media (min-width: $mediaBp) {
+        display: flex;
+
+        @for $i from 1 through $columns {
+            .col-#{$i}-#{$columns} {
+                width: 100% / $columns * $i;
+
+            }
+        }
+    }
+}
