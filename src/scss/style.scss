@@ -1,8 +1,11 @@
-@import "partials/grid";
 @import "variables";
 @import "mixins";
-
 
 @import "partials/normalize";
 @import "partials/print";
 
+@import "partials/grid";
+@import "partials/layout";
+
+@import "components/page_header";
+@import "components/page_hero";

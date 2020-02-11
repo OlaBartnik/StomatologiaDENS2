@@ -1,0 +1,79 @@
+.page_header {
+    height: 100px;
+}
+
+.page_header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.header_logo {
+    display: flex;
+    align-items: center;
+    width: 300px;
+
+}
+
+
+.page_logo img {
+    max-width: 100%;
+    height: auto;
+}
+
+.NFZ_logo img {
+    margin-left: 14px;
+    max-width: 50%;
+    height: auto;
+
+}
+
+
+.page_nav {}
+
+.page_nav_list {
+    display: flex;
+    list-style: none;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.page_nav_list a {
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: $color-main;
+    font-size: 18px;
+    font-weight: 800;
+    display: block;
+    padding: 15px 7px;
+    transition: 0.3s color;
+}
+
+.page_nav_list a::after {
+    content: "";
+    position: absolute;
+    bottom: 12%;
+    height: 2px;
+    background: $color-hover;
+    left: 50%;
+    right: 50%;
+    opacity: 0;
+    transition: 0.5s left, 0.5s right, 0.5s opacity;
+
+
+}
+
+.page_nav_list a:hover {
+    color: $color-hover;
+}
+
+
+.page_nav_list a:hover::after {
+    left: 0;
+    right: 0;
+    opacity: 1;
+
+}

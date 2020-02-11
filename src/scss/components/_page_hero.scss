@@ -1,0 +1,29 @@
+.page_hero {
+    height: 100vh;
+    min-height: 600px;
+    background-image: url(../images/banner_AdobeStock_119354853_Preview.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom 40% center;
+    position: relative;
+}
+
+
+.banner {}
+
+.banner_addon {
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    transform: translate(-50%);
+    height: 40px;
+
+}
+
+.banner_arrow {
+    position: absolute;
+    height: 20px;
+    bottom: 1%;
+    left: 50%;
+    transform: translate(-50%);
+}
