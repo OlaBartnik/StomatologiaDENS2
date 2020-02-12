@@ -559,6 +559,10 @@ body {
   margin: 0;
 }
 
+.page_nav_list li {
+  padding: 15px 7px;
+}
+
 .page_nav_list a {
   position: relative;
   text-decoration: none;
@@ -567,7 +571,6 @@ body {
   font-size: 18px;
   font-weight: 800;
   display: block;
-  padding: 15px 7px;
   transition: 0.3s color;
 }
 
@@ -595,7 +598,7 @@ body {
 
 .page_hero {
   height: 100vh;
-  min-height: 600px;
+  min-height: 550px;
   background-image: url(../images/banner_AdobeStock_119354853_Preview.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -619,6 +622,33 @@ body {
   left: 50%;
   -webkit-transform: translate(-50%);
           transform: translate(-50%);
+}
+
+.box_photo img {
+  max-width: 100%;
+}
+
+.section_sevices {
+  margin-top: 100px;
+}
+
+.section_header {
+  margin-bottom: 45px;
+}
+
+.section_header h2 {
+  text-align: center;
+  text-transform: uppercase;
+  color: rgba(56, 56, 56, 0.9);
+  font-size: 28px;
+}
+
+.section_header h2::after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 10px;
+  color: red;
 }
 
 /*# sourceMappingURL=style.min.css.map */

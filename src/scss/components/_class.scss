@@ -1,0 +1,28 @@
+.section_sevices {
+    margin-top: 100px;
+
+}
+
+.section_header {
+    margin-bottom: 45px;
+
+}
+
+.section_header h2 {
+    text-align: center;
+    text-transform: uppercase;
+    color: $color-main;
+    font-size: 28px;
+
+}
+
+.section_header h2::after {
+    content: "";
+    display: block;
+    height: 2px;
+    width: 10px;
+    color: red;
+}
+
+
+// .section_header h2:hover::after {

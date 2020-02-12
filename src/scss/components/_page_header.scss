@@ -30,7 +30,6 @@
 }
 
 
-.page_nav {}
 
 .page_nav_list {
     display: flex;
@@ -38,6 +37,10 @@
     list-style: none;
     padding: 0;
     margin: 0;
+}
+
+.page_nav_list li {
+    padding: 15px 7px;
 }
 
 .page_nav_list a {
@@ -48,7 +51,6 @@
     font-size: 18px;
     font-weight: 800;
     display: block;
-    padding: 15px 7px;
     transition: 0.3s color;
 }
 
