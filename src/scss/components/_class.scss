@@ -1,10 +1,28 @@
+html {
+    scroll-behavior: smooth;
+}
+
 .section_sevices {
-    margin-top: 100px;
+    padding-top: 10px;
+    height: 100vh;
 
 }
 
 .section_header {
-    margin-bottom: 45px;
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.section_header::after {
+    content: "";
+    height: 2px;
+    width: 240px;
+    background-color: $color-hover;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    right: 0;
+    transform: translate(-50%, 0);
 
 }
 
@@ -13,6 +31,8 @@
     text-transform: uppercase;
     color: $color-main;
     font-size: 28px;
+
+
 
 }
 
@@ -23,6 +43,3 @@
     width: 10px;
     color: red;
 }
-
-
-// .section_header h2:hover::after {

@@ -9,11 +9,10 @@
 }
 
 
-.banner {}
 
 .banner_addon {
     position: absolute;
-    bottom: 0px;
+    bottom: -1px;
     left: 50%;
     transform: translate(-50%);
     height: 40px;
@@ -23,7 +22,7 @@
 .banner_arrow {
     position: absolute;
     height: 20px;
-    bottom: 1%;
+    bottom: 1.2%;
     left: 50%;
     transform: translate(-50%);
 }

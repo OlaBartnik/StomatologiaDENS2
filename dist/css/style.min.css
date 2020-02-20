@@ -459,6 +459,8 @@ textarea {
   padding-left: 15px;
   max-width: 1140px;
   margin: 0 auto;
+  border-left: 1px solid red;
+  border-right: 1px solid red;
 }
 
 .row {
@@ -577,8 +579,8 @@ body {
 .page_nav_list a::after {
   content: "";
   position: absolute;
-  bottom: 12%;
-  height: 2px;
+  bottom: 0;
+  height: 1px;
   background: #08BDD4;
   left: 50%;
   right: 50%;
@@ -608,7 +610,7 @@ body {
 
 .banner_addon {
   position: absolute;
-  bottom: 0px;
+  bottom: -1px;
   left: 50%;
   -webkit-transform: translate(-50%);
           transform: translate(-50%);
@@ -618,22 +620,78 @@ body {
 .banner_arrow {
   position: absolute;
   height: 20px;
-  bottom: 1%;
+  bottom: 1.2%;
   left: 50%;
   -webkit-transform: translate(-50%);
           transform: translate(-50%);
 }
 
+.box {
+  max-width: 310px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.box_photo {
+  text-decoration: none;
+}
+
+.box_photo_container {
+  height: 207px;
+  overflow: hidden;
+}
+
 .box_photo img {
+  display: block;
   max-width: 100%;
+  height: auto;
+  transition: 3s ease-in-out;
+}
+
+.box:hover .box_photo img {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.box_tittle {
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 700;
+  text-align: center;
+  color: rgba(56, 56, 56, 0.9);
+  margin-top: 20px;
+  margin-bottom: 0;
+}
+
+.box:hover .box_tittle {
+  color: #08BDD4;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 .section_sevices {
-  margin-top: 100px;
+  padding-top: 10px;
+  height: 100vh;
 }
 
 .section_header {
-  margin-bottom: 45px;
+  position: relative;
+  margin-bottom: 50px;
+}
+
+.section_header::after {
+  content: "";
+  height: 2px;
+  width: 240px;
+  background-color: #08BDD4;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  right: 0;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
 }
 
 .section_header h2 {

@@ -1,9 +1,49 @@
 .box {
-    // max-width: 350px;
+    max-width: 310px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.box_photo {
+    text-decoration: none;
+
+
+
+}
+
+.box_photo_container {
+    height: 207px;
+    overflow: hidden;
+
 }
 
 .box_photo img {
+    display: block;
     max-width: 100%;
+    height: auto;
+    transition: 3s ease-in-out;
+
 }
 
-.box_tittle {}
+.box:hover .box_photo img {
+    transform: scale(1.2);
+
+
+}
+
+.box_tittle {
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    color: $color-main;
+    margin-top: 20px;
+    margin-bottom: 0;
+
+
+}
+
+.box:hover .box_tittle {
+    color: $color-hover;
+}
