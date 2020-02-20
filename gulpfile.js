@@ -15,10 +15,10 @@ const webpack = require("webpack");
 const showError = function (err) {
     //console.log(err.toString());
 
-    notifier.notify({
-        title: "Error in sass",
-        message: err.messageFormatted
-    });
+    // notifier.notify({
+    //     title: "Error in sass",
+    //     message: err.messageFormatted
+    // });
 
     console.log(c.red("==============================="));
     console.log(c.red(err.messageFormatted));
