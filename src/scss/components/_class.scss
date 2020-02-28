@@ -7,11 +7,6 @@ section {
     padding-bottom: 20px;
 }
 
-.section_sevices {
-
-    min-height: 100vh;
-
-}
 
 .section_header {
     position: relative;
@@ -34,100 +29,59 @@ section {
 
 }
 
-.section_header h2,
-h4 {
+.section_header h2 {
     font-size: 28px;
 }
 
 
 
-// o nas
 
 
-.section_aboutUs .box {
-    max-width: 400px;
+// button
 
+.button {
+    cursor: pointer;
+    padding: 10px 60px;
 
-}
-
-.section_aboutUS_photo {
-    max-width: 100%;
-    height: auto;
-    display: block;
-}
-
-
-.section_aboutUs .section_header {
-    margin-bottom: 20px;
-}
-
-.section_aboutUs .section_header::after {
-    left: 0;
-    transform: translate(0);
-}
-
-.section_header h3 {
-    text-align: left;
-    padding-left: 15px;
-    font-size: 28px;
-
-}
-
-
-
-.section_aboutUs_article {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: space-between;
-    height: 100%;
-
-}
-
-.section_aboutUs_text {
-    line-height: 150%;
-    margin-top: 0px;
-
-}
-
-// kontakt
-
-.section_contact .section_header::after {
-
-    width: 180px;
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: none;
     background-color: $color-hover;
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    right: 0;
-    transform: translate(-50%, 0);
+    border: 1px solid $color-hover;
+    border-radius: 15px;
+    color: $color-hover;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 0.6px;
+    box-shadow: inset 0 0 0 60px white;
+    transition: 0.5s;
 
 }
 
+.button:hover {
+    box-shadow: inset 0 0 0 0px white;
+    color: white;
 
-.contact_form {
-    height: 200px;
 }
 
+// banner
 
-// footer
-.footer {}
+.banner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    height: 190px;
+    background: linear-gradient(170deg, rgb(239, 248, 255) 0%, rgb(200, 245, 250) 33%, rgb(117, 229, 243) 53%, rgb(51, 197, 236) 73%, rgb(92, 176, 238) 100%);
+    margin-bottom: 80px;
+    margin-top: 60px;
+    padding-top: 0px;
+}
 
-.footer_nav {}
-
-.footer_nav_list {}
-
-.footer_nav_list li {}
-
-.footer_nav_list li a {}
-
-
-.footer_address {}
-
-.footer_hours {}
-
-.footer_phones {}
-
-.footer_email {}
-
-.footer_copyright {}
+.banner_text {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 150%;
+}
