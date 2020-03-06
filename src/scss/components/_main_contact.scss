@@ -11,6 +11,106 @@
 }
 
 
-.contact_form {
-    height: 200px;
+.section_contact {
+    margin-bottom: 60px;
 }
+
+// Formularz kontaktowy
+.contact_form_container {
+    margin: 0 auto 80px auto;
+    max-width: 1000px;
+    border-left: 1px solid red;
+    border-right: 1px solid red;
+}
+
+label {
+    @include visuallyhidden();
+}
+
+.contact_data {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.rodo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+
+
+}
+
+.contact_data input {
+    display: inline-blok;
+    width: 350px;
+    height: 35px;
+
+}
+
+.contact_data div {
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+}
+
+.contact_data div p {
+    line-height: 0px;
+}
+
+.contact_data textarea {
+    resize: none;
+    width: 500px;
+    height: 210px;
+
+}
+
+.contact_data input,
+.contact_data textarea {
+    padding: 20px;
+    border: 1px solid #C4C4C4;
+    font-family: inherit;
+    border-radius: 7px;
+
+    &:focus {
+        border-color: #333;
+        outline: none;
+    }
+
+}
+
+
+.wpcf7-list-item input {
+    width: 18px;
+    height: 18px;
+}
+
+.rodo p {
+    font-size: 14px;
+    padding-left: 10px;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    -webkit-box-shadow: 0 0 0 30px #EBECF1 inset !important;
+
+
+}
+
+.contact_submit {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 15px;
+}
+
+// .wpcf7-form {
+//     margin-bottom: 0px;
+// }

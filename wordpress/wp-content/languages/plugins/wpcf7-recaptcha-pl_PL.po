@@ -1,0 +1,160 @@
+# Translation of Plugins - Contact Form 7 &#8211; reCaptcha v2 - Stable (latest release) in Polish
+# This file is distributed under the same license as the Plugins - Contact Form 7 &#8211; reCaptcha v2 - Stable (latest release) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2019-05-07 05:38:56+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Generator: GlotPress/2.4.0-alpha\n"
+"Language: pl\n"
+"Project-Id-Version: Plugins - Contact Form 7 &#8211; reCaptcha v2 - Stable (latest release)\n"
+
+#: wpcf7-recaptcha.php:237
+msgid "Secret Key"
+msgstr "Tajny klucz"
+
+#: wpcf7-recaptcha.php:233
+msgid "Site Key"
+msgstr "Klucz strony"
+
+#: wpcf7-recaptcha.php:224
+msgid "You may set Network wide API keys below. Please ensure that every network site is whitelisted in the Google API Console. ReCaptcha keys can still be set ( or unset ) on a per site basis if necessary."
+msgstr "Podaj poniżej klucze API dla witryn. Upewnij się, że każda z witryn została dodana w Google API Console. Jeśli to konieczne, klucze ReCaptcha mogą zostać aktywowane (lub deaktywowane) osobno dla każdej z witryn. "
+
+#: wpcf7-recaptcha.php:223
+msgid "Please read all of the below before committing to these changes."
+msgstr "Przeczytaj wszystko poniżej, zanim potwierdzisz zmiany. "
+
+#: wpcf7-recaptcha.php:117 wpcf7-recaptcha.php:118
+msgid "WPCF7 reCaptcha Settings"
+msgstr "Ustawienia WPCF7 reCaptcha"
+
+#. translators: Care for HTML in string used for emphasis.
+#: wpcf7-recaptcha.php:227
+msgid "Do note that these keys will automatically apply to all network websites upon save <strong>if keys are not detected</strong>. If some network websites use reCaptcha v3 please <u>do not use this option</u> and set it on a per site level."
+msgstr "Pamiętaj, że podane klucze zostaną automatycznie zastosowane dla całej witryny w momencie zapisania <strong>Gdy klucze nie zostaną rozpoznane</strong>. W przypadku , kiedy witryna korzysta z reCaptcha v3 prosimy <u>nie korzystać z tej opcji</u> i dokonać ustawień z poziomu witryny."
+
+#. translators: %s is a link to the Contact Form 7 blog post regarding
+#. reCaptcha v3
+#: recaptcha-v2.php:339 recaptcha-v2.php:372 recaptcha-v2.php:383
+msgid "reCaptcha"
+msgstr "reCaptcha"
+
+#: wpcf7-recaptcha.php:257
+msgid "Click the image above and like us on Facebook! Facebook is where you will receive the latest news on both this plugin and all future IQComputing plugins."
+msgstr "Kliknij obrazek powyżej i polub nas na Facebooku! Facebook jest miejscem, w którym znajdziesz najnowsze informacje zarówno o tym, jak i innych dodatkach od IQComputing. "
+
+#: wpcf7-recaptcha.php:205
+msgid "Select the version of reCaptcha you would like to use. You will still need to use the %s shortcode tag in your Contact Form 7 forms."
+msgstr "Wybierz wersję reCaptcha, której chcesz używać. Wciąż wymagane jest uzycie shortcode %s w Twoim fomularzu."
+
+#. translators: Image alternative tag.
+#: wpcf7-recaptcha.php:254
+msgid "Like IQComputing on Facebook mascot"
+msgstr "Polub maskotkę IQComputing na Facebooku"
+
+#: recaptcha-v2.php:72
+msgid "Please verify that you are not a robot."
+msgstr "Potwierdź, że nie jestes robotem. "
+
+#: wpcf7-recaptcha.php:245
+msgid "Submit"
+msgstr "Wyślij"
+
+#: wpcf7-recaptcha.php:215
+msgid "reCaptcha Version 2"
+msgstr "reCaptcha Wersja 2"
+
+#: wpcf7-recaptcha.php:214
+msgid "Default Usage"
+msgstr "Zastosowanie domyślne"
+
+#: wpcf7-recaptcha.php:199
+msgid "Your reCaptcha settings have been updated."
+msgstr "Twoje ustawienia reCaptcha zostały zaktualizowane."
+
+#: wpcf7-recaptcha.php:178
+msgid "This version of Contact Form 7 already uses reCaptcha version 2, you do not need 'Contact Form 7 - reCaptcha v2' installed at this time."
+msgstr "Ta wersja Contact Form 7 już korzysta z reCaptcha w wersji 2, w tej chwili nie potrzebujesz zainstalowanego dodatku 'Contact Form 7 - reCaptcha v2' "
+
+#: wpcf7-recaptcha.php:98 wpcf7-recaptcha.php:99
+msgid "reCaptcha Version"
+msgstr "Wersja reCaptcha "
+
+#. translators: Insert shortcode tag into the page content
+#: recaptcha-v2.php:455
+msgid "Insert Tag"
+msgstr "Wstaw tag "
+
+#. translators: HTML Attribute class for reCaptcha box
+#: recaptcha-v2.php:439
+msgid "Class attribute"
+msgstr "Atrybut klasy"
+
+#. translators: HTML Attribute ID for reCaptcha box
+#: recaptcha-v2.php:431
+msgid "Id attribute"
+msgstr "Atrybut id"
+
+#. translators: ReCaptcha theme: dark
+#: recaptcha-v2.php:423
+msgid "Dark"
+msgstr "Ciemny"
+
+#. translators: ReCaptcha theme: light
+#: recaptcha-v2.php:421
+msgid "Light"
+msgstr "Jasny"
+
+#. translators: ReCaptcha theme (light or dark)
+#. translators: Screen reader text, reCaptcha theme (light or dark)
+#: recaptcha-v2.php:413 recaptcha-v2.php:419
+msgid "Theme"
+msgstr "Motyw"
+
+#. translators: ReCaptcha size: compact
+#: recaptcha-v2.php:405
+msgid "Compact"
+msgstr "Kompaktowy"
+
+#. translators: ReCaptcha size: normal
+#: recaptcha-v2.php:403
+msgid "Normal"
+msgstr "Normalny"
+
+#. translators: ReCaptcha size (normal or compact)
+#. translators: Screen reader text, reCaptcha size (normal or compact)
+#: recaptcha-v2.php:395 recaptcha-v2.php:401
+msgid "Size"
+msgstr "Rozmiar"
+
+#. translators: %s is a link to the Contact Form 7 blog post regarding
+#. reCaptcha v3
+#: recaptcha-v2.php:382
+msgid "Generate a form-tag for a reCaptcha widget. For more details, see %s."
+msgstr "Wygeneruj tag dla widgetu reCaptcha. Więcej informacji znajdziesz tutaj %s. "
+
+#. translators: %s is a link to the Contact Form 7 blog post regarding
+#. reCaptcha v3
+#: recaptcha-v2.php:372
+msgid "To use reCaptcha, first you need to install an API key pair. For more details, see %s."
+msgstr "Aby używać reCaptcha musisz najpierw skonfigurowac parę kluczy API. Więcej informacji znajdziesz tutaj %s. "
+
+#. Author URI of the plugin
+msgid "http://www.iqcomputing.com/"
+msgstr "http://www.iqcomputing.com/"
+
+#. Author of the plugin
+msgid "IQComputing"
+msgstr "IQComputing"
+
+#. Description of the plugin
+msgid "ReCaptcha v2 Fix for Contact Form 7 5.1 and later."
+msgstr "ReCaptcha v2 Fix dla Contact Form w wersji 7 5.1 i późniejszych. "
+
+#. Plugin Name of the plugin
+#: wpcf7-recaptcha.php:177 wpcf7-recaptcha.php:194
+msgid "Contact Form 7 - reCaptcha v2"
+msgstr "Contact Form 7 - reCaptcha v2"

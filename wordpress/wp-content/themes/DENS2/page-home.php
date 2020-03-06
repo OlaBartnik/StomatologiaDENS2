@@ -3,10 +3,12 @@
  * Template Name: Home
  */
 
-get_header(); ?>
+get_header('home'); ?>
 
-<section id="services" class="section_sevices" id="sevices">
-        <div class="container">
+<?php if (have_posts()): ?>
+    <?php while (have_posts()) : the_post(); ?>
+        <section id="services" class="section_sevices" id="sevices">
+                 <div class="container">
             <header class="section_header">
                 <h2>Nasze usługi</h2>
             </header>
@@ -89,8 +91,7 @@ get_header(); ?>
 
             </div>
         </div>
-
-    </section>
+         </section>
 
     <section id="aboutUs" class="section_aboutUs">
         <div class="banner">
@@ -156,9 +157,45 @@ get_header(); ?>
             <header class="section_header">
                 <h2>Kontakt</h2>
             </header>
-            <div class="contact_form"></div>
-        </div>
+
+            <div class="contact_form contact_form_container">
+          <?php the_content();?>
+            </div>
+
+<div class="address">
+    <div class="container">
+            <div class="row">
+                <div class="col-4-12">
+<p>DENS 2
+ul. Jaktorowska 8 U7
+01-202 Warszawa
+Wejście od ul. Karolkowej</p>
+
+<p>pon. - piąt.  09:00 - 20:00</p>
+<p>Tel. (22) 632 99 11
+Tel. 664 474 996</p>
+
+                </div>
+
+                <div class="col-4-12">
+
+                <p>ortodoncja.budel@gmail.com</p>
+                <p>DENS2
+Prywatna Przychodnia
+Dentystyczno - Lekarska</p>
+                </div>
+
+                <div class="col-4-12">
+<p>OFERTY PRACY</p>
+                </div>
+    </div>
+</div>
+
+
     </section>
+</main>
+    <?php endwhile; ?>
+<?php endif; ?>
 
 
 <?php get_footer(); ?>

@@ -37,12 +37,12 @@ section {
 
 
 
-// button
+// button plus button sumbit z control form 7
 
-.button {
+.button,
+.wpcf7-form-control.wpcf7-submit {
     cursor: pointer;
     padding: 10px 60px;
-
     text-transform: uppercase;
     text-align: center;
     text-decoration: none;
@@ -58,11 +58,22 @@ section {
 
 }
 
-.button:hover {
+.button:hover,
+.wpcf7-form-control.wpcf7-submit:hover {
     box-shadow: inset 0 0 0 0px white;
     color: white;
+    outline: none;
 
 }
+
+.wpcf7-form-control.wpcf7-submit {
+    padding: 10px 20px;
+    margin-left: 50px;
+    outline: none;
+
+
+}
+
 
 // banner
 

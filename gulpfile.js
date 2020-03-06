@@ -28,7 +28,7 @@ const showError = function (err) {
 const server = (cb) => {
     browserSync.init({
         server: {
-            baseDir: "./dist"
+            baseDir: "./"
         },
         notify: false,
         //host: "192.168.0.24",
@@ -59,7 +59,7 @@ const css = function () {
         }))
         // .pipe(csso())
         .pipe(sourcemaps.write("."))
-        .pipe(gulp.dest("dist/css"))
+        .pipe(gulp.dest("wordpress/wp-content/themes/DENS2/css"))
         .pipe(browserSync.stream({
             match: "**/*.css"
         }));
@@ -75,7 +75,24 @@ const js = function (cb) { //https://github.com/webpack/docs/wiki/usage-with-gul
 };
 
 
+gulp.task('browser-sync-php', function () {
+    connect.server({
+        base: './'
+    }, function () {
+        browserSync({
+            proxy: '127.0.0.1:8000',
+            notify: false,
+            ghostMode: {
+                clicks: true,
+                location: true,
+                forms: true,
+                scroll: false
+            }
+        });
+    });
 
+
+});
 
 const watch = function () {
     gulp.watch("src/scss/**/*.scss", {
@@ -84,9 +101,12 @@ const watch = function () {
     gulp.watch("src/js/**/*.js", {
         usePolling: true
     }, gulp.series(js));
-    gulp.watch("src/html/**/*.html", {
-        usePolling: true
-    }).on("change", browserSync.reload);
+    // gulp.watch("src/html/**/*.html", {
+    //     usePolling: true
+    // }).on("change", browserSync.reload);
+    gulp.watch('**/*.php').on('change', function () {
+        browserSync.reload();
+    });
 };
 
 

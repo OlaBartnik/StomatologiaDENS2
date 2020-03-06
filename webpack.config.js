@@ -4,7 +4,7 @@ module.exports = {
     entry: './src/js/app.js',
     output: {
         filename: "bundle.min.js",
-        path: path.resolve(__dirname, "./dist/js")
+        path: path.resolve(__dirname, "wordpress/wp-content/themes/DENS2/js")
     },
     watch: true,
     mode: 'development',
