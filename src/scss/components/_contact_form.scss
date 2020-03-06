@@ -1,0 +1,42 @@
+label {
+    @include visuallyhidden();
+}
+
+.contact_data,
+.rodo {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contact_data input {
+    display: inline-blok;
+    width: 350px;
+    height: 35px;
+}
+
+
+.contact_data textarea {
+    resize: none;
+    width: 500px;
+    height: 190px;
+}
+
+
+
+
+// .contact_data p {
+//     margin-top: 0px;
+// }
+
+// .rodo {
+//     display: flex;
+//     justify-content: flex-start;
+//     align-items: center;
+// }
+
+// .rodo span {
+//     display: block;
+//     width: 50px;
+
+// }

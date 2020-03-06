@@ -28,7 +28,7 @@
                 </div>
 
                 <div class="col-3-12"">
-                    <div class=" footer_contact footer_address">
+                    <div class="footer_contact footer_address">
                     <strong> DENS 2</strong>
                     ul. Jaktorowska 8 U7<br>
                     01-202 Warszawa

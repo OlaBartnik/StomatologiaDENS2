@@ -852,7 +852,7 @@ section {
 
 .contact_form_container {
   margin: 0 auto 80px auto;
-  max-width: 1000px;
+  max-width: 1100px;
   border-left: 1px solid red;
   border-right: 1px solid red;
 }
@@ -895,7 +895,8 @@ label .focusable:focus {
 
 .contact_data input {
   display: inline-blok;
-  width: 350px;
+  margin-left: 50px;
+  width: 380px;
   height: 35px;
 }
 
@@ -913,8 +914,9 @@ label .focusable:focus {
 
 .contact_data textarea {
   resize: none;
-  width: 500px;
-  height: 210px;
+  width: 550px;
+  height: 190px;
+  margin-right: 50px;
 }
 
 .contact_data input,
@@ -953,6 +955,58 @@ input:-webkit-autofill:active {
   justify-content: flex-start;
   align-items: center;
   padding-left: 15px;
+}
+
+.contact_adress img {
+  display: block;
+  width: 40px;
+  height: auto;
+}
+
+.contact_adress.mail {
+  width: 35px;
+  height: auto;
+}
+
+.contact_adress.fb {
+  width: 35px;
+  height: auto;
+  margin-top: 20px;
+}
+
+.contact_adress strong:nth-of-type(2) {
+  text-decoration: underline;
+  font-weight: 500;
+}
+
+.job_link,
+.mail_link,
+.fb_link {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 70px;
+}
+
+.contact_adress.job,
+.contact_adress.mail,
+.contact_adress.fb,
+.contact_adress.adress {
+  margin-right: 15px;
+}
+
+.adress {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.adress_details {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-top: 0;
 }
 
 .footer {

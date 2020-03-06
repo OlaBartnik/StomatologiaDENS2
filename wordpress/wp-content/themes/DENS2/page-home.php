@@ -162,32 +162,43 @@ get_header('home'); ?>
           <?php the_content();?>
             </div>
 
-<div class="address">
+<div class="contact_adress">
     <div class="container">
             <div class="row">
-                <div class="col-4-12">
-<p>DENS 2
-ul. Jaktorowska 8 U7
-01-202 Warszawa
-Wejście od ul. Karolkowej</p>
+            <div class="col-4-12">
+                <div class="adress">
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/adress.svg" alt="Adres" class="contact_adress adress">
 
-<p>pon. - piąt.  09:00 - 20:00</p>
-<p>Tel. (22) 632 99 11
-Tel. 664 474 996</p>
+
+                 <p class="adress_details"><strong>DENS 2</strong>
+                    ul. Jaktorowska 8 U7<br>
+                    01-202 Warszawa </br>
+                    <strong>Wejście od ul. Karolkowej</strong>
+                </p>
 
                 </div>
 
-                <div class="col-4-12">
+<p>pon. - piąt.:  09:00 - 20:00</p>
+<p>Tel. (22) 632 99 11<br>
+Tel.  664 474 996</p>
 
-                <p>ortodoncja.budel@gmail.com</p>
-                <p>DENS2
-Prywatna Przychodnia
-Dentystyczno - Lekarska</p>
-                </div>
+            </div>
 
-                <div class="col-4-12">
-<p>OFERTY PRACY</p>
-                </div>
+                <div class="col-4-12 mail fb">
+                <a href="mailto:aleksandra.dadacz@gmail.com" class="mail_link" target ="_blank">
+             <img src="<?php echo get_template_directory_uri(); ?>/images/envelope.svg" alt="mail" class="contact_adress mail">ortodoncja.budel@gmail.com</a>
+
+             <a href="https://www.facebook.com/Dens2-Prywatna-Przychodnia-Dentystyczno-Lekarska-842138229254599/" class="fb_link" target ="_blank">
+            <img src="<?php echo get_template_directory_uri(); ?>/images/facebook_logo.svg" alt="Facebook" class="contact_adress fb">Stomatoliga DENS2</a>
+
+            </div>
+
+                <div class="col-4-12 job">
+    <a href="ty-http://localhost/oferpracy/" class="job_link" target ="_blank">
+            <img src="<?php echo get_template_directory_uri(); ?>/images/hiring.svg" alt="ofety pracy" class="contact_adress job">Ofety pracy</a>
+
+            </div>
+
     </div>
 </div>
 
