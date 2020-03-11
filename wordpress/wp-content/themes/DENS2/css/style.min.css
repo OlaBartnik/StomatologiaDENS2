@@ -1045,6 +1045,10 @@ input:-webkit-autofill:active {
   width: 150px;
 }
 
+.main_map {
+  height: 500px;
+}
+
 .footer {
   background: linear-gradient(170deg, #eff8ff 0%, #c8f5fa 33%, #75e5f3 53%, #33c5ec 73%, #5cb0ee 100%);
   padding-top: 25px;

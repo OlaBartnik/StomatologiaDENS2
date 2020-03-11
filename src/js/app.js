@@ -1,10 +1,9 @@
-import {test, test2} from "./test";
+import map from "./map";
 
-console.log('test')
 
-document.addEventListener("DOMContentLoaded", function() {
+$(function () {
 
-    test();
-    test2();
+
+    map();
 
 });

@@ -219,12 +219,27 @@ Tel.  664 474 996</p>
 
     </div>
 </div>
-
-
     </section class="section_contact">
+
+
+
+
+    <div id='map' style='width: 100%; height: 500px;'></div>
+
+
+
 </main>
     <?php endwhile; ?>
 <?php endif; ?>
 
 
+
 <?php get_footer(); ?>
+
+<!-- <script>
+mapboxgl.accessToken = 'pk.eyJ1IjoiYXhkYWRhY3oiLCJhIjoiY2p1MDd5ZmRiMjBzZzRhbHo5dDFweWx4aCJ9.FNAE9mAdO-SOD9DySqgU6g';
+var map = new mapboxgl.Map({
+container: 'map',
+style: 'mapbox://styles/mapbox/streets-v11'
+});
+</script> -->

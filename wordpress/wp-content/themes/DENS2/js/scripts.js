@@ -95,42 +95,64 @@
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _test__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./test */ "./src/js/test.js");
+/* harmony import */ var _map__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./map */ "./src/js/map.js");
 
-console.log('test');
-document.addEventListener("DOMContentLoaded", function () {
-  Object(_test__WEBPACK_IMPORTED_MODULE_0__["test"])();
-  Object(_test__WEBPACK_IMPORTED_MODULE_0__["test2"])(); // mapboxgl.accessToken = 'pk.eyJ1IjoiYXhkYWRhY3oiLCJhIjoiY2p1MDd5ZmRiMjBzZzRhbHo5dDFweWx4aCJ9.FNAE9mAdO-SOD9DySqgU6g';
-  // var map = new mapboxgl.Map({
-  //     container: 'map',
-  //     style: 'mapbox://styles/mapbox/streets-v11'
-  // });
+$(function () {
+  Object(_map__WEBPACK_IMPORTED_MODULE_0__["default"])();
 });
 
 /***/ }),
 
-/***/ "./src/js/test.js":
-/*!************************!*\
-  !*** ./src/js/test.js ***!
-  \************************/
-/*! exports provided: test, test2 */
+/***/ "./src/js/map.js":
+/*!***********************!*\
+  !*** ./src/js/map.js ***!
+  \***********************/
+/*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "test", function() { return test; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "test2", function() { return test2; });
-var test = function test() {
-  console.log("test1");
-};
-
-function test2() {
-  console.log("test2");
+function map() {
+  mapboxgl.accessToken = 'pk.eyJ1IjoiYXhkYWRhY3oiLCJhIjoiY2p1MDd5ZmRiMjBzZzRhbHo5dDFweWx4aCJ9.FNAE9mAdO-SOD9DySqgU6g';
+  var map = new mapboxgl.Map({
+    container: 'map',
+    style: 'mapbox://styles/axdadacz/ck5i35chk0nvj1imvwul65ymp',
+    zoom: 14,
+    center: [20.9777280, 52.234966]
+  }); // map.on("load", function () {
+  //     /* Image: An image is loaded and added to the map. */
+  //     map.loadImage("images/marker.png", function (error, image) {
+  //         if (error) throw error;
+  //         map.addImage("custom-marker", image);
+  //         /* Style layer: A style layer ties together the source and image and specifies how they are displayed on the map. */
+  //         map.addLayer({
+  //             id: "markers",
+  //             type: "symbol",
+  //             /* Source: A data source specifies the geographic coordinate where the image marker gets placed. */
+  //             source: {
+  //                 type: "geojson",
+  //                 data: {
+  //                     type: "FeatureCollection",
+  //                     features: [{
+  //                         "type": "Feature",
+  //                         "geometry": {
+  //                             "type": "Point",
+  //                             "coordinates": ["20.9777280", "52.234966"]
+  //                         }
+  //                     }]
+  //                 }
+  //             },
+  //             layout: {
+  //                 "icon-image": "custom-marker",
+  //             }
+  //         });
+  //     });
+  // });
 }
 
-
+/* harmony default export */ __webpack_exports__["default"] = (map);
 
 /***/ })
 
 /******/ });
-//# sourceMappingURL=bundle.min.js.map
+//# sourceMappingURL=scripts.js.map
