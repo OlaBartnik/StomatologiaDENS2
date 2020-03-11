@@ -10,7 +10,7 @@ div.wpcf7 .screen-reader-response {
 }
 
 div.wpcf7-response-output {
-	margin: 2em 0.5em 1em;
+	/* margin: 2em 0.5em 1em; */
 	padding: 0.2em 1em;
 	/* border: 1px solid #ff0000;
 	border-radius: 5px; */
@@ -49,8 +49,11 @@ span.wpcf7-not-valid-tip {
 	font-weight: normal;
 	display: inline-block;
 	position: relative;
-	bottom: -35%;
-	left: 4%;
+	bottom: 0%;
+	left: 5%;
+	width: 360px;
+	height: 5px;
+
 }
 
 .use-floating-validation-tip span.wpcf7-not-valid-tip {

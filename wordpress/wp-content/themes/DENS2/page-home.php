@@ -146,64 +146,82 @@ get_header('home'); ?>
         </div>
     </section>
 
-    <section id="contact" class="section_contact">
+    <section>
         <div class="banner">
             <div class="banner_text">
                 U nas możesz skorzystać z wizyty również w ramach NFZ
             </div>
 
         </div>
-        <div class="container">
+        <div id="contact"class="container" >
             <header class="section_header">
                 <h2>Kontakt</h2>
             </header>
 
-            <div class="contact_form contact_form_container">
+            <div class="contact_form">
           <?php the_content();?>
             </div>
 
 <div class="contact_adress">
     <div class="container">
             <div class="row">
-            <div class="col-4-12">
-                <div class="adress">
-                    <img src="<?php echo get_template_directory_uri(); ?>/images/adress.svg" alt="Adres" class="contact_adress adress">
+
+                <div class="col-1-12">
+                    <div class="image_box">
+<img src="<?php echo get_template_directory_uri(); ?>/images/address.svg" alt="Adres" class="contact_address address">
+</div>
+</div>
+            <div class="col-3-12">
 
 
-                 <p class="adress_details"><strong>DENS 2</strong>
+                    <div class="address_box">
+                    <p class="address_address"><strong>DENS 2</strong><br>
                     ul. Jaktorowska 8 U7<br>
                     01-202 Warszawa </br>
                     <strong>Wejście od ul. Karolkowej</strong>
-                </p>
-
-                </div>
-
-<p>pon. - piąt.:  09:00 - 20:00</p>
-<p>Tel. (22) 632 99 11<br>
+                    </p>
+<p class="address_hours">pon. - piąt.:  09:00 - 20:00</p>
+<p class="address_phone">Tel. (22) 632 99 11<br>
 Tel.  664 474 996</p>
+                    </div>
 
-            </div>
 
-                <div class="col-4-12 mail fb">
+        </div>
+
+
+
+
+        <div class="col-4-12">
+            <div class="mail_box">
+
+            <div>
                 <a href="mailto:aleksandra.dadacz@gmail.com" class="mail_link" target ="_blank">
-             <img src="<?php echo get_template_directory_uri(); ?>/images/envelope.svg" alt="mail" class="contact_adress mail">ortodoncja.budel@gmail.com</a>
-
-             <a href="https://www.facebook.com/Dens2-Prywatna-Przychodnia-Dentystyczno-Lekarska-842138229254599/" class="fb_link" target ="_blank">
-            <img src="<?php echo get_template_directory_uri(); ?>/images/facebook_logo.svg" alt="Facebook" class="contact_adress fb">Stomatoliga DENS2</a>
-
+             <img src="<?php echo get_template_directory_uri(); ?>/images/envelope.svg" alt="mail" class="contact_address mail">ortodoncja.budel@gmail.com</a>
             </div>
 
-                <div class="col-4-12 job">
-    <a href="ty-http://localhost/oferpracy/" class="job_link" target ="_blank">
-            <img src="<?php echo get_template_directory_uri(); ?>/images/hiring.svg" alt="ofety pracy" class="contact_adress job">Ofety pracy</a>
 
+            <div>
+             <a href="https://www.facebook.com/Dens2-Prywatna-Przychodnia-Dentystyczno-Lekarska-842138229254599/" class="fb_link" target ="_blank">
+            <img src="<?php echo get_template_directory_uri(); ?>/images/facebook_logo.svg" alt="Facebook" class="contact_address fb">Stomatoliga DENS2</a>
+            </div>
+
+            </div>
+            </div>
+
+
+
+                <div class="col-4-12">
+                    <div class="job_box">
+    <a href="http://localhost/oferty-pracy/" class="job_link" target ="_blank">
+            <img src="<?php echo get_template_directory_uri(); ?>/images/hiring.svg" alt="ofety pracy" class="contact_address job">Ofety pracy</a>
+</div>
             </div>
 
     </div>
 </div>
 
 
-    </section>
+    </section class="section_contact">
 </main>
     <?php endwhile; ?>
 <?php endif; ?>
