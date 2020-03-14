@@ -16,12 +16,12 @@ get_header('home'); ?>
             <div class="row">
                 <div class="col-4-12">
                     <div class="box">
-                        <a href="" class="box_photo">
+                        <a href="http://localhost/stomatologia-zachowacza" class="box_photo">
                             <div class="box_photo_container"><img src="<?php echo get_template_directory_uri(); ?>/images/Stomat.zachow._AdobeStock_100506477_Preview.jpeg"
                                     alt="Stomatologia Zachowawcza">
                             </div>
 
-                            <h2 class="box_tittle">Stomatologia Zachowawcza</h2>
+                            <h3 class="box_tittle">Stomatologia Zachowawcza</h3>
                         </a>
 
                     </div>
@@ -29,22 +29,22 @@ get_header('home'); ?>
 
                 <div class="col-4-12">
                     <div class="box">
-                        <a href="" class="box_photo">
+                        <a href="http://localhost/ortodoncja" class="box_photo">
                             <div class="box_photo_container">
                                 <img src="<?php echo get_template_directory_uri(); ?>/images/Ortodoncja_AdobeStock_248841020_Preview.jpeg" alt="Ortodoncja">
                             </div>
-                            <h2 class="box_tittle">Ortodoncja</h2>
+                            <h3 class="box_tittle">Ortodoncja</h3>
                         </a>
                     </div>
                 </div>
 
                 <div class="col-4-12">
                     <div class="box">
-                        <a href="" class="box_photo">
+                        <a href="http://localhost/chirurgia_implantologia"" class="box_photo">
                             <div class="box_photo_container">
                                 <img src="<?php echo get_template_directory_uri(); ?>/images/Implanty.jpg" alt="Chirurgia Stomatologiczna Implantologia">
                             </div>
-                            <h2 class=" box_tittle">Chirurgia Stomatologiczna Implantologia</h2>
+                            <h3 class=" box_tittle">Chirurgia Stomatologiczna Implantologia</h3>
                         </a>
                     </div>
                 </div>
@@ -55,33 +55,33 @@ get_header('home'); ?>
             <div class="row">
                 <div class="col-4-12">
                     <div class="box">
-                        <a href="" class="box_photo">
+                        <a href="http://localhost/protetyka" class="box_photo">
                             <div class="box_photo_container">
                                 <img src="<?php echo get_template_directory_uri(); ?>/images/Protetyka_AdobeStock_269155967_Preview.jpeg" alt="Protetyka">
                             </div>
-                            <h2 class="box_tittle">Protetyka</h2>
+                            <h3 class="box_tittle">Protetyka</h3>
                         </a>
                     </div>
                 </div>
 
                 <div class="col-4-12">
                     <div class="box">
-                        <a href="" class="box_photo">
+                        <a href="http://localhost/zdjecia_rtg" class="box_photo">
                             <div class="box_photo_container">
                                 <img src="<?php echo get_template_directory_uri(); ?>/images/RTG_AdobeStock_206079798_Preview.jpeg" alt="Zdjęcia RTG">
                             </div>
-                            <h2 class="box_tittle">Zdjęcia RTG</h2>
+                            <h3 class="box_tittle">Zdjęcia RTG</h3>
                         </a>
                     </div>
                 </div>
 
                 <div class="col-4-12">
                     <div class="box">
-                        <a href="" class="box_photo">
+                        <a href="http://localhost/nfz/" class="box_photo">
                             <div class="box_photo_container">
                                 <img src="<?php echo get_template_directory_uri(); ?>/images/NFZ.jpg" alt="Narodowy Fundusz Zdrowia">
                             </div>
-                            <h2 class=" box_tittle">Narodowy Fundusz Zdrowia</h2>
+                            <h3 class=" box_tittle">Narodowy Fundusz Zdrowia</h3>
                         </a>
                     </div>
                 </div>
@@ -95,7 +95,7 @@ get_header('home'); ?>
 
     <section id="aboutUs" class="section_aboutUs">
         <div class="banner">
-            <div class="banner_text">
+            <div class="banner_text container">
                 Piękny uśmiech i zdrowe zęby to dobre samopoczucie każdego dnia.<br>
                 Nasi specjaliści sprawią że poczujesz się pewnie i komfortowo.
             </div>
@@ -137,7 +137,7 @@ get_header('home'); ?>
                             Scelerisque egestas vitae quam risus quis nisi euBlandit. Ornare posuere diam et semper
                             mauris nunc platea ut metus. Eget vestibulum ut commodo vestibulum.
                             Scelerisque egestas vitae quam risus quis nisi eu.</p>
-                        <a href="/" class="button">Więcej</a>
+                        <a href="http://localhost/klinika/" class="button">Więcej</a>
 
                     </div>
 
@@ -146,9 +146,9 @@ get_header('home'); ?>
         </div>
     </section>
 
-    <section>
+    <section class="section_contact">
         <div class="banner">
-            <div class="banner_text">
+            <div class="banner_text container"">
                 U nas możesz skorzystać z wizyty również w ramach NFZ
             </div>
 
@@ -169,6 +169,7 @@ get_header('home'); ?>
                 <div class="col-1-12">
                     <div class="image_box">
 <img src="<?php echo get_template_directory_uri(); ?>/images/address.svg" alt="Adres" class="contact_address address">
+ <!-- Icons made by <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons">Smashicons</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a> -->
 </div>
 </div>
             <div class="col-3-12">
@@ -189,20 +190,20 @@ Tel.  664 474 996</p>
         </div>
 
 
-
-
         <div class="col-4-12">
             <div class="mail_box">
 
             <div>
                 <a href="mailto:aleksandra.dadacz@gmail.com" class="mail_link" target ="_blank">
              <img src="<?php echo get_template_directory_uri(); ?>/images/envelope.svg" alt="mail" class="contact_address mail">ortodoncja.budel@gmail.com</a>
+              <!-- Icons made by <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons">Smashicons</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a> -->
             </div>
 
 
             <div>
              <a href="https://www.facebook.com/Dens2-Prywatna-Przychodnia-Dentystyczno-Lekarska-842138229254599/" class="fb_link" target ="_blank">
             <img src="<?php echo get_template_directory_uri(); ?>/images/facebook_logo.svg" alt="Facebook" class="contact_address fb">Stomatoliga DENS2</a>
+             <!-- Icons made by <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons">Smashicons</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a> -->
             </div>
 
             </div>
@@ -214,6 +215,7 @@ Tel.  664 474 996</p>
                     <div class="job_box">
     <a href="http://localhost/oferty-pracy/" class="job_link" target ="_blank">
             <img src="<?php echo get_template_directory_uri(); ?>/images/hiring.svg" alt="ofety pracy" class="contact_address job">Ofety pracy</a>
+             <!-- Icons made by <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons">Smashicons</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a> -->
 </div>
             </div>
 
@@ -222,9 +224,7 @@ Tel.  664 474 996</p>
     </section class="section_contact">
 
 
-
-
-    <div id='map' style='width: 100%; height: 500px;'></div>
+    <div id='map' style='width: 100%; height: 480px;'></div>
 
 
 
@@ -235,11 +235,3 @@ Tel.  664 474 996</p>
 
 
 <?php get_footer(); ?>
-
-<!-- <script>
-mapboxgl.accessToken = 'pk.eyJ1IjoiYXhkYWRhY3oiLCJhIjoiY2p1MDd5ZmRiMjBzZzRhbHo5dDFweWx4aCJ9.FNAE9mAdO-SOD9DySqgU6g';
-var map = new mapboxgl.Map({
-container: 'map',
-style: 'mapbox://styles/mapbox/streets-v11'
-});
-</script> -->

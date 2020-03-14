@@ -1,4 +1,13 @@
 <?php
+if(function_exists('register_sidebar'))
+register_sidebar(array(
+ 'before_widget' => '<div class="widget wp_widget" id="%1$s">',
+ 'after_widget' => '</div>',
+ 'before_title' => '<h3>',
+ 'after_title' => '</h3>'));
+
+// add_theme_support( 'post-thumbnails' );
+
 include('php/theme.php');
 // include('php/admin.php');
 // include('php/acf.php');
@@ -77,3 +86,8 @@ function custome_styles()
 //-----------------------------------------------------------
 function my_function_admin_bar(){ return false; }
 add_filter( 'show_admin_bar' , 'my_function_admin_bar');
+
+
+// wdidget
+
+?>

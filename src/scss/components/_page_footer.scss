@@ -54,6 +54,7 @@
 .footer_copyright a {
     text-decoration: none;
     color: $color-main;
+    padding-left: 1px;
 }
 
 .footer_contact {
@@ -64,6 +65,9 @@
     flex-direction: column;
 }
 
+.footer_email {
+    text-decoration: none;
+}
 
 footer .row .col-3-12,
 footer .row .col-6-12 {

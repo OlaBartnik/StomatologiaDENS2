@@ -5,9 +5,9 @@
                     <nav class="footer_nav">
                         <ul class="footer_nav_list">
                             <li><a href="/">Strona Główna</a></li>
-                            <li><a href="/">Klinika</a></li>
-                            <li><a href="#services">Usługi</a></li>
-                            <li><a href="/">Cennik</a></li>
+                            <li><a href="http://localhost/klinika/">Klinika</a></li>
+                            <li><a href="/#services">Usługi</a></li>
+                            <li><a href="http://localhost/cennik/">Cennik</a></li>
                         </ul>
                     </nav>
 
@@ -16,8 +16,8 @@
                 <div class="col-3-12">
                     <nav class="footer_nav">
                         <ul class="footer_nav_list">
-                            <li><a href="/">Kontakt</a></li>
-                            <li><a href="/">Oferty pracy </a></li>
+                            <li><a href="/#contact">Kontakt</a></li>
+                            <li><a href="http://localhost/oferty-pracy/">Oferty pracy </a></li>
                             <li><a href="/">Polityka prywatności</a></li>
                             <li><a href="/">Mapa strony</a></li>
 
@@ -51,10 +51,10 @@
 
         <div class="row">
             <div class="col-6-12">
-                <span class="footer_copyright">
-                    &copy; 2020 DENS2 Wszelkie prawa zastrzeżone. Projekt i wykonanie <a
-                        href="www.internetowekreacje.pl">internetowekreacje.pl</a>
-                </span>
+                <div class="footer_copyright">
+                   <p>&copy; 2020 DENS2 Wszelkie prawa zastrzeżone. Projekt i wykonanie</p>
+                   <a href="http://internetowekreacje.pl" target="_blank">internetowekreacje.pl</a>
+                </div>
 
             </div>
 
@@ -66,10 +66,10 @@
                 </div>
             </div>
             <div class="col-3-12">
-                <div class="footer_contact footer_email">
+                <a href="mailto:aleksandra.dadacz@gmail.com" class="footer_contact footer_email">
                     Email:<br>
                     ortodoncja.budel@gmail.com
-                </div>
+                </a>
             </div>
         </div>
 
