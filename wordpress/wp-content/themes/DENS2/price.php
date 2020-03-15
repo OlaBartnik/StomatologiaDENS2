@@ -9,7 +9,7 @@ get_header(); ?>
 <?php if (have_posts()): ?>
     <?php while (have_posts()) : the_post(); ?>
 
-    <section class="section_pirce">
+    <section class="section_single_page">
         <div class="banner">
             <div class="banner_text container">
              <p>Lorem ipsum</p>
@@ -23,10 +23,11 @@ get_header(); ?>
 
 <div class="row">
         <div class="col-8-12">
-
+        <div class="header_container">
             <header class="section_header">
                 <h2>Cennik usług</h2>
             </header>
+</div>
 
 
 

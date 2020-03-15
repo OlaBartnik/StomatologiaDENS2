@@ -9,9 +9,13 @@ get_header('home'); ?>
     <?php while (have_posts()) : the_post(); ?>
         <section id="services" class="section_sevices" id="sevices">
                  <div class="container">
+                 <div class="row">
+                <div class="col-12-12 header_container">
             <header class="section_header">
                 <h2>Nasze usługi</h2>
             </header>
+</div>
+</div>
 
             <div class="row">
                 <div class="col-4-12">
@@ -108,10 +112,12 @@ get_header('home'); ?>
 
                 </div>
 
-                <div class="col-6-12">
+                <div class="col-6-12 header_container">
+
                     <header class="section_header">
                         <h2>Nasza Klinika</h2>
                     </header>
+
 
                 </div>
             </div>
@@ -154,10 +160,13 @@ get_header('home'); ?>
 
         </div>
         <div id="contact"class="container" >
+        <div class="row">
+                <div class="col-12-12 header_container">
             <header class="section_header">
                 <h2>Kontakt</h2>
             </header>
-
+</div>
+</div>
             <div class="contact_form">
           <?php the_content();?>
             </div>

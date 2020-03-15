@@ -1,0 +1,38 @@
+.section_single_page {
+    padding-top: 20px;
+}
+
+.section_single_page .container {
+    min-height: 100vh;
+}
+
+.section_single_page .banner_text.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+
+// .services_single_page.section_header h3::after {
+//     width: 510px;
+
+// }
+
+
+.services_single_page.photo {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 55px;
+}
+
+.services_single_page.photo img {
+
+    margin-right: 60px;
+}
+
+.descritption_tittle {
+    font-size: 20px;
+
+}

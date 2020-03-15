@@ -1,10 +1,10 @@
 <?php if (!function_exists('dynamic_sidebar') || !dynamic_sidebar()): ?>
-  <div class="widget">
+  <!-- <div class="widget"> -->
 
   <aside>
-
+  <div class="header_container">
   <h2 class="section_header">Nasze usługi</h2>
-
+</div>
   <ul class="aside_nav_list">
                             <li><a href="http://localhost/stomatologia-zachowacza"  class="sidebar_box">
 
@@ -59,5 +59,5 @@
 
 
 
-  </div><!-- /.widget -->
+  <!-- </div>/.widget -->
 <?php endif; ?>

@@ -59,9 +59,9 @@
                         <ul class="page_nav_list">
                             <li><a href="/">Strona główna</a></li>
                             <li><a href="http://localhost/klinika/">Klinika</a></li>
-                            <li><a href="#services">Usługi</a></li>
+                            <li><a href="http://localhost/#services">Usługi</a></li>
                             <li><a href="http://localhost/cennik/">Cennik</a></li>
-                            <li><a href="#contact">Kontakt</a></li>
+                            <li><a href="http://localhost/#contact">Kontakt</a></li>
                         </ul>
                     </nav>
                 </div>

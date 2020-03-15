@@ -20,19 +20,13 @@
     margin-bottom: 20px;
 }
 
-.section_aboutUs .section_header h2 {
+.section_aboutUs .header_container {
     text-align: left;
-    padding-left: 15px;
-
-
+    margin-left: 50px;
 }
 
 
 
-.section_aboutUs .section_header::after {
-    left: 0;
-    transform: translate(0);
-}
 
 
 

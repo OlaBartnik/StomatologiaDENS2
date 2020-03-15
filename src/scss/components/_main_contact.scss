@@ -7,19 +7,6 @@
     margin-bottom: 30px;
 }
 
-#contact .section_header::after {
-
-    width: 180px;
-    background-color: $color-hover;
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    right: 0;
-    transform: translate(-50%, 0);
-
-}
-
-
 
 
 // Formularz kontaktowy
@@ -107,9 +94,9 @@ label {
 }
 
 
-.col-4-12.recaptcha span.wpcf7-not-valid-tip {
-    display: none;
-}
+// .col-4-12.recaptcha span.wpcf7-not-valid-tip {
+//     display: none;
+// }
 
 .col-12-12.rodo {
     display: flex;

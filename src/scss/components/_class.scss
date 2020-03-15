@@ -11,15 +11,15 @@ section {
 .section_header {
     position: relative;
     margin-bottom: 50px;
-    text-align: center;
     text-transform: uppercase;
     color: $color-main;
+    display: inline-block;
 }
 
 .section_header::after {
     content: "";
     height: 2px;
-    width: 240px;
+    width: 120%;
     background-color: $color-hover;
     position: absolute;
     bottom: 0;
@@ -28,12 +28,19 @@ section {
 
 }
 
-.section_header h2 {
+.section_header h2,
+.section_header h3 {
     font-size: 28px;
+    margin: 0;
+    padding: 0;
+
 }
 
 
+.header_container {
+    text-align: center;
 
+}
 
 
 // button plus button sumbit z control form 7
