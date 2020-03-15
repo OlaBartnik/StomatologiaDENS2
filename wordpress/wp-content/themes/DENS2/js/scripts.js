@@ -96,9 +96,12 @@
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _map__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./map */ "./src/js/map.js");
+/* harmony import */ var _price_table__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./price_table */ "./src/js/price_table.js");
+
 
 $(function () {
-  Object(_map__WEBPACK_IMPORTED_MODULE_0__["default"])();
+  // map();
+  Object(_price_table__WEBPACK_IMPORTED_MODULE_1__["default"])();
 });
 
 /***/ }),
@@ -155,6 +158,26 @@ function map() {
 }
 
 /* harmony default export */ __webpack_exports__["default"] = (map);
+
+/***/ }),
+
+/***/ "./src/js/price_table.js":
+/*!*******************************!*\
+  !*** ./src/js/price_table.js ***!
+  \*******************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+function showPriceDetails() {
+  $(".tablepress").hide();
+  $(".accordion_tab_arrow").on("click", function () {
+    $(this).parent().siblings("table").fadeToggle("slow");
+  });
+}
+
+/* harmony default export */ __webpack_exports__["default"] = (showPriceDetails);
 
 /***/ })
 

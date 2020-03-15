@@ -1,3 +1,4 @@
+
 function map() {
 
     mapboxgl.accessToken = 'pk.eyJ1IjoiYXhkYWRhY3oiLCJhIjoiY2p1MDd5ZmRiMjBzZzRhbHo5dDFweWx4aCJ9.FNAE9mAdO-SOD9DySqgU6g';

@@ -1123,8 +1123,28 @@ footer .row .col-6-12 {
   margin-bottom: 20px;
 }
 
-.price_box_tab table {
-  width: 100%;
+.accordion_tab {
+  margin-bottom: 20px;
+}
+
+.accordion_tab_arrow {
+  display: block;
+  width: 30px;
+  height: auto;
+}
+
+.accordion_tab_title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-transform: uppercase;
+  font-weight: 800;
+  border: 1px solid #DDD;
+  padding: 10px 20px;
+}
+
+.accordion_tab_title h3 {
+  margin: 0;
 }
 
 aside h2 {
