@@ -9,7 +9,7 @@ get_header(); ?>
 <?php if (have_posts()): ?>
     <?php while (have_posts()) : the_post(); ?>
 
-    <section class="section_single_page">
+    <section class="section_single_page price">
         <div class="banner">
             <div class="banner_text container">
              <p>Lorem ipsum</p>
@@ -36,7 +36,9 @@ get_header(); ?>
      <div class="accordion_tab">
      <div class="accordion_tab_title">
      <h3>Stomatologia zachowawcza</h3>
-    <img src="<?php echo get_template_directory_uri(); ?>/images/down-arrow.svg" alt="" class="accordion_tab_arrow">
+     <div class="accordion_tab_arrow"><div class="arrow-down"></div></div>
+
+
     </div>
 
 
@@ -49,7 +51,7 @@ get_header(); ?>
     <div class="accordion_tab">
      <div class="accordion_tab_title">
      <h3>Endodoncja <br>specjalistyczne leczenie kanałowe pod mikroskopem</h3>
-    <img src="<?php echo get_template_directory_uri(); ?>/images/down-arrow.svg" alt="" class="accordion_tab_arrow">
+     <div class="accordion_tab_arrow"><div class="arrow-down"></div></div>
     </div>
 
 

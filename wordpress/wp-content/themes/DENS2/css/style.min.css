@@ -561,7 +561,7 @@ section {
 .section_header::after {
   content: "";
   height: 2px;
-  width: 120%;
+  width: 110%;
   background-color: #08BDD4;
   position: absolute;
   bottom: 0;
@@ -570,8 +570,7 @@ section {
           transform: translate(-50%, 0);
 }
 
-.section_header h2,
-.section_header h3 {
+.section_header h2 {
   font-size: 28px;
   margin: 0;
   padding: 0;
@@ -681,6 +680,7 @@ section {
   justify-content: space-between;
   align-items: center;
   height: 100%;
+  width: 100vw;
 }
 
 .contact_nav {
@@ -783,14 +783,26 @@ section {
   opacity: 1;
 }
 
+.page_header.home {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+  z-index: 1;
+}
+
 .page_hero {
   height: 100vh;
-  min-height: 550px;
-  background-image: url(../images/banner_AdobeStock_119354853_Preview.jpeg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: bottom 40% center;
   position: relative;
+}
+
+.slider,
+.slider {
+  height: 100vh;
+  width: 100vw;
+  background-size: cover;
+  background-position: center;
 }
 
 .main_banner_addon {
@@ -1123,14 +1135,44 @@ footer .row .col-6-12 {
   margin-bottom: 20px;
 }
 
+.price .section_header h2 {
+  font-size: 22px;
+  margin: 0;
+  padding: 0;
+}
+
 .accordion_tab {
   margin-bottom: 20px;
 }
 
 .accordion_tab_arrow {
-  display: block;
   width: 30px;
-  height: auto;
+  height: 30px;
+  border: 2px solid #383838;
+  position: relative;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.arrow-down {
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid #383838;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+  top: 37%;
+}
+
+.accordion_tab_arrow:hover .arrow-down {
+  border-top: 10px solid white;
+}
+
+.accordion_tab_arrow:hover {
+  background: #383838;
 }
 
 .accordion_tab_title {
@@ -1147,9 +1189,14 @@ footer .row .col-6-12 {
   margin: 0;
 }
 
+.accordion_tab table {
+  display: none;
+}
+
 aside h2 {
-  font-size: 28px;
+  font-size: 22px;
   margin: 0;
+  padding: 0;
 }
 
 .aside_nav_list {
@@ -1209,6 +1256,12 @@ aside::after {
   padding-top: 20px;
 }
 
+.services_single_page.section_header h3 {
+  font-size: 22px;
+  margin: 0;
+  padding: 0;
+}
+
 .section_single_page .container {
   min-height: 100vh;
 }
@@ -1232,6 +1285,11 @@ aside::after {
 
 .descritption_tittle {
   font-size: 20px;
+}
+
+.col-4-12.gallery {
+  display: flex;
+  justify-content: center;
 }
 
 /*# sourceMappingURL=style.min.css.map */

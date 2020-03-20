@@ -19,7 +19,7 @@ section {
 .section_header::after {
     content: "";
     height: 2px;
-    width: 120%;
+    width: 110%;
     background-color: $color-hover;
     position: absolute;
     bottom: 0;
@@ -28,8 +28,9 @@ section {
 
 }
 
-.section_header h2,
-.section_header h3 {
+
+
+.section_header h2 {
     font-size: 28px;
     margin: 0;
     padding: 0;

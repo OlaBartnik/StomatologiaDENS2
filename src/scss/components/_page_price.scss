@@ -1,15 +1,49 @@
+.price .section_header h2 {
+    font-size: 22px;
+    margin: 0;
+    padding: 0;
+}
+
 .accordion_tab {
     margin-bottom: 20px;
 }
 
 
-.accordion_tab_arrow {
-    display: block;
-    width: 30px;
-    height: auto;
 
+
+.accordion_tab_arrow {
+    width: 30px;
+    height: 30px;
+    border: 2px solid $color-main;
+    position: relative;
+    border-radius: 50%;
+    cursor: pointer;
 }
 
+.arrow-down {
+    width: 0;
+    height: 0;
+
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+
+    border-top: 10px solid $color-main;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    top: 37%;
+}
+
+.accordion_tab_arrow:hover {
+    & .arrow-down {
+        border-top: 10px solid white;
+
+    }
+
+    & {
+        background: $color-main;
+    }
+}
 
 .accordion_tab_title {
     display: flex;
@@ -23,4 +57,8 @@
     & h3 {
         margin: 0;
     }
+}
+
+.accordion_tab table {
+    display: none;
 }

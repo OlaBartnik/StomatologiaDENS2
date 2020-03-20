@@ -19,7 +19,15 @@
 <body <?php body_class(); ?>>
 <body>
 <div class="page_hero">
-        <header class="page_header">
+     <div class="autoplay">
+
+        <div class="slider" style="background-image:url(<?php echo get_template_directory_uri(); ?>/images/slider.jpg)"></div>
+        <div class="slider" style="background-image:url(<?php echo get_template_directory_uri(); ?>/images/slider2.jpg)"></div>
+        <div class="slider" style="background-image:url(<?php echo get_template_directory_uri(); ?>/images/slider3.jpg)"></div>
+       </div>
+
+
+        <header class="page_header home">
             <div class="contact_menu">
                 <div class="container">
                     <nav class="contact_nav">
@@ -72,6 +80,11 @@
                 <img src="<?php echo get_template_directory_uri(); ?>/images/arrow.svg" alt="" class="main_banner_arrow">
             </a>
         </div>
+
+
+
+      
+        
 </div>
 
 

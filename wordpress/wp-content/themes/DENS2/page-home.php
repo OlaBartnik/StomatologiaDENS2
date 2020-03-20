@@ -3,10 +3,16 @@
  * Template Name: Home
  */
 
-get_header('home'); ?>
+get_header('home');
+// get_header();
+ ?>
+
+
+
 
 <?php if (have_posts()): ?>
     <?php while (have_posts()) : the_post(); ?>
+
         <section id="services" class="section_sevices" id="sevices">
                  <div class="container">
                  <div class="row">

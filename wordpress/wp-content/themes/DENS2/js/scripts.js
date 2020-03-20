@@ -95,14 +95,54 @@
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _map__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./map */ "./src/js/map.js");
-/* harmony import */ var _price_table__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./price_table */ "./src/js/price_table.js");
+/* harmony import */ var _price_table__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./price_table */ "./src/js/price_table.js");
+/* harmony import */ var _map__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./map */ "./src/js/map.js");
+/* harmony import */ var _gallery__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./gallery */ "./src/js/gallery.js");
+/* harmony import */ var _slider__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./slider */ "./src/js/slider.js");
+
+
 
 
 $(function () {
-  // map();
-  Object(_price_table__WEBPACK_IMPORTED_MODULE_1__["default"])();
+  Object(_price_table__WEBPACK_IMPORTED_MODULE_0__["default"])();
+  Object(_slider__WEBPACK_IMPORTED_MODULE_3__["default"])();
+  Object(_gallery__WEBPACK_IMPORTED_MODULE_2__["default"])();
+  Object(_map__WEBPACK_IMPORTED_MODULE_1__["default"])();
 });
+
+/***/ }),
+
+/***/ "./src/js/gallery.js":
+/*!***************************!*\
+  !*** ./src/js/gallery.js ***!
+  \***************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+function gallery() {
+  $.fancybox.defaults.thumbs.autoStart = true;
+  $().fancybox({
+    selector: '.gallery .slick-slide:not(.slick-cloned)',
+    backFocus: false
+  });
+  $(".gallery").slick({
+    slidesToShow: 3,
+    infinite: true,
+    dots: false,
+    arrows: false
+  });
+  $(document).on('click', '.slick-cloned', function (e) {
+    var $slides = $(this).parent().children('.slick-slide:not(.slick-cloned)');
+    $slides.eq(($(this).attr("data-slick-index") || 0) % $slides.length).trigger("click.fb-start", {
+      $trigger: $(this)
+    });
+    return false;
+  });
+}
+
+/* harmony default export */ __webpack_exports__["default"] = (gallery);
 
 /***/ }),
 
@@ -171,13 +211,38 @@ function map() {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 function showPriceDetails() {
-  $(".tablepress").hide();
   $(".accordion_tab_arrow").on("click", function () {
-    $(this).parent().siblings("table").fadeToggle("slow");
+    $(this).parent().parent().children("table").fadeToggle("slow"); //   $(this).parent().parent().siblings().children("table").fadeOut("slow");
   });
 }
 
 /* harmony default export */ __webpack_exports__["default"] = (showPriceDetails);
+
+/***/ }),
+
+/***/ "./src/js/slider.js":
+/*!**************************!*\
+  !*** ./src/js/slider.js ***!
+  \**************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+function slider() {
+  $('.autoplay').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 4000,
+    arrows: false,
+    pauseOnFocus: false,
+    pauseOnHover: false
+  });
+}
+
+;
+/* harmony default export */ __webpack_exports__["default"] = (slider);
 
 /***/ })
 

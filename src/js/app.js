@@ -1,10 +1,14 @@
-import map from "./map";
 import showPriceDetails from "./price_table";
+import map from "./map";
+import gallery from "./gallery";
+import slider from "./slider";
+
 
 $(function () {
 
-
-    // map();
     showPriceDetails();
+    slider();
+    gallery();
+    map();
 
 });
