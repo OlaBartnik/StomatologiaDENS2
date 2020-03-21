@@ -35,13 +35,6 @@ get_header(); ?>
 </div>
 
 
-    <?php if( get_field('picture') ): ?>
-        <div class="services_single_page photo">
- <img src="<?php the_field('picture'); ?>"  width="200px" height="auto" alt="<?php the_field('name'); ?>">
- <h4 class="descritption_tittle"><?php the_field('descritption_tittle');?></h4>
- </div>
-
-    <?php endif; ?>
 
 
     <?php if( get_field('description') ): ?>

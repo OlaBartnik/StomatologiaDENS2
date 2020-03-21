@@ -1,31 +1,87 @@
-<?php get_header(); ?>
+<?php
+/**
+ * Template Name: Single
+ */
 
-<main class="page-main clearfix" role="main">
-	<?php
-	get_template_part('partials/breadcrumbs');
-	?>
-	<div class="page-center">
-		<h2 class="page-title page-center"><?php the_title(); ?></h2>
+get_header(); ?>
 
-		<div class="dynamic-content">
-			<?php if (have_posts()): ?>
+
+    <section class="section_single_page">
+        <div class="banner">
+            <div class="banner_text container">
+             <p>Lorem ipsum</p>
+             <p>Dolor sit amet</p>
+             <p>Ac morbi et ut quis</p>
+             <p>Cursus sit </p>
+            </div>
+        </div>
+
+<div class="container">
+
+<div class="row">
+ <div class="col-8-12">
+     <div class="header_container">
+
+
+ <header class="single_page section_header">
+ <h3>Oferty pracy</h3>
+        </header>
+
+
+</div>
+
+    <?php if( get_field('description3') ): ?>
+ <div> <?php the_field('description3'); ?> </div>
+    <?php endif; ?>
+<br>
+	<?php if (have_posts()): ?>
 				<?php while (have_posts()) : the_post(); ?>
 
-					<?php the_content(); ?>
-					<?php edit_post_link(); ?>
+					<header class="single section_header">
+					<h3> <?php the_title(); ?> </h3> </header>
 
+
+				<?php if( get_field('description4') ): ?>
+ <div> <?php the_field('description4'); ?> </div>
+	<?php endif; ?>
+
+				<p>Data zamieszczenia ogłoszenia: <?php the_time('F j, Y'); ?></p>
 				<?php endwhile; ?>
-				<?php
-				get_template_part('partials/pagination');
-				?>
 			<?php endif; ?>
-		</div><!-- e: dynamic content -->
-        
-        <?php 
-        get_sidebar(true);
-        ?>
 
-	</div><!-- e: page center -->
+</div>
+
+
+                <div class="col-4-12">
+                <aside>
+  <div class="header_container">
+  <h2 class="section_header">Aktualne oferty pracy</h2>
+    </div>
+				<?php $page = (get_query_var('paged')) ? get_query_var('paged') : 1; query_posts("showposts=20&paged=$page"); while ( have_posts() ) : the_post() ?>
+
+				<div class="single_link_container">
+			<div class="square"></div>
+			<a class= "single_link" href="<?php the_permalink() ?>" rel="bookmark"><?php the_title(); ?></a>
+</div>
+            <br>
+
+			<?php endwhile; ?>
+
+			<p><?php posts_nav_link(); ?></p>
+
+    </aside>
+                </div>
+</div>
+</div>
+
+
+
+
+</section>
+
 </main>
+
+
+
 
 <?php get_footer(); ?>

@@ -1,4 +1,13 @@
-.col-4-12.gallery {
+.row.gallery_box {
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+}
+
+
+
+.slick-list.draggable .slick-track a {
     display: flex;
     justify-content: center;
+    align-items: center;
 }

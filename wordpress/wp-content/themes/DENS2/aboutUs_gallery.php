@@ -36,14 +36,6 @@ get_header(); ?>
 </div>
 
 
-    <?php if( get_field('picture') ): ?>
-        <div class="services_single_page photo">
- <img src="<?php the_field('picture'); ?>"  width="200px" height="auto" alt="<?php the_field('name'); ?>">
- <h4 class="descritption_tittle"><?php the_field('descritption_tittle');?></h4>
- </div>
-
-    <?php endif; ?>
-
 
     <?php if( get_field('description') ): ?>
  <div> <?php the_field('description'); ?> </div>
@@ -66,23 +58,41 @@ get_header(); ?>
 
 
 
-<div class="row">
+<div class="row gallery_box">
 
- <div class="col-12-12 gallery">
+ <div class="col-8-12 gallery">
 
- <a class="group" rel="group1" href="<?php echo get_template_directory_uri(); ?>/images/slider.jpg"><img src="<?php echo get_template_directory_uri(); ?>/images/slider_small.jpg" alt=""/></a>
-
-
-
- <a class="group" rel="group1" href="<?php echo get_template_directory_uri(); ?>/images/slider2.jpg"><img src="<?php echo get_template_directory_uri(); ?>/images/slider2_small.jpg" alt=""/></a>
+ <a class="group" rel="group1" href="<?php echo get_template_directory_uri(); ?>/images/slider.jpg"><img src="<?php echo get_template_directory_uri(); ?>/images/slider_smal.jpg" alt=""/></a>
 
 
 
- <a class="group" rel="group1" href="<?php echo get_template_directory_uri(); ?>/images/slider3.jpg"><img src="<?php echo get_template_directory_uri(); ?>/images/slider3_small.jpg" alt=""/></a>
+ <a class="group" rel="group1" href="<?php echo get_template_directory_uri(); ?>/images/slider2.jpg"><img src="<?php echo get_template_directory_uri(); ?>/images/slider2_smal.jpg" alt=""/></a>
+
+
+
+ <a class="group" rel="group1" href="<?php echo get_template_directory_uri(); ?>/images/slider3.jpg"><img src="<?php echo get_template_directory_uri(); ?>/images/slider3_smal.jpg" alt=""/></a>
+
  </div>
 
  </div>
 
+ <div class="row gallery_box">
+
+ <div class="col-8-12 gallery">
+
+ <a class="group" rel="group1" href="<?php echo get_template_directory_uri(); ?>/images/slider.jpg"><img src="<?php echo get_template_directory_uri(); ?>/images/slider_smal.jpg" alt=""/></a>
+
+
+
+ <a class="group" rel="group1" href="<?php echo get_template_directory_uri(); ?>/images/slider2.jpg"><img src="<?php echo get_template_directory_uri(); ?>/images/slider2_smal.jpg" alt=""/></a>
+
+
+
+ <a class="group" rel="group1" href="<?php echo get_template_directory_uri(); ?>/images/slider3.jpg"><img src="<?php echo get_template_directory_uri(); ?>/images/slider3_smal.jpg" alt=""/></a>
+
+ </div>
+
+ </div>
 
 
 </div>

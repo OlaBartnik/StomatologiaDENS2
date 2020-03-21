@@ -18,7 +18,7 @@
                         <ul class="footer_nav_list">
                             <li><a href="/#contact">Kontakt</a></li>
                             <li><a href="http://localhost/oferty-pracy/">Oferty pracy </a></li>
-                            <li><a href="/">Polityka prywatności</a></li>
+                            <li><a href="http://localhost/polityka-prywatnosci">Polityka prywatności</a></li>
                             <li><a href="/">Mapa strony</a></li>
 
                         </ul>

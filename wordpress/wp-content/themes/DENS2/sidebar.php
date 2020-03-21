@@ -1,5 +1,4 @@
-<?php if (!function_exists('dynamic_sidebar') || !dynamic_sidebar()): ?>
-  <!-- <div class="widget"> -->
+
 
   <aside>
   <div class="header_container">
@@ -58,6 +57,3 @@
 
 
 
-
-  <!-- </div>/.widget -->
-<?php endif; ?>
