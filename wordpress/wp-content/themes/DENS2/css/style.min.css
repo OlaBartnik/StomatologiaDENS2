@@ -721,7 +721,7 @@ section {
   display: block;
   content: "";
   height: 1px;
-  background-color: #383838;
+  background-color: #b8b8b8;
 }
 
 .header_logo {
@@ -788,6 +788,61 @@ section {
   left: 0;
   right: 0;
   opacity: 1;
+}
+
+.toggle-main-nav {
+  display: none;
+  right: 10px;
+  top: 7px;
+  width: 60px;
+  height: 60px;
+  background: none;
+  border: 0;
+  cursor: pointer;
+}
+
+.toggle-main-nav span {
+  display: block;
+  background: #000;
+  height: 6px;
+  width: 80%;
+  margin: 5px auto;
+  border-radius: 2px;
+}
+
+.toggle-main-nav:focus {
+  outline: none;
+}
+
+@media (max-width: 760px) {
+  .toggle-main-nav {
+    display: block;
+  }
+  .page_nav {
+    position: fixed;
+    top: 0;
+    left: -320px;
+    width: 300px;
+    height: 100vh;
+    background: white;
+    transition: 1s left;
+    box-shadow: 1px 0 10px rgba(0, 0, 0, 0.4);
+  }
+  .page_nav.show {
+    left: 0;
+  }
+  .page_nav li {
+    display: block;
+    text-align: center;
+    border-bottom: 1px solid #b8b8b8;
+  }
+  .page_nav_list {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .page_nav_list a::after {
+    display: none;
+  }
 }
 
 .page_header.home {
@@ -1437,6 +1492,30 @@ a.single_link {
 .notfound_link:hover {
   color: #08BDD4;
   background: white;
+}
+
+@media only screen and (max-width: 767px) {
+  .notfound .notfound-404 {
+    height: 200px;
+  }
+  .notfound .notfound-404 h1 {
+    font-size: 200px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .notfound .notfound-404 {
+    height: 162px;
+  }
+  .notfound .notfound-404 h1 {
+    font-size: 162px;
+    height: 150px;
+    line-height: 162px;
+  }
+  .notfound a {
+    padding: 7px 15px;
+    font-size: 14px;
+  }
 }
 
 /*# sourceMappingURL=style.min.css.map */

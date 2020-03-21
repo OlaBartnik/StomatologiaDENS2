@@ -99,6 +99,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _map__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./map */ "./src/js/map.js");
 /* harmony import */ var _gallery__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./gallery */ "./src/js/gallery.js");
 /* harmony import */ var _slider__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./slider */ "./src/js/slider.js");
+/* harmony import */ var _menu_hamburger__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./menu_hamburger */ "./src/js/menu_hamburger.js");
+
 
 
 
@@ -107,6 +109,7 @@ $(function () {
   Object(_price_table__WEBPACK_IMPORTED_MODULE_0__["default"])();
   Object(_slider__WEBPACK_IMPORTED_MODULE_3__["default"])();
   Object(_gallery__WEBPACK_IMPORTED_MODULE_2__["default"])();
+  Object(_menu_hamburger__WEBPACK_IMPORTED_MODULE_4__["default"])();
   Object(_map__WEBPACK_IMPORTED_MODULE_1__["default"])();
 });
 
@@ -198,6 +201,26 @@ function map() {
 }
 
 /* harmony default export */ __webpack_exports__["default"] = (map);
+
+/***/ }),
+
+/***/ "./src/js/menu_hamburger.js":
+/*!**********************************!*\
+  !*** ./src/js/menu_hamburger.js ***!
+  \**********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+function showMenu() {
+  $(".toggle-main-nav").on("click", function (event) {
+    event.preventDefault();
+    $(".page_nav").toggleClass("show");
+  });
+}
+
+/* harmony default export */ __webpack_exports__["default"] = (showMenu);
 
 /***/ }),
 

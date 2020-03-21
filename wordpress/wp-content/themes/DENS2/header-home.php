@@ -69,6 +69,12 @@
                             <li><a href="#contact">Kontakt</a></li>
                         </ul>
                     </nav>
+
+                    <button type="button" class="toggle-main-nav">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                     </button>
                 </div>
             </div>
 
