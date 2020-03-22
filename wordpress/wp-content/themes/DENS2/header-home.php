@@ -18,16 +18,11 @@
 </head>
 <body <?php body_class(); ?>>
 <body>
+
+
 <div class="page_hero">
-     <div class="autoplay">
 
-        <div class="slider" style="background-image:url(<?php echo get_template_directory_uri(); ?>/images/slider.jpg)"></div>
-        <div class="slider" style="background-image:url(<?php echo get_template_directory_uri(); ?>/images/slider2.jpg)"></div>
-        <div class="slider" style="background-image:url(<?php echo get_template_directory_uri(); ?>/images/slider3.jpg)"></div>
-       </div>
-
-
-        <header class="page_header home">
+ <header class="page_header home">
             <div class="contact_menu">
                 <div class="container">
                     <nav class="contact_nav">
@@ -55,10 +50,10 @@
                     <div class="header_logo">
                         <h1>
                             <a href="/" class="page_logo">
-                                <img src="<?php echo get_template_directory_uri(); ?>/images/logo final.png" alt="Stomatologia DENS2">
+                                <img src="<?php echo get_template_directory_uri(); ?>/images/logoDENS2.png" alt="Stomatologia DENS2">
                             </a>
                         </h1>
-                        <a href="http://localhost/nfz/" class="NFZ_logo"><img src="<?php echo get_template_directory_uri(); ?>/images/nfz_logo_C_kolor (1).png" alt="NFZ"></a>
+                        <a href="http://localhost/nfz/" class="NFZ_logo"><img src="<?php echo get_template_directory_uri(); ?>/images/nfz.png" alt="NFZ"></a>
                     </div>
                     <nav class="page_nav">
                         <ul class="page_nav_list">
@@ -69,16 +64,21 @@
                             <li><a href="#contact">Kontakt</a></li>
                         </ul>
                     </nav>
-
-                    <button type="button" class="toggle-main-nav">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                     </button>
                 </div>
             </div>
 
-        </header>
+</header>
+
+
+     <div class="autoplay">
+
+        <div class="slider" style="background-image:url(<?php echo get_template_directory_uri(); ?>/images/slider.jpg)"></div>
+        <div class="slider" style="background-image:url(<?php echo get_template_directory_uri(); ?>/images/slider2.jpg)"></div>
+        <div class="slider" style="background-image:url(<?php echo get_template_directory_uri(); ?>/images/slider3.jpg)"></div>
+    </div>
+
+
+       
 
         <div class="main_banner">
             <a href="#services">
@@ -88,10 +88,25 @@
         </div>
 
 
-
-      
-        
 </div>
+
+<button type="button" class="toggle-main-nav">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+</button>
+
+
+
+ <nav class="page_nav home">
+        <ul class="page_nav_list">
+                            <li><a href="/">Strona główna</a></li>
+                            <li><a href="http://localhost/klinika/">Klinika</a></li>
+                            <li><a href="#services">Usługi</a></li>
+                            <li><a href="http://localhost/cennik/">Cennik</a></li>
+                            <li><a href="#contact">Kontakt</a></li>
+        </ul>
+</nav>
 
 
 <main class="p-main" role="main">

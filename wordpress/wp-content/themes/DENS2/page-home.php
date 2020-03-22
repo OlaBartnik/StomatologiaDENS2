@@ -174,7 +174,7 @@ get_header('home');
 </div>
 </div>
             <div class="contact_form">
-          <?php the_content();?>
+          <!-- <?php the_content();?> -->
             </div>
 
 <div class="contact_adress">

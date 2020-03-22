@@ -50,9 +50,9 @@
                     <div class="header_logo">
                         <h1>
                         <a href="<?php echo home_url(); ?>" class="page_logo"">
-                <img src="<?php echo get_template_directory_uri(); ?>/images/logo final.png" alt="Stomatologia DENS2"></a>
+                <img src="<?php echo get_template_directory_uri(); ?>/images/logoDENS2.png" alt="Stomatologia DENS2"></a>
                         </h1>
-                        <a href="http://localhost/nfz/" class="NFZ_logo"><img src="<?php echo get_template_directory_uri(); ?>/images/nfz_logo_C_kolor (1).png" alt="NFZ"></a>
+                        <a href="http://localhost/nfz/" class="NFZ_logo"><img src="<?php echo get_template_directory_uri(); ?>/images/nfz.png" alt="NFZ"></a>
                     </div>
                     <nav class="page_nav">
 

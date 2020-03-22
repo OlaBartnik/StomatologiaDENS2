@@ -678,7 +678,7 @@ section {
   justify-content: flex-start;
 }
 
-.page_header.home {
+.page_hero .page_header {
   width: 100%;
 }
 
@@ -687,7 +687,6 @@ section {
   justify-content: space-between;
   align-items: center;
   height: 100%;
-  width: 100vw;
 }
 
 .contact_nav {
@@ -721,13 +720,13 @@ section {
   display: block;
   content: "";
   height: 1px;
-  background-color: #b8b8b8;
+  background-color: #9e9e9e;
 }
 
 .header_logo {
   display: flex;
   align-items: center;
-  width: 300px;
+  max-width: 300px;
 }
 
 .header_logo h1 {
@@ -736,14 +735,14 @@ section {
 }
 
 .page_logo img {
-  max-width: 100%;
+  width: 145px;
   height: auto;
 }
 
 .NFZ_logo img {
   margin-left: 14px;
-  max-width: 50%;
   height: auto;
+  width: 80px;
 }
 
 .page_nav_list {
@@ -803,20 +802,41 @@ section {
 
 .toggle-main-nav span {
   display: block;
-  background: #000;
+  background: #383838;
   height: 6px;
   width: 80%;
   margin: 5px auto;
   border-radius: 2px;
+  transition: 0.5s;
 }
 
 .toggle-main-nav:focus {
   outline: none;
 }
 
+.page_nav.home {
+  display: none;
+}
+
 @media (max-width: 760px) {
   .toggle-main-nav {
     display: block;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 10000;
+  }
+  .toggle-main-nav:hover span {
+    background: #08b4ca;
+  }
+  .page_hero .page_nav {
+    display: none;
+  }
+  .page_nav.home {
+    display: block;
+  }
+  .header_logo {
+    margin: 0 auto;
   }
   .page_nav {
     position: fixed;
@@ -830,6 +850,7 @@ section {
   }
   .page_nav.show {
     left: 0;
+    z-index: 100;
   }
   .page_nav li {
     display: block;
@@ -862,7 +883,7 @@ section {
 .slider,
 .slider {
   height: 100vh;
-  width: 100vw;
+  width: 100%;
   background-size: cover;
   background-position: center;
 }

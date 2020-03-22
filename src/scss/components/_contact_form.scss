@@ -17,8 +17,9 @@ label {
 
 
 .contact_data textarea {
+    // display: none;
     resize: none;
-    width: 500px;
+    max-width: 500px;
     height: 190px;
 }
 
