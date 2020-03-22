@@ -50,7 +50,7 @@ get_header('home');
 
                 <div class="col-4-12">
                     <div class="box">
-                        <a href="http://localhost/chirurgia_implantologia"" class="box_photo">
+                        <a href="http://localhost/chirurgia_implantologia" class="box_photo">
                             <div class="box_photo_container">
                                 <img src="<?php echo get_template_directory_uri(); ?>/images/Implanty.jpg" alt="Chirurgia Stomatologiczna Implantologia">
                             </div>

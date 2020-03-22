@@ -133,6 +133,20 @@
 
 }
 
+// sublist uslugi
+
+
+.page_nav_sublist {
+    display: none;
+
+}
+
+.page_nav_list_button {
+    display: none;
+    padding-left: 2px;
+    font-size: 20px;
+
+}
 
 
 
@@ -249,6 +263,36 @@
         background: darken($color-hover, 2%);
     }
 
+
+    .header_logo {
+        margin: 0 auto;
+    }
+
+
+    .page_nav_sublist.show {
+        display: block;
+        padding: 20px 0 0 20px;
+
+
+        li {
+            border-bottom: none;
+        }
+
+        a {
+            font-size: 14px;
+            text-align: left;
+        }
+    }
+
+
+
+    .page_nav_list_button {
+        display: inline-block;
+
+    }
+
+
+
     .page_hero .page_nav {
         display: none;
     }
@@ -259,9 +303,7 @@
 
 
 
-    .header_logo {
-        margin: 0 auto;
-    }
+
 
     // .page_header.home .page_nav {
     //     position: fixed;
@@ -290,6 +332,7 @@
             display: block;
             text-align: center;
             border-bottom: 1px solid lighten($color-main, 50%);
+
 
         }
 

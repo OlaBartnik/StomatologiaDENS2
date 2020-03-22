@@ -59,7 +59,34 @@
                         <ul class="page_nav_list">
                             <li><a href="/">Strona główna</a></li>
                             <li><a href="http://localhost/klinika/">Klinika</a></li>
-                            <li><a href="http://localhost/#services">Usługi</a></li>
+
+                            <li><a class="page_nav_list_button_link" href="http://localhost/#services">Usługi <span class="page_nav_list_button">&#43;</span></a>
+                            <ul class="page_nav_sublist">
+                            <li class="page_nave_sublist_el">
+                            <a href="http://localhost/stomatologia-zachowacza" class="page_nav_sublist_link">Stomatologia zachowawcza</a>
+                        </li>
+                        <li class="page_nave_sublist_el">
+                            <a href="http://localhost/ortodoncja" class="page_nav_sublist_link">Ortodoncja</a>
+                        </li>
+
+                        <li class="page_nave_sublist_el">
+                            <a href="http://localhost/chirurgia_implantologia" class="page_nav_sublist_link">Chirurgia Implantologia</a>
+                        </li>
+                        <li class="page_nave_sublist_el">
+                            <a href="http://localhost/protetyka" class="page_nav_sublist_link">Protetyka</a>
+                        </li>
+                        <li class="page_nave_sublist_el">
+                            <a href="http://localhost/zdjecia_rtg" class="page_nav_sublist_link">Zdjęcia RTG</a>
+                        </li>
+                        <li class="page_nave_sublist_el">
+                            <a href="http://localhost/nfz/" class="page_nav_sublist_link">NFZ</a>
+                        </li>
+
+
+
+                            </ul>
+                            </li>
+
                             <li><a href="http://localhost/cennik/">Cennik</a></li>
                             <li><a href="http://localhost/#contact">Kontakt</a></li>
                         </ul>

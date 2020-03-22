@@ -789,6 +789,16 @@ section {
   opacity: 1;
 }
 
+.page_nav_sublist {
+  display: none;
+}
+
+.page_nav_list_button {
+  display: none;
+  padding-left: 2px;
+  font-size: 20px;
+}
+
 .toggle-main-nav {
   display: none;
   right: 10px;
@@ -829,14 +839,28 @@ section {
   .toggle-main-nav:hover span {
     background: #08b4ca;
   }
+  .header_logo {
+    margin: 0 auto;
+  }
+  .page_nav_sublist.show {
+    display: block;
+    padding: 20px 0 0 20px;
+  }
+  .page_nav_sublist.show li {
+    border-bottom: none;
+  }
+  .page_nav_sublist.show a {
+    font-size: 14px;
+    text-align: left;
+  }
+  .page_nav_list_button {
+    display: inline-block;
+  }
   .page_hero .page_nav {
     display: none;
   }
   .page_nav.home {
     display: block;
-  }
-  .header_logo {
-    margin: 0 auto;
   }
   .page_nav {
     position: fixed;
@@ -1274,6 +1298,11 @@ footer .row .col-6-12 {
 
 .accordion_tab table {
   display: none;
+}
+
+.price_descritpion {
+  margin-top: 60px;
+  padding-left: 5px;
 }
 
 aside h2 {

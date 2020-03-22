@@ -218,6 +218,10 @@ function showMenu() {
     event.preventDefault();
     $(".page_nav").toggleClass("show");
   });
+  $(".page_nav_list_button_link").on("click", function (event) {
+    event.preventDefault();
+    $(".page_nav_sublist").toggleClass("show");
+  });
 }
 
 /* harmony default export */ __webpack_exports__["default"] = (showMenu);
