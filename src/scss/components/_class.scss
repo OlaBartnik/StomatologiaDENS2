@@ -59,7 +59,7 @@ section {
     text-align: center;
     text-decoration: none;
     background-color: $color-hover;
-    border: 1px solid $color-hover;
+    border: 1px solid $color-hover !important;
     border-radius: 15px;
     color: $color-hover;
     font-size: 18px;
@@ -76,11 +76,12 @@ section {
     color: white;
     outline: none;
 
+
 }
 
 .wpcf7-form-control.wpcf7-submit {
     padding: 10px 50px;
-
+    margin-top: 5px;
 
 
 }

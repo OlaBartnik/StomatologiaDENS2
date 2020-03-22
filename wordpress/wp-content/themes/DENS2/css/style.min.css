@@ -524,21 +524,6 @@ body {
   color: #383838;
 }
 
-/* clearfix */
-/* -------------------------------------------------------------------------------- */
-.clearfix {
-  zoom: 1;
-}
-
-.clearfix:before, .clearfix:after {
-  content: "";
-  display: table;
-}
-
-.clearfix:after {
-  clear: both;
-}
-
 html {
   scroll-behavior: smooth;
 }
@@ -591,7 +576,7 @@ section {
   text-align: center;
   text-decoration: none;
   background-color: #08BDD4;
-  border: 1px solid #08BDD4;
+  border: 1px solid #08BDD4 !important;
   border-radius: 15px;
   color: #08BDD4;
   font-size: 18px;
@@ -610,6 +595,7 @@ section {
 
 .wpcf7-form-control.wpcf7-submit {
   padding: 10px 50px;
+  margin-top: 5px;
 }
 
 .banner {
@@ -977,7 +963,7 @@ section {
 }
 
 #contact .section_header {
-  margin-bottom: 30px;
+  margin-bottom: 0px;
 }
 
 label {
@@ -1002,42 +988,8 @@ label .focusable:focus {
   width: auto;
 }
 
-.contact_data input {
-  display: inline-blok;
-  height: 60px;
-}
-
-.col-8-12.message {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-}
-
-.col-4-12.email {
-  display: flex;
-  justify-content: flex-start;
-}
-
-.col-4-12.recaptcha {
-  display: flex;
-  justify-content: flex-end;
-  align-items: flex-start;
-}
-
-.row:nth-last-child() {
-  margin-top: 5px;
-}
-
-.contact_data .col-4-12,
-.contact_data .col-8-12 {
-  margin-bottom: 15px;
-}
-
 .contact_data textarea {
   resize: none;
-  display: block;
-  width: 680px;
-  height: 153px;
 }
 
 .contact_data input,
@@ -1055,22 +1007,23 @@ label .focusable:focus {
 }
 
 .g-recaptcha {
-  width: 100%;
-  -webkit-transform: scale(0.77);
-          transform: scale(0.77);
+  -webkit-transform: scale(0.7);
+          transform: scale(0.7);
   -webkit-transform-origin: 0 0;
           transform-origin: 0 0;
 }
 
-.g-recaptcha div {
-  padding-left: 3px;
+.submit_container {
+  display: flex;
+  margin-top: 20px;
+  padding-left: 30px;
 }
 
 .col-12-12.rodo {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  margin-top: 20px;
+  margin-bottom: 0;
 }
 
 .wpcf7-list-item input {
@@ -1095,8 +1048,46 @@ input:-webkit-autofill:active {
   color: #383838;
 }
 
+div.wpcf7-response-output {
+  border: none !important;
+  color: #ff0000;
+  margin-top: 0 !important;
+}
+
+div.wpcf7-mail-sent-ok {
+  color: #08BDD4;
+  border: none !important;
+  margin-top: 0 !important;
+}
+
+div.wpcf7-mail-sent-ng,
+div.wpcf7-aborted {
+  color: #ff0000;
+  border: none !important;
+  margin-top: 0 !important;
+}
+
+div.wpcf7-spam-blocked {
+  color: #ff0000;
+  border: none !important;
+  margin-top: 0 !important;
+}
+
+div.wpcf7-validation-errors,
+div.wpcf7-acceptance-missing {
+  color: #ff0000;
+  border: none !important;
+  margin-top: 0 !important;
+}
+
+.use-floating-validation-tip span.wpcf7-not-valid-tip {
+  border: none !important;
+  color: #ff0000;
+  margin-top: 0 !important;
+}
+
 .contact_adress {
-  margin-top: 40px;
+  margin-top: 50px;
 }
 
 .contact_adress .col-1-12 {

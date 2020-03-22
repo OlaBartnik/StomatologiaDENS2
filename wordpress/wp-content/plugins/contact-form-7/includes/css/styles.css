@@ -10,50 +10,38 @@ div.wpcf7 .screen-reader-response {
 }
 
 div.wpcf7-response-output {
-	/* margin: 2em 0.5em 1em; */
+	margin: 2em 0.5em 1em;
 	padding: 0.2em 1em;
-	/* border: 1px solid #ff0000;
-	border-radius: 5px; */
+	border: 2px solid #ff0000;
 }
 
 div.wpcf7-mail-sent-ok {
-	/* border: 2px solid #398f14; */
-	color: #398f14;
+	border: 2px solid #398f14;
 }
 
 div.wpcf7-mail-sent-ng,
 div.wpcf7-aborted {
-	/* border: 2px solid #ff0000; */
-	color: #f00
+	border: 2px solid #ff0000;
 }
 
 div.wpcf7-spam-blocked {
-	/* border: 2px solid #ffa500; */
-	color: #ffa500;
+	border: 2px solid #ffa500;
 }
 
 div.wpcf7-validation-errors,
 div.wpcf7-acceptance-missing {
-	/* border: 2px solid #f7e700; */
-	color: #f00;
+	border: 2px solid #f7e700;
 }
 
 .wpcf7-form-control-wrap {
 	position: relative;
-	margin-right: 10px;
 }
 
 span.wpcf7-not-valid-tip {
 	color: #f00;
 	font-size: 1em;
 	font-weight: normal;
-	display: inline-block;
-	position: relative;
-	bottom: 0%;
-	left: 5%;
-	width: 360px;
-	height: 5px;
-
+	display: block;
 }
 
 .use-floating-validation-tip span.wpcf7-not-valid-tip {
@@ -102,7 +90,6 @@ div.wpcf7 div.ajax-error {
 
 div.wpcf7 .placeheld {
 	color: #888;
-
 }
 
 div.wpcf7 input[type="file"] {
@@ -115,4 +102,10 @@ div.wpcf7 input[type="file"]:disabled {
 
 div.wpcf7 .wpcf7-submit:disabled {
 	cursor: not-allowed;
+}
+
+.wpcf7 input[type="url"],
+.wpcf7 input[type="email"],
+.wpcf7 input[type="tel"] {
+	direction: ltr;
 }
