@@ -22,7 +22,7 @@ get_header(); ?>
 <div class="container">
 
 <div class="row">
- <div class="col-8-12">
+ <div class="col-8-12 single_page_box">
      <div class="header_container">
 
 

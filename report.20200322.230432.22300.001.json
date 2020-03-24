@@ -3,9 +3,9 @@
   "header": {
     "event": "Allocation failed - JavaScript heap out of memory",
     "location": "OnFatalError",
-    "filename": "report.20200322.185425.12236.001.json",
-    "dumpEventTime": "2020-03-22T18:54:25Z",
-    "processId": 12236,
+    "filename": "report.20200322.230432.22300.001.json",
+    "dumpEventTime": "2020-03-22T23:04:32Z",
+    "processId": 22300,
     "commandLine": [
       "node",
       "C:\\Users\\Ola\\AppData\\Roaming\\npm\\\\node_modules\\gulp-cli\\bin\\gulp.js"
@@ -104,15 +104,15 @@
       "symbol": "v8::internal::StoreBuffer::StoreBufferOverflow+27082"
     },
     {
-      "pc": "0x00000377f7650461",
+      "pc": "0x000000eb162d0461",
       "symbol": ""
     }
   ],
   "javascriptHeap": {
-    "totalMemory": 1492389888,
-    "totalCommittedMemory": 1492389888,
-    "usedMemory": 1456633408,
-    "availableMemory": 35780888,
+    "totalMemory": 1496059904,
+    "totalCommittedMemory": 1496059904,
+    "usedMemory": 1459660584,
+    "availableMemory": 33553040,
     "memoryLimit": 1526909922,
     "heapSpaces": {
       "read_only_space": {
@@ -126,36 +126,36 @@
         "memorySize": 2097152,
         "committedMemory": 2097152,
         "capacity": 1031168,
-        "used": 185096,
-        "available": 846072
+        "used": 182616,
+        "available": 848552
       },
       "old_space": {
-        "memorySize": 1418924032,
-        "committedMemory": 1418924032,
-        "capacity": 1389190104,
-        "used": 1388856520,
-        "available": 333584
+        "memorySize": 1422594048,
+        "committedMemory": 1422594048,
+        "capacity": 1393569992,
+        "used": 1391796720,
+        "available": 1773272
       },
       "code_space": {
         "memorySize": 3670016,
         "committedMemory": 3670016,
-        "capacity": 2862432,
-        "used": 2862432,
+        "capacity": 2951968,
+        "used": 2951968,
         "available": 0
       },
       "map_space": {
         "memorySize": 3158016,
         "committedMemory": 3158016,
-        "capacity": 2060480,
-        "used": 2060480,
+        "capacity": 2060400,
+        "used": 2060400,
         "available": 0
       },
       "large_object_space": {
         "memorySize": 64016384,
         "committedMemory": 64016384,
-        "capacity": 96754528,
+        "capacity": 93084512,
         "used": 62635360,
-        "available": 34119168
+        "available": 30449152
       },
       "new_large_object_space": {
         "memorySize": 0,
@@ -254,11 +254,11 @@
     "C:\\WINDOWS\\System32\\sechost.dll",
     "C:\\WINDOWS\\System32\\USER32.dll",
     "C:\\WINDOWS\\System32\\win32u.dll",
-    "C:\\WINDOWS\\SYSTEM32\\dbghelp.dll",
     "C:\\WINDOWS\\System32\\GDI32.dll",
-    "C:\\WINDOWS\\System32\\ucrtbase.dll",
+    "C:\\WINDOWS\\SYSTEM32\\dbghelp.dll",
     "C:\\WINDOWS\\System32\\gdi32full.dll",
     "C:\\WINDOWS\\System32\\msvcp_win.dll",
+    "C:\\WINDOWS\\System32\\ucrtbase.dll",
     "C:\\WINDOWS\\System32\\CRYPT32.dll",
     "C:\\WINDOWS\\System32\\MSASN1.dll",
     "C:\\WINDOWS\\System32\\bcrypt.dll",
@@ -266,7 +266,7 @@
     "C:\\WINDOWS\\SYSTEM32\\USERENV.dll",
     "C:\\WINDOWS\\System32\\profapi.dll",
     "C:\\WINDOWS\\SYSTEM32\\WINMM.dll",
-    "C:\\WINDOWS\\SYSTEM32\\WINMMBASE.dll",
+    "C:\\WINDOWS\\SYSTEM32\\winmmbase.dll",
     "C:\\WINDOWS\\System32\\cfgmgr32.dll",
     "C:\\WINDOWS\\System32\\bcryptPrimitives.dll",
     "C:\\WINDOWS\\System32\\IMM32.DLL",

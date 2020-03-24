@@ -1,3 +1,7 @@
+body {
+  background-color: #fafafa;
+}
+
 /*! normalize.css v4.1.1 | MIT License | github.com/necolas/normalize.css */
 /**
  * 1. Change the default font family in all browsers (opinionated).
@@ -542,7 +546,7 @@ section {
   position: relative;
   margin-bottom: 50px;
   text-transform: uppercase;
-  color: #383838;
+  color: #333333;
   display: inline-block;
 }
 
@@ -550,7 +554,7 @@ section {
   content: "";
   height: 2px;
   width: 110%;
-  background-color: #08BDD4;
+  background-color: #30aebe;
   position: absolute;
   bottom: 0;
   left: 50%;
@@ -575,21 +579,21 @@ section {
   text-transform: uppercase;
   text-align: center;
   text-decoration: none;
-  background-color: #08BDD4;
-  border: 1px solid #08BDD4 !important;
+  background-color: #30aebe;
+  border: 1px solid #30aebe !important;
   border-radius: 15px;
-  color: #08BDD4;
+  color: #30aebe;
   font-size: 18px;
   font-weight: 700;
   letter-spacing: 0.6px;
-  box-shadow: inset 0 0 0 60px white;
+  box-shadow: inset 0 0 0 60px #fafafa;
   transition: 0.5s;
 }
 
 .button:hover,
 .wpcf7-form-control.wpcf7-submit:hover {
-  box-shadow: inset 0 0 0 0px white;
-  color: white;
+  box-shadow: inset 0 0 0 0px #fafafa;
+  color: #fafafa;
   outline: none;
 }
 
@@ -649,13 +653,13 @@ section {
   font-size: 18px;
   font-weight: 700;
   text-align: center;
-  color: #383838;
+  color: #333333;
   margin-top: 20px;
   margin-bottom: 0;
 }
 
 .box:hover .box_tittle {
-  color: #08BDD4;
+  color: #30aebe;
 }
 
 .page_header {
@@ -706,7 +710,7 @@ section {
   display: block;
   content: "";
   height: 1px;
-  background-color: #9e9e9e;
+  background-color: #999999;
 }
 
 .header_logo {
@@ -746,7 +750,7 @@ section {
   position: relative;
   text-decoration: none;
   text-transform: uppercase;
-  color: #383838;
+  color: #333333;
   font-size: 18px;
   font-weight: 800;
   display: block;
@@ -758,7 +762,7 @@ section {
   position: absolute;
   bottom: 0;
   height: 1px;
-  background: #08BDD4;
+  background: #30aebe;
   left: 50%;
   right: 50%;
   opacity: 0;
@@ -766,7 +770,7 @@ section {
 }
 
 .page_nav_list a:hover {
-  color: #08BDD4;
+  color: #30aebe;
 }
 
 .page_nav_list a:hover::after {
@@ -777,6 +781,7 @@ section {
 
 .page_nav_sublist {
   display: none;
+  z-index: 10000;
 }
 
 .page_nav_list_button {
@@ -798,7 +803,7 @@ section {
 
 .toggle-main-nav span {
   display: block;
-  background: #383838;
+  background: #333333;
   height: 6px;
   width: 80%;
   margin: 5px auto;
@@ -823,7 +828,7 @@ section {
     z-index: 10000;
   }
   .toggle-main-nav:hover span {
-    background: #08b4ca;
+    background: #2ea7b6;
   }
   .header_logo {
     margin: 0 auto;
@@ -831,6 +836,7 @@ section {
   .page_nav_sublist.show {
     display: block;
     padding: 20px 0 0 20px;
+    z-index: 10000;
   }
   .page_nav_sublist.show li {
     border-bottom: none;
@@ -857,15 +863,15 @@ section {
     background: white;
     transition: 1s left;
     box-shadow: 1px 0 10px rgba(0, 0, 0, 0.4);
+    z-index: 1000000;
   }
   .page_nav.show {
     left: 0;
-    z-index: 100;
   }
   .page_nav li {
     display: block;
     text-align: center;
-    border-bottom: 1px solid #b8b8b8;
+    border-bottom: 1px solid #b3b3b3;
   }
   .page_nav_list {
     flex-direction: column;
@@ -998,6 +1004,7 @@ label .focusable:focus {
   border: 1px solid #C4C4C4;
   font-family: inherit;
   border-radius: 7px;
+  background-color: #F9F9F9;
 }
 
 .contact_data input:focus,
@@ -1045,7 +1052,7 @@ input:-webkit-autofill:active {
 
 .rodo a {
   font-weight: 600;
-  color: #383838;
+  color: #333333;
 }
 
 div.wpcf7-response-output {
@@ -1055,7 +1062,7 @@ div.wpcf7-response-output {
 }
 
 div.wpcf7-mail-sent-ok {
-  color: #08BDD4;
+  color: #30aebe;
   border: none !important;
   margin-top: 0 !important;
 }
@@ -1138,7 +1145,7 @@ div.wpcf7-acceptance-missing {
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  color: #383838;
+  color: #333333;
   text-decoration: none;
   font-weight: 600;
 }
@@ -1181,13 +1188,13 @@ div.wpcf7-acceptance-missing {
 .footer_nav_list li a {
   text-decoration: none;
   text-transform: uppercase;
-  color: #383838;
+  color: #333333;
   font-size: 12px;
   font-weight: 700;
 }
 
 .footer_nav_list li a:hover {
-  color: #08BDD4;
+  color: #30aebe;
 }
 
 .footer_address strong:nth-last-child(1) {
@@ -1197,7 +1204,7 @@ div.wpcf7-acceptance-missing {
 
 .footer_copyright {
   display: block;
-  color: #383838;
+  color: #333333;
   font-size: 8px;
   height: 100%;
   display: flex;
@@ -1212,12 +1219,12 @@ div.wpcf7-acceptance-missing {
 
 .footer_copyright a {
   text-decoration: none;
-  color: #383838;
+  color: #333333;
   padding-left: 1px;
 }
 
 .footer_contact {
-  color: #383838;
+  color: #333333;
   font-size: 12px;
   font-weight: 600;
   display: flex;
@@ -1246,7 +1253,7 @@ footer .row .col-6-12 {
 .accordion_tab_arrow {
   width: 30px;
   height: 30px;
-  border: 2px solid #383838;
+  border: 2px solid #333333;
   position: relative;
   border-radius: 50%;
   cursor: pointer;
@@ -1257,7 +1264,7 @@ footer .row .col-6-12 {
   height: 0;
   border-left: 10px solid transparent;
   border-right: 10px solid transparent;
-  border-top: 10px solid #383838;
+  border-top: 10px solid #333333;
   position: absolute;
   left: 50%;
   -webkit-transform: translate(-50%, 0);
@@ -1270,10 +1277,11 @@ footer .row .col-6-12 {
 }
 
 .accordion_tab_arrow:hover {
-  background: #383838;
+  background: #333333;
 }
 
 .accordion_tab_title {
+  width: 710px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -1289,11 +1297,16 @@ footer .row .col-6-12 {
 
 .accordion_tab table {
   display: none;
+  width: 710px;
 }
 
 .price_descritpion {
   margin-top: 60px;
   padding-left: 5px;
+}
+
+aside {
+  padding-left: 15px;
 }
 
 aside h2 {
@@ -1331,7 +1344,15 @@ aside h2 {
   text-transform: uppercase;
   font-size: 15px;
   font-weight: 700;
-  color: #383838;
+  color: #333333;
+}
+
+.sidebar_tittle:hover {
+  color: #30aebe;
+}
+
+.sidebar_tittle_container:hover .sidebar_tittle {
+  color: #30aebe;
 }
 
 .sidebar_tittle_container h3 {
@@ -1339,20 +1360,12 @@ aside h2 {
   margin-top: 5px;
 }
 
-aside {
-  position: relative;
+.single_page_box {
+  border-right: 1px solid #30aebe;
 }
 
-aside::after {
-  content: "";
-  height: 1px;
-  width: 720px;
-  background-color: #08BDD4;
-  position: absolute;
-  -webkit-transform: rotate(90deg);
-          transform: rotate(90deg);
-  top: 360px;
-  right: 0;
+.row .col-8-12.single_page_box {
+  padding-right: 50px;
 }
 
 .section_single_page {
@@ -1390,9 +1403,17 @@ aside::after {
   font-size: 20px;
 }
 
-.row.gallery_box {
+.gallery {
   margin-top: 30px;
   margin-bottom: 30px;
+}
+
+.gallery.first_row {
+  margin-top: 100px;
+}
+
+.gallery.last_row {
+  margin-bottom: 80px;
 }
 
 .slick-list.draggable .slick-track a {
@@ -1425,7 +1446,7 @@ a.single_link {
   display: inline-block;
   text-decoration: none;
   text-transform: uppercase;
-  color: #383838;
+  color: #333333;
   font-weight: 600;
   font-size: 18px;
   transition: 0.3s;
@@ -1434,7 +1455,7 @@ a.single_link {
 .square {
   width: 5px;
   height: 5px;
-  background-color: #383838;
+  background-color: #333333;
   margin-right: 10px;
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
@@ -1448,11 +1469,11 @@ a.single_link {
 }
 
 .single_link_container:hover .square {
-  background-color: #08BDD4;
+  background-color: #30aebe;
 }
 
 .single_link_container:hover a.single_link {
-  color: #08BDD4;
+  color: #30aebe;
 }
 
 #notfound {
@@ -1523,15 +1544,15 @@ a.single_link {
   color: #fff;
   text-transform: uppercase;
   padding: 13px 23px;
-  background: #08BDD4;
-  border: 1px solid #08BDD4;
+  background: #30aebe;
+  border: 1px solid #30aebe;
   font-size: 18px;
   transition: 0.3s all;
   cursor: pointer;
 }
 
 .notfound_link:hover {
-  color: #08BDD4;
+  color: #30aebe;
   background: white;
 }
 

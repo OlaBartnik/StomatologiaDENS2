@@ -1,3 +1,7 @@
+aside {
+    padding-left: 15px;
+}
+
 aside h2 {
     font-size: 22px;
     margin: 0;
@@ -7,7 +11,6 @@ aside h2 {
 .aside_nav_list {
     list-style: none;
     padding: 0;
-    // padding-top: 10px;
     margin: 0;
 
 
@@ -42,26 +45,17 @@ aside h2 {
     font-size: 15px;
     font-weight: 700;
     color: $color-main;
+
+    &:hover {
+        color: $color-hover;
+    }
+}
+
+.sidebar_tittle_container:hover .sidebar_tittle {
+    color: $color-hover;
 }
 
 .sidebar_tittle_container h3 {
     margin-bottom: 5px;
     margin-top: 5px;
-}
-
-aside {
-    position: relative;
-}
-
-
-aside::after {
-    content: "";
-    height: 1px;
-    width: 720px;
-    background-color: $color-hover;
-    position: absolute;
-    transform: rotate(90deg);
-    top: 360px;
-    right: 0;
-
 }

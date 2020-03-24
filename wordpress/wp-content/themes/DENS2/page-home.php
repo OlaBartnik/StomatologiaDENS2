@@ -139,16 +139,11 @@ get_header('home');
 
                 <div class="col-6-12">
                     <div class="section_aboutUs_article">
-                        <p class="section_aboutUs_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Est
-                            ultricies viverra posuere nibh tincidunt fermentum aliquet pellentesque. Rutrum dui rutrum
-                            odio
-                            vitae. Risus, viverra in morbi auctor enim est. Blandit porta tristique elementum
-                            scelerisque
-                            sed facilisis sit. Viverra varius nunc diam vel, lectus curabitur faucibus sed elit. Ornare
-                            posuere diam et semper mauris nunc platea ut metus. Eget vestibulum ut commodo vestibulum.
-                            Scelerisque egestas vitae quam risus quis nisi euBlandit. Ornare posuere diam et semper
-                            mauris nunc platea ut metus. Eget vestibulum ut commodo vestibulum.
-                            Scelerisque egestas vitae quam risus quis nisi eu.</p>
+                        <p class="section_aboutUs_text">
+                            <p>W trosce o satysfakcję i komfort naszych pacjentów oferujemy pełen zakres zabiegów stomatologicznych. Zaczynając od stomatologii zachowawczej, stomatologii estetycznej, poprzez, endodoncję implantologię, protetykę, ortodoncję nie zapominając o stomatologii dziecięcej.</p>
+                            <p>Dysponujemy nowocześnie wyposażonymi gabinetami oraz wykwalifikowanym personelem  </p>
+                            <p>Świadczymy usługi z zakresu stomatologi zachowawczej, stomatologi dziecięcej, endodoncji, chirurgi, protetyki i ortodoncji. </p>
+                    </p>
                         <a href="http://localhost/klinika/" class="button">Więcej</a>
 
                     </div>

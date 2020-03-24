@@ -138,6 +138,7 @@
 
 .page_nav_sublist {
     display: none;
+    z-index: 10000;
 
 }
 
@@ -160,6 +161,7 @@
     background: none;
     border: 0;
     cursor: pointer;
+
 
     span {
         display: block;
@@ -272,6 +274,8 @@
     .page_nav_sublist.show {
         display: block;
         padding: 20px 0 0 20px;
+        z-index: 10000;
+
 
 
         li {
@@ -320,12 +324,13 @@
         background: white;
         transition: 1s left;
         box-shadow: 1px 0 10px rgba(black, 0.4);
+        z-index: 1000000;
 
 
 
         &.show {
             left: 0;
-            z-index: 100;
+
         }
 
         li {

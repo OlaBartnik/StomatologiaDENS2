@@ -12,7 +12,9 @@ $(function () {
     slider();
     gallery();
     showMenu();
+
     map();
+
 
 
 });
