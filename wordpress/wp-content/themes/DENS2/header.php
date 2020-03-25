@@ -54,13 +54,35 @@
                         </h1>
                         <a href="http://localhost/nfz/" class="NFZ_logo"><img src="<?php echo get_template_directory_uri(); ?>/images/nfz.png" alt="NFZ"></a>
                     </div>
-                    <nav class="page_nav">
 
+
+                    <nav class="page_nav">
                         <ul class="page_nav_list">
                             <li><a href="/">Strona główna</a></li>
                             <li><a href="http://localhost/klinika/">Klinika</a></li>
+                            <li><a href="http://localhost/#services">Usługi</a></li>
+                            <li><a href="http://localhost/cennik/">Cennik</a></li>
+                            <li><a href="http://localhost/#contact">Kontakt</a></li>
+                        </ul>
+                    </nav>
+                    </div>
+            </div>
 
-                            <li><a class="page_nav_list_button_link" href="http://localhost/#services">Usługi <span class="page_nav_list_button">&#43;</span></a>
+</header>
+
+                    <button type="button" class="toggle-main-nav">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+
+
+                <nav class="page_nav home">
+        <ul class="page_nav_list">
+                            <li><a href="/">Strona główna</a></li>
+                            <li><a href="http://localhost/klinika/">Klinika</a></li>
+
+                            <li><a href="http://localhost/#services" class="page_nav_list_button_link" >Usługi <span class="page_nav_list_button">&#43;</span></a></li>
                             <ul class="page_nav_sublist">
                             <li class="page_nave_sublist_el">
                             <a href="http://localhost/stomatologia-zachowacza" class="page_nav_sublist_link">Stomatologia zachowawcza</a>
@@ -81,26 +103,13 @@
                         <li class="page_nave_sublist_el">
                             <a href="http://localhost/nfz/" class="page_nav_sublist_link">NFZ</a>
                         </li>
-
-
-
                             </ul>
                             </li>
 
                             <li><a href="http://localhost/cennik/">Cennik</a></li>
                             <li><a href="http://localhost/#contact">Kontakt</a></li>
-                        </ul>
-                    </nav>
-
-                    <button type="button" class="toggle-main-nav">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
-                </div>
-            </div>
-
-</header>
+        </ul>
+</nav>
 
 
 <main class="p-main" role="main">

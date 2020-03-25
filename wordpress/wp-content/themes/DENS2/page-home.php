@@ -13,10 +13,10 @@ get_header('home');
 <?php if (have_posts()): ?>
     <?php while (have_posts()) : the_post(); ?>
 
-        <section id="services" class="section_sevices" id="sevices">
+        <section id="services" class="section_sevices">
                  <div class="container">
                  <div class="row">
-                <div class="col-12-12 header_container">
+                <div class="col-12-12 header_container_main">
             <header class="section_header">
                 <h2>Nasze usługi</h2>
             </header>
@@ -171,7 +171,7 @@ get_header('home');
         </div>
         <div id="contact"class="container" >
         <div class="row">
-                <div class="col-12-12 header_container">
+                <div class="col-12-12 header_container_main">
             <header class="section_header">
                 <h2>Kontakt</h2>
             </header>
@@ -233,7 +233,7 @@ Tel.  664 474 996</p>
                 <div class="col-4-12">
                     <div class="job_box">
     <a href="http://localhost/oferty-pracy/" class="job_link" target ="_blank">
-            <img src="<?php echo get_template_directory_uri(); ?>/images/hiring.svg" alt="ofety pracy" class="contact_address job">Ofety pracy</a>
+            <img src="<?php echo get_template_directory_uri(); ?>/images/hiring.svg" alt="ofety pracy" class="contact_address job">Oferty pracy</a>
              <!-- Icons made by <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons">Smashicons</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a> -->
 </div>
             </div>

@@ -103,7 +103,7 @@
                             <li><a href="/">Strona główna</a></li>
                             <li><a href="http://localhost/klinika/">Klinika</a></li>
 
-                            <li><a class="page_nav_list_button_link" href="http://localhost/#services">Usługi <span class="page_nav_list_button">&#43;</span></a>
+                            <li><a href="http://localhost/#services" class="page_nav_list_button_link" >Usługi <span class="page_nav_list_button">&#43;</span></a></li>
                             <ul class="page_nav_sublist">
                             <li class="page_nave_sublist_el">
                             <a href="http://localhost/stomatologia-zachowacza" class="page_nav_sublist_link">Stomatologia zachowawcza</a>

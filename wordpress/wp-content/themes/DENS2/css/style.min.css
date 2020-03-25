@@ -569,6 +569,11 @@ section {
 }
 
 .header_container {
+  text-align: left;
+  margin-left: 14px;
+}
+
+.header_container_main {
   text-align: center;
 }
 
@@ -945,11 +950,6 @@ section {
 
 .section_aboutUs .section_header {
   margin-bottom: 20px;
-}
-
-.section_aboutUs .header_container {
-  text-align: left;
-  margin-left: 50px;
 }
 
 .section_aboutUs_article {
@@ -1362,6 +1362,12 @@ aside h2 {
   margin-top: 5px;
 }
 
+@media (max-width: 768px) {
+  aside {
+    display: none;
+  }
+}
+
 .single_page_box {
   border-right: 1px solid #30aebe;
 }
@@ -1405,6 +1411,12 @@ aside h2 {
   font-size: 20px;
 }
 
+@media (max-width: 768px) {
+  .single_page_box {
+    border-right: none;
+  }
+}
+
 .gallery {
   margin-top: 30px;
   margin-bottom: 30px;
@@ -1432,6 +1444,7 @@ aside h2 {
 .single.section_header {
   margin-bottom: 20px;
   margin-top: 20px;
+  margin-left: 10px;
 }
 
 .single.section_header::after {
