@@ -132,24 +132,33 @@ get_header('home');
 
         <div class="container">
             <div class="row">
-                <div class="col-6-12">
+                <div class="col-6-12 section_aboutUs_img_container">
                     <div class="box">
                         <img src="<?php echo get_template_directory_uri(); ?>/images/gabinet.jpg" alt="Dens2 Klinika" class="section_aboutUS_photo"></div>
                 </div>
 
                 <div class="col-6-12">
                     <div class="section_aboutUs_article">
-                        <p class="section_aboutUs_text">
+                        <div class="section_aboutUs_text">
                             <p>W trosce o satysfakcję i komfort naszych pacjentów oferujemy pełen zakres zabiegów stomatologicznych. Zaczynając od stomatologii zachowawczej, stomatologii estetycznej, poprzez, endodoncję implantologię, protetykę, ortodoncję nie zapominając o stomatologii dziecięcej.</p>
                             <p>Dysponujemy nowocześnie wyposażonymi gabinetami oraz wykwalifikowanym personelem  </p>
-                            <p>Świadczymy usługi z zakresu stomatologi zachowawczej, stomatologi dziecięcej, endodoncji, chirurgi, protetyki i ortodoncji. </p>
-                    </p>
-                        <a href="http://localhost/klinika/" class="button">Więcej</a>
+                            <p>Świadczymy usługi z zakresu stomatologi zachowawczej, stomatologi dziecięcej, endodoncji, chirurgi, protetyki i ortodoncji.</p>
+                    </div>
 
                     </div>
 
                 </div>
             </div>
+
+
+            <div class="row">
+                <div class="col-6-12">
+                </div>
+                <div class="col-6-12">
+<a href="http://localhost/klinika/" class="button">Więcej</a>
+                </div>
+                </div>
+
         </div>
     </section>
 

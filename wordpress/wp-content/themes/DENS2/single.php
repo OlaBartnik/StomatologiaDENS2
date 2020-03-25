@@ -43,7 +43,12 @@ get_header(); ?>
 
 				<?php if( get_field('description4') ): ?>
  <div> <?php the_field('description4'); ?> </div>
-	<?php endif; ?>
+    <?php endif; ?>
+
+    <p class="single_page Cv_description">Osoby zainteresowane ofertą prosimy o przesyłanie CV na adres: <strong>ortodoncja.budel@gmail.com</strong></p>
+ <p>
+W aplikacji prosimy zawrzeć klauzulę:
+“Wyrażam zgodę na przetwarzanie moich danych osobowych przez firmę DENS2 Stomatologia z siedzibą w Warszawie, ul. Jaktorowska 8 U7 01-202 Warszawa w celu prowadzenia rekrutacji na aplikowane przeze mnie stanowisko.”</p>
 
 				<p>Data zamieszczenia ogłoszenia: <?php the_time('F j, Y'); ?></p>
 				<?php endwhile; ?>
