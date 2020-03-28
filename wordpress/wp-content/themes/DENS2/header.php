@@ -7,7 +7,7 @@
 
 
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no"">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
 
 
 <meta name="application-name" content="<?php bloginfo('name'); ?>" />
@@ -19,7 +19,7 @@
 </head>
 
 <body <?php body_class(); ?>>
-<body>
+<!-- <body> -->
 
  <header class="page_header">
             <div class="contact_menu">
@@ -49,7 +49,7 @@
                 <div class="container">
                     <div class="header_logo">
                         <h1>
-                        <a href="<?php echo home_url(); ?>" class="page_logo"">
+                        <a href="<?php echo home_url(); ?>" class="page_logo">
                 <img src="<?php echo get_template_directory_uri(); ?>/images/logoDENS2.png" alt="Stomatologia DENS2"></a>
                         </h1>
                         <a href="http://localhost/nfz/" class="NFZ_logo"><img src="<?php echo get_template_directory_uri(); ?>/images/nfz.png" alt="NFZ"></a>
@@ -82,7 +82,8 @@
                             <li><a href="/">Strona główna</a></li>
                             <li><a href="http://localhost/klinika/">Klinika</a></li>
 
-                            <li><a href="http://localhost/#services" class="page_nav_list_button_link" >Usługi <span class="page_nav_list_button">&#43;</span></a></li>
+                            <li><a href="http://localhost/#services" class="page_nav_list_button_link" >Usługi <span>&#43;</span></a></li>
+
                             <ul class="page_nav_sublist">
                             <li class="page_nave_sublist_el">
                             <a href="http://localhost/stomatologia-zachowacza" class="page_nav_sublist_link">Stomatologia zachowawcza</a>
@@ -104,7 +105,7 @@
                             <a href="http://localhost/nfz/" class="page_nav_sublist_link">NFZ</a>
                         </li>
                             </ul>
-                            </li>
+
 
                             <li><a href="http://localhost/cennik/">Cennik</a></li>
                             <li><a href="http://localhost/#contact">Kontakt</a></li>

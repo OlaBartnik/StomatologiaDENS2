@@ -57,6 +57,14 @@
     background-color: lighten($color-main, 40%);
 }
 
+@media screen and (-ms-high-contrast: active),
+(-ms-high-contrast: none) {
+    .contact_menu::after {
+        height: 0.6px;
+
+    }
+}
+
 .header_logo {
     display: flex;
     align-items: center;
@@ -70,16 +78,18 @@
 }
 
 .page_logo img {
-    width: 145px;
+    display: block;
+    max-width: 145px;
     height: auto;
 }
 
 
 
 .NFZ_logo img {
+    display: block;
     margin-left: 14px;
     height: auto;
-    width: 80px;
+    max-width: 80px;
 
 }
 
@@ -144,11 +154,17 @@
 
 .page_nav_list_button {
     display: none;
-    padding-left: 2px;
     font-size: 20px;
 
 }
 
+.page_nav_list_button_link {
+    padding-left: 20px;
+
+    & span {
+        padding-left: 2px;
+    }
+}
 
 
 // menu hamburger

@@ -7,7 +7,7 @@
 
 
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no"">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
 
 <meta name="application-name" content="<?php bloginfo('name'); ?>" />
 <meta name="description" content="<?php bloginfo('description'); ?>">
@@ -17,7 +17,6 @@
  <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
-<body>
 
 
 <div class="page_hero">
@@ -78,7 +77,7 @@
     </div>
 
 
-       
+
 
         <div class="main_banner">
             <a href="#services">
@@ -103,7 +102,7 @@
                             <li><a href="/">Strona główna</a></li>
                             <li><a href="http://localhost/klinika/">Klinika</a></li>
 
-                            <li><a href="http://localhost/#services" class="page_nav_list_button_link" >Usługi <span class="page_nav_list_button">&#43;</span></a></li>
+                            <li><a href="http://localhost/#services" class="page_nav_list_button_link" >Usługi <span>&#43;</span></a></li>
                             <ul class="page_nav_sublist">
                             <li class="page_nave_sublist_el">
                             <a href="http://localhost/stomatologia-zachowacza" class="page_nav_sublist_link">Stomatologia zachowawcza</a>
@@ -125,7 +124,7 @@
                             <a href="http://localhost/nfz/" class="page_nav_sublist_link">NFZ</a>
                         </li>
                             </ul>
-                            </li>
+
 
                             <li><a href="http://localhost/cennik/">Cennik</a></li>
                             <li><a href="#contact">Kontakt</a></li>

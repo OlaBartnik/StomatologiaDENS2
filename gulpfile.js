@@ -49,7 +49,7 @@ const css = function () {
         .pipe(sourcemaps.init())
         .pipe(
             sass({
-                outputStyle: "expanded" //nested, compressed, compact, compressed
+                outputStyle: "expanded" //nested, expanded, compressed, compact, compressed
             }).on("error", showError)
         )
         .pipe(autoprefixer())

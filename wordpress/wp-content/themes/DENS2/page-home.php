@@ -13,15 +13,15 @@ get_header('home');
 <?php if (have_posts()): ?>
     <?php while (have_posts()) : the_post(); ?>
 
-        <section id="services" class="section_sevices">
-                 <div class="container">
+<section id="services" class="section_sevices">
+    <div class="container">
                  <div class="row">
                 <div class="col-12-12 header_container_main">
             <header class="section_header">
                 <h2>Nasze usługi</h2>
             </header>
-</div>
-</div>
+                </div>
+                </div>
 
             <div class="row">
                 <div class="col-4-12">
@@ -101,9 +101,10 @@ get_header('home');
 
             </div>
         </div>
-         </section>
+</section>
 
-    <section id="aboutUs" class="section_aboutUs">
+
+<section id="aboutUs" class="section_aboutUs">
         <div class="banner">
             <div class="banner_text container">
                 Piękny uśmiech i zdrowe zęby to dobre samopoczucie każdego dnia.<br>
@@ -132,8 +133,8 @@ get_header('home');
 
         <div class="container">
             <div class="row">
-                <div class="col-6-12 section_aboutUs_img_container">
-                    <div class="box">
+                <div class="col-6-12">
+                    <div class="aboutUs box">
                         <img src="<?php echo get_template_directory_uri(); ?>/images/gabinet.jpg" alt="Dens2 Klinika" class="section_aboutUS_photo"></div>
                 </div>
 
@@ -157,31 +158,35 @@ get_header('home');
                 <div class="col-6-12">
 <a href="http://localhost/klinika/" class="button">Więcej</a>
                 </div>
-                </div>
+            </div>
 
         </div>
-    </section>
 
-    <section class="section_contact">
+</section>
+
+
+<section class="section_contact">
         <div class="banner">
-            <div class="banner_text container"">
+            <div class="banner_text container single">
                 U nas możesz skorzystać z wizyty również w ramach NFZ
             </div>
 
         </div>
-        <div id="contact"class="container" >
+
+<div id="contact" class="container" >
         <div class="row">
                 <div class="col-12-12 header_container_main">
             <header class="section_header">
                 <h2>Kontakt</h2>
             </header>
-</div>
-</div>
+            </div>
+        </div>
+
             <div class="contact_form">
           <?php the_content();?>
             </div>
 
-<div class="contact_adress">
+    <div class="contact_adress">
     <div class="container">
             <div class="row">
 
@@ -197,7 +202,7 @@ get_header('home');
                     <div class="address_box">
                     <p class="address_address"><strong>DENS 2</strong><br>
                     ul. Jaktorowska 8 U7<br>
-                    01-202 Warszawa </br>
+                    01-202 Warszawa <br>
                     <strong>Wejście od ul. Karolkowej</strong>
                     </p>
 <p class="address_hours">pon. - piąt.:  09:00 - 20:00</p>
@@ -235,13 +240,12 @@ Tel.  664 474 996</p>
     <a href="http://localhost/oferty-pracy/" class="job_link" target ="_blank">
             <img src="<?php echo get_template_directory_uri(); ?>/images/hiring.svg" alt="ofety pracy" class="contact_address job">Oferty pracy</a>
              <!-- Icons made by <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons">Smashicons</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a> -->
-</div>
+                    </div>
             </div>
 
-    </div>
 </div>
-    </section class="section_contact">
-
+</div>
+</section>
 
     <div id='map' style='width: 100%; height: 480px;'></div>
 

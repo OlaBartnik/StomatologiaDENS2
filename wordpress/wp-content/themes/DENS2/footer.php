@@ -27,7 +27,7 @@
 
                 </div>
 
-                <div class="col-3-12"">
+                <div class="col-3-12">
                     <div class="footer_contact footer_address">
                     <strong> DENS 2</strong>
                     ul. Jaktorowska 8 U7<br>
@@ -39,10 +39,13 @@
 
             </div>
 
-            <div class="col-3-12"">
-                    <div class=" footer_contact footer_phones">
-                <br>Skontaktuj się z nami:<br>
+            <div class="col-3-12">
+            <div class="footer_contact footer_phones">
+                    <div class="footer_contact footer_phones">
+                    <br>
+                    Skontaktuj się z nami:<br>
                 Tel. (22) 632 99 11 <br>Tel. 664 474 996
+                </div>
             </div>
 
 
@@ -73,7 +76,7 @@
             </div>
         </div>
 
-        </nav>
+
 
         </div>
     </footer>

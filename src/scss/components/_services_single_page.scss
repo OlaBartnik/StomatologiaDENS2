@@ -1,5 +1,6 @@
 .single_page_box {
     border-right: 1px solid $color-hover;
+    min-height: 70vh;
 
 
 }
@@ -15,6 +16,7 @@
 
 .section_single_page {
     padding-top: 20px;
+
 }
 
 
@@ -26,13 +28,13 @@
 
 
 .section_single_page .container {
-    min-height: 100vh;
+    // min-height: 100vh;
 }
 
 .section_single_page .banner_text.container {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+    // display: flex;
+    // justify-content: space-around;
+    // align-items: center;
 }
 
 

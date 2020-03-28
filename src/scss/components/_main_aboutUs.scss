@@ -1,14 +1,13 @@
-.section_aboutUs_img_container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
 .section_aboutUs {
-    padding-top: 0px;
     min-height: 100vh;
 }
 
+.aboutUs.box {
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: 75px;
+    margin-top: 10px;
+}
 
 
 .section_aboutUS_photo {
@@ -22,28 +21,14 @@
     margin-bottom: 20px;
 }
 
-// .section_aboutUs .header_container {
-//     text-align: left;
-//     // margin-left: 50px;
-// }
 
-
-
-
-
-
-
-.section_aboutUs_article {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: space-between;
-    height: 100%;
-
-}
 
 .section_aboutUs_text {
     line-height: 150%;
-    margin-top: 0px;
 
+
+}
+
+.section_aboutUs_text P:first-child {
+    margin-top: 0;
 }
