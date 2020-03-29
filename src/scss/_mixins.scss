@@ -1,8 +1,3 @@
-// @function rem($px, $unit : rem) {
-//     $size : $px / 16px;
-//     @return #{$size}#{$unit}
-// }
-
 @mixin visuallyhidden() {
     border: 0;
     clip: rect(0 0 0 0);
@@ -26,3 +21,37 @@
 }
 
 
+//-------------------------------------
+//breakpoints
+//.page-wrap {
+//	 width: 75%;
+//
+//	 @include bp(#bpSmall) { width: 60%; }
+//	 @include bp(420px) { width: 60%; }
+//}
+//-------------------------------------
+@mixin bp($point, $direction : 'max') {
+    @media screen and (#{$direction}-width: $point) {
+        @content;
+    }
+}
+
+//-------------------------------------
+//breakpoint height
+//   @include bph(200) { ... }
+//-------------------------------------
+@mixin bph($point, $direction : 'max') {
+    @media screen and (#{$direction}-height: $point) {
+        @content;
+    }
+}
+
+//-------------------------------------
+//breakpoint custom
+//    @include bpc("(max-width:200px) and (min-height:200)") {...}
+//-------------------------------------
+@mixin bpc($code, $direction : 'max') {
+    @media screen and #{$code} {
+        @content;
+    }
+}

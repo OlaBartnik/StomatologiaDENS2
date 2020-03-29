@@ -155,7 +155,7 @@ get_header('home');
             <div class="row">
                 <div class="col-6-12">
                 </div>
-                <div class="col-6-12">
+                <div class="col-6-12 aboutUs_button_container">
 <a href="http://localhost/klinika/" class="button">Więcej</a>
                 </div>
             </div>
@@ -186,17 +186,18 @@ get_header('home');
           <?php the_content();?>
             </div>
 
-    <div class="contact_adress">
-    <div class="container">
+    <div class="contact_adress container">
+
             <div class="row">
 
-                <div class="col-1-12">
+
+
+                <div class="col-4-12 address_container">
                     <div class="image_box">
 <img src="<?php echo get_template_directory_uri(); ?>/images/address.svg" alt="Adres" class="contact_address address">
  <!-- Icons made by <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons">Smashicons</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a> -->
 </div>
-</div>
-            <div class="col-3-12">
+
 
 
                     <div class="address_box">
@@ -204,47 +205,64 @@ get_header('home');
                     ul. Jaktorowska 8 U7<br>
                     01-202 Warszawa <br>
                     <strong>Wejście od ul. Karolkowej</strong>
-                    </p>
-<p class="address_hours">pon. - piąt.:  09:00 - 20:00</p>
-<p class="address_phone">Tel. (22) 632 99 11<br>
-Tel.  664 474 996</p>
+
                     </div>
 
 
         </div>
 
+        <div class="col-4-12 phone_container">
+            <div class="image_box_container"">
+        <div class="image_box">
+<img src="<?php echo get_template_directory_uri(); ?>/images/calendar.svg" alt="zapisy" class="contact_address calendar">
+ <!-- Icons made by <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons">Smashicons</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a> -->
+</div>
 
-        <div class="col-4-12">
+<div>
+            <p class="address_phone">
+                <strong>Telefon:</strong><br>(22) 632 99 11 <br>664 474 996
+            </p>
+            <p class="address_hours"><strong>Godziny otwarcia:</strong><br>pon. - piąt.:  09:00 - 20:00
+        </p>
+
+</div>
+</div>
+
+
+
+</div>
+
+        <div class="col-4-12 contact_container">
+
+
             <div class="mail_box">
-
-            <div>
                 <a href="mailto:aleksandra.dadacz@gmail.com" class="mail_link" target ="_blank">
              <img src="<?php echo get_template_directory_uri(); ?>/images/envelope.svg" alt="mail" class="contact_address mail">ortodoncja.budel@gmail.com</a>
               <!-- Icons made by <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons">Smashicons</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a> -->
             </div>
 
 
-            <div>
+            <div class="fb_box">
              <a href="https://www.facebook.com/Dens2-Prywatna-Przychodnia-Dentystyczno-Lekarska-842138229254599/" class="fb_link" target ="_blank">
-            <img src="<?php echo get_template_directory_uri(); ?>/images/facebook_logo.svg" alt="Facebook" class="contact_address fb">Stomatoliga DENS2</a>
+            <img src="<?php echo get_template_directory_uri(); ?>/images/facebook_logo.svg" alt="Facebook" class="contact_address fb">Stomatologia DENS2</a>
              <!-- Icons made by <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons">Smashicons</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a> -->
             </div>
 
-            </div>
-            </div>
 
-
-
-                <div class="col-4-12">
-                    <div class="job_box">
-    <a href="http://localhost/oferty-pracy/" class="job_link" target ="_blank">
+            <div class="job_box">
+            <a href="http://localhost/oferty-pracy/" class="job_link" target ="_blank">
             <img src="<?php echo get_template_directory_uri(); ?>/images/hiring.svg" alt="ofety pracy" class="contact_address job">Oferty pracy</a>
              <!-- Icons made by <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons">Smashicons</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a> -->
-                    </div>
             </div>
+
+
+        </div>
+
 
 </div>
 </div>
+
+
 </section>
 
     <div id='map' style='width: 100%; height: 480px;'></div>

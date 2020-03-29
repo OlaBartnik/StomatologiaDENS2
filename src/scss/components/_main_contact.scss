@@ -1,12 +1,15 @@
 #contact {
     // padding-top: 20px;
-    min-height: 100vh;
+    //     height: 100vh;
 }
 
 #contact .section_header {
     margin-bottom: 0px;
 }
 
+// .contact_data.col_5-12 div {
+//     margin: 0 auto;
+// }
 
 
 // Formularz kontaktowy
@@ -39,25 +42,149 @@ label {
     }
 }
 
+
+
 .message {
-    padding-left: 50px;
-    padding-right: 50px;
+    margin: 0 auto;
+    max-width: 650px;
+
 }
 
 .g-recaptcha {
-
     transform: scale(0.70);
     transform-origin: 0 0;
 
+}
 
+div.wpcf7-form-control-wrap {
+    max-width: 220px;
 }
 
 .submit_container {
     display: flex;
+    justify-content: space-evenly;
     margin-top: 20px;
-    padding-left: 60px;
-    // align-items: center;
+
+
+
 }
+
+@media all and (-ms-high-contrast: none),
+(-ms-high-contrast: active) {
+    .submit_container {
+        justify-content: space-around;
+    }
+}
+
+@supports (-ms-ime-align:auto) {
+    .submit_container {
+        justify-content: space-around;
+    }
+}
+
+
+
+
+// style ogolnie w clss.scss ze stylami button
+.wpcf7-form-control.wpcf7-submit {
+    padding: 10px 30px;
+    margin-top: 3px;
+
+}
+
+
+span.wpcf7-not-valid-tip {
+    width: 400px;
+}
+
+
+@include bp(1200px, 'max') {
+    .message {
+        max-width: 600px;
+    }
+
+}
+
+
+@include bp(1100px, 'max') {
+    .message {
+        max-width: 550px;
+    }
+
+    div.wpcf7-form-control-wrap {
+        padding-left: 20px;
+    }
+
+
+}
+
+
+@include bp(1000px, 'max') {
+    .g-recaptcha {
+        transform: scale(0.65);
+
+    }
+
+
+    .wpcf7-form-control.wpcf7-submit {
+        padding: 8px 18px;
+        font-size: 16px;
+    }
+
+}
+
+@include bp(768px, 'max') {
+    .message {
+        margin: 0;
+    }
+
+    .submit_container {
+        justify-content: flex-start;
+
+    }
+
+    .recaptcha {
+        margin-right: 35px;
+
+    }
+
+    .wpcf7-form-control.wpcf7-submit {
+        margin-top: 6px;
+
+    }
+}
+
+
+@include bp(525px, 'max') {
+
+    .g-recaptcha {
+        transform: scale(0.63);
+
+    }
+
+    .wpcf7-form-control.wpcf7-submit {
+        padding: 5px 10px;
+        font-size: 15px;
+        margin-top: 8px;
+    }
+}
+
+
+@include bp(480px, 'max') {
+    .submit_container {
+        flex-direction: column;
+    }
+
+    div.wpcf7-form-control-wrap {
+        padding-left: 5px;
+    }
+
+    .wpcf7-form-control.wpcf7-submit {
+        margin-top: 0px;
+        margin-left: 5px;
+    }
+}
+
 
 
 //ostylowanie button contactform w scss class
@@ -75,27 +202,13 @@ label {
 
 }
 
-// .wpcf7-list-item input {
-//     width: 15px;
-//     height: 15px;
-// }
 
-// @media screen and (min-width:0\0) {
-//     .ie910 {
-//         .wpcf7-list-item input {
-//             width: 0px\9;
-//             height: 0px\9;
-//         }
-//     }
-
-//     /* backslash-9 removes ie11+ & old Safari 4 */
-// }
 
 
 
 .rodo p {
     font-size: 14px;
-    padding-left: 10px;
+    padding-left: 15px;
     max-width: 100%;
 }
 
@@ -161,56 +274,46 @@ div.wpcf7-acceptance-missing {
 
 // Dane adresowe
 .contact_adress {
-    margin-top: 50px;
+    margin-top: 80px;
 }
 
-.contact_adress .col-1-12 {
-    padding-right: 0px;
-}
-
-.contact_address.address {
-    display: block;
-    width: 40px;
-    height: auto;
-
-}
 
 .address_address strong:nth-of-type(2) {
     text-decoration: underline;
 }
 
+
+.contact_address.address,
 .contact_address.mail,
 .contact_address.job,
-.contact_address.fb {
+.contact_address.fb,
+.contact_address.calendar {
     display: block;
-    width: 35px;
+    max-width: 35px;
     height: auto;
-    margin-right: 15px;
+    margin-right: 20px;
 }
 
-
-.image_box {
+.address_container,
+.image_box_container {
     display: flex;
-    justify-content: flex-end;
-    padding-top: 5px;
 }
 
-
-.address_box {
+.contact_container {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-
 }
+
+
+
 
 .address_address,
-.address_hours,
 .address_phone {
-    margin-top: 5px;
-    margin-bottom: 5px;
-
+    margin-top: 0px;
 
 }
+
+
 
 
 .mail_link,
@@ -224,22 +327,121 @@ div.wpcf7-acceptance-missing {
     font-weight: 600;
 }
 
-.mail_box {
-    margin-top: 5px;
-    margin: 0 auto;
-    width: 260px;
+.mail_box,
+.fb_box {
+    margin-bottom: 20px;
+
 }
 
-.mail_link {
 
-    margin-bottom: 15px;
+
+
+
+@include bp(992px, 'max') {
+
+    .contact_address.address,
+    .contact_address.mail,
+    .contact_address.job,
+    .contact_address.fb,
+    .contact_address.calendar {
+        margin-right: 10px;
+    }
+
+
+
 }
 
-.job_box {
-    margin-top: 5px;
-    margin: 0 auto;
-    width: 150px;
+@include bp(925px, 'max') {
+
+    .contact_address.address,
+    .contact_address.mail,
+    .contact_address.job,
+    .contact_address.fb,
+    .contact_address.calendar {
+        max-width: 30px;
+    }
+
+
+
 }
+
+@include bp(820px, 'max') {
+
+    .contact_address.address,
+    .contact_address.mail,
+    .contact_address.job,
+    .contact_address.fb,
+    .contact_address.calendar {
+        max-width: 20px;
+        margin-right: 3px;
+    }
+
+
+
+}
+
+@include bp(767px, 'max') {
+
+
+    .contact_address.address,
+    .contact_address.mail,
+    .contact_address.job,
+    .contact_address.fb,
+    .contact_address.calendar {
+
+        max-width: 30px;
+
+        margin-right: 15px;
+    }
+
+
+
+    .col-4-12.address_container {
+        margin-bottom: 0px;
+    }
+
+    .phone_container {
+        margin-left: 30px;
+    }
+
+    .mail_box,
+    .fb_box,
+    .job_box {
+        margin-bottom: 16px;
+
+    }
+}
+
+
+
+
+
+@include bp(370px, 'max') {
+
+
+    .contact_address.address,
+    .contact_address.mail,
+    .contact_address.job,
+    .contact_address.fb,
+    .contact_address.calendar {
+        max-width: 20px;
+    }
+
+    .contact_address.address,
+    .contact_address.mail,
+    .contact_address.job,
+    .contact_address.fb,
+    .contact_address.calendar {
+        margin-right: 10px;
+    }
+
+
+
+    .phone_container {
+        margin-left: 20px;
+    }
+}
+
 
 // mapa
 

@@ -9,6 +9,15 @@
     margin-top: 10px;
 }
 
+@include bp(768px, 'max') {
+    .aboutUs.box {
+        margin: 0 auto;
+        margin-bottom: 45px;
+
+    }
+
+}
+
 
 .section_aboutUS_photo {
     max-width: 100%;

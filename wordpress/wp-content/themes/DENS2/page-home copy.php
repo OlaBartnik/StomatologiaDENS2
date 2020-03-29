@@ -133,8 +133,8 @@ get_header('home');
 
         <div class="container">
             <div class="row">
-                <div class="col-6-12 section_aboutUs_img_container">
-                    <div class="box">
+                <div class="col-6-12">
+                    <div class="aboutUs box">
                         <img src="<?php echo get_template_directory_uri(); ?>/images/gabinet.jpg" alt="Dens2 Klinika" class="section_aboutUS_photo"></div>
                 </div>
 
@@ -155,7 +155,7 @@ get_header('home');
             <div class="row">
                 <div class="col-6-12">
                 </div>
-                <div class="col-6-12">
+                <div class="col-6-12 aboutUs_button_container">
 <a href="http://localhost/klinika/" class="button">Więcej</a>
                 </div>
             </div>
@@ -167,7 +167,7 @@ get_header('home');
 
 <section class="section_contact">
         <div class="banner">
-            <div class="banner_text container">
+            <div class="banner_text container single">
                 U nas możesz skorzystać z wizyty również w ramach NFZ
             </div>
 
@@ -190,13 +190,15 @@ get_header('home');
     <div class="container">
             <div class="row">
 
+
+
                 <div class="col-1-12">
                     <div class="image_box">
 <img src="<?php echo get_template_directory_uri(); ?>/images/address.svg" alt="Adres" class="contact_address address">
  <!-- Icons made by <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons">Smashicons</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a> -->
 </div>
 </div>
-            <div class="col-3-12">
+            <div class="col-3-12 address_box_container">
 
 
                     <div class="address_box">
