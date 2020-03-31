@@ -186,7 +186,7 @@ get_header('home');
           <?php the_content();?>
             </div>
 
-    <div class="contact_adress container">
+    <div class="contact_adress">
 
             <div class="row">
 
@@ -212,20 +212,21 @@ get_header('home');
         </div>
 
         <div class="col-4-12 phone_container">
-            <div class="image_box_container"">
         <div class="image_box">
 <img src="<?php echo get_template_directory_uri(); ?>/images/calendar.svg" alt="zapisy" class="contact_address calendar">
  <!-- Icons made by <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons">Smashicons</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a> -->
 </div>
 
-<div>
+<div class="phone_box"">
             <p class="address_phone">
                 <strong>Telefon:</strong><br>(22) 632 99 11 <br>664 474 996
             </p>
+
+
             <p class="address_hours"><strong>Godziny otwarcia:</strong><br>pon. - piąt.:  09:00 - 20:00
         </p>
 
-</div>
+
 </div>
 
 

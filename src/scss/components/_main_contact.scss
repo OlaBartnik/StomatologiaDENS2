@@ -1,6 +1,7 @@
 #contact {
     // padding-top: 20px;
     //     height: 100vh;
+    margin-bottom: 60px;
 }
 
 #contact .section_header {
@@ -274,7 +275,8 @@ div.wpcf7-acceptance-missing {
 
 // Dane adresowe
 .contact_adress {
-    margin-top: 80px;
+    margin-top: 40px;
+
 }
 
 
@@ -289,13 +291,27 @@ div.wpcf7-acceptance-missing {
 .contact_address.fb,
 .contact_address.calendar {
     display: block;
-    max-width: 35px;
+    max-width: 30px;
     height: auto;
-    margin-right: 20px;
+    margin-right: 15px;
 }
 
+
+@-moz-document url-prefix() {
+
+    .contact_address.address,
+    .contact_address.mail,
+    .contact_address.job,
+    .contact_address.fb,
+    .contact_address.calendar {
+        width: 30px;
+
+    }
+}
+
+
 .address_container,
-.image_box_container {
+.phone_container {
     display: flex;
 }
 
@@ -304,15 +320,26 @@ div.wpcf7-acceptance-missing {
     flex-direction: column;
 }
 
-
+.image_box img {
+    width: 100%;
+}
 
 
 .address_address,
-.address_phone {
+.address_phone,
+.address_hours {
     margin-top: 0px;
 
 }
 
+.address_phone {
+    margin-bottom: 20px;
+}
+
+.address_hours {
+    margin-bottom: 0px;
+
+}
 
 
 
@@ -348,24 +375,11 @@ div.wpcf7-acceptance-missing {
     }
 
 
-
 }
 
-@include bp(925px, 'max') {
-
-    .contact_address.address,
-    .contact_address.mail,
-    .contact_address.job,
-    .contact_address.fb,
-    .contact_address.calendar {
-        max-width: 30px;
-    }
 
 
-
-}
-
-@include bp(820px, 'max') {
+@include bp(850px, 'max') {
 
     .contact_address.address,
     .contact_address.mail,
@@ -373,7 +387,14 @@ div.wpcf7-acceptance-missing {
     .contact_address.fb,
     .contact_address.calendar {
         max-width: 20px;
-        margin-right: 3px;
+        height: auto;
+        margin-right: 5px;
+    }
+
+
+    .col-4-12.contact_container,
+    .col-4-12.phone_container {
+        padding-left: 0px;
     }
 
 
@@ -390,26 +411,26 @@ div.wpcf7-acceptance-missing {
     .contact_address.calendar {
 
         max-width: 30px;
-
+        height: auto;
         margin-right: 15px;
     }
 
-
+    .col-4-12.phone_container {
+        flex-direction: row;
+    }
 
     .col-4-12.address_container {
-        margin-bottom: 0px;
+        margin-bottom: 20px;
     }
 
-    .phone_container {
-        margin-left: 30px;
+
+    .col-4-12.contact_container,
+    .col-4-12.phone_container {
+        padding-left: 15px;
     }
 
-    .mail_box,
-    .fb_box,
-    .job_box {
-        margin-bottom: 16px;
 
-    }
+
 }
 
 
@@ -437,9 +458,6 @@ div.wpcf7-acceptance-missing {
 
 
 
-    .phone_container {
-        margin-left: 20px;
-    }
 }
 
 
