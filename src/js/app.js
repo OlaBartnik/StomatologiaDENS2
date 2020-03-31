@@ -8,12 +8,17 @@ import showMenu from "./menu_hamburger";
 
 $(function () {
 
+
     showPriceDetails();
     slider();
     gallery();
     showMenu();
 
-    map();
+
+    if ($(".p-main").children().hasClass("map")) {
+        map();
+
+    }
 
 
 

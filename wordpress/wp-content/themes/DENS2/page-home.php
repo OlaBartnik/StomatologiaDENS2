@@ -266,7 +266,7 @@ get_header('home');
 
 </section>
 
-    <div id='map' style='width: 100%; height: 480px;'></div>
+    <div id='map' class="map" style='width: 100%; height: 400px;'></div>
 
 
 

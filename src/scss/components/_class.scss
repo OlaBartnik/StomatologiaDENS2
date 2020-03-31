@@ -7,6 +7,11 @@ section {
     padding-bottom: 20px;
 }
 
+.p-main,
+.footer {
+    overflow: hidden;
+}
+
 
 
 // page.php
@@ -46,7 +51,7 @@ section {
 // }
 
 .section_header h2 {
-    font-size: 28px;
+    font-size: 24px;
     margin: 0;
     padding: 0;
 
@@ -67,19 +72,19 @@ section {
 
 }
 
-@include bp(768px, 'max') {
-    .header_container {
-        text-align: center;
+// @include bp(767px, 'max') {
+//     .header_container {
+//         text-align: center;
 
-    }
+//     }
 
-    .aboutUs_button_container {
-        display: flex;
-        justify-content: center;
-        margin-top: 40px;
-    }
+//     .aboutUs_button_container {
+//         display: flex;
+//         justify-content: center;
+//         margin-top: 40px;
+//     }
 
-}
+// }
 
 
 // button plus button sumbit z control form 7

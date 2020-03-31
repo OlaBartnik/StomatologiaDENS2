@@ -110,7 +110,10 @@ $(function () {
   Object(_slider__WEBPACK_IMPORTED_MODULE_3__["default"])();
   Object(_gallery__WEBPACK_IMPORTED_MODULE_2__["default"])();
   Object(_menu_hamburger__WEBPACK_IMPORTED_MODULE_4__["default"])();
-  Object(_map__WEBPACK_IMPORTED_MODULE_1__["default"])();
+
+  if ($(".p-main").children().hasClass("map")) {
+    Object(_map__WEBPACK_IMPORTED_MODULE_1__["default"])();
+  }
 });
 
 /***/ }),
@@ -239,7 +242,7 @@ function showMenu() {
 __webpack_require__.r(__webpack_exports__);
 function showPriceDetails() {
   $(".accordion_tab_arrow").on("click", function () {
-    $(this).parent().parent().children("table").fadeToggle("slow"); //   $(this).parent().parent().siblings().children("table").fadeOut("slow");
+    $(this).parent().parent().children("table").fadeToggle("slow");
   });
 }
 

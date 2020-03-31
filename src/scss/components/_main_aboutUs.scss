@@ -5,15 +5,14 @@
 .aboutUs.box {
     max-width: 300px;
     margin-left: auto;
-    margin-right: 75px;
+    margin-right: auto;
     margin-top: 10px;
 }
 
 @include bp(768px, 'max') {
     .aboutUs.box {
-        margin: 0 auto;
+        margin: 0;
         margin-bottom: 45px;
-
     }
 
 }
@@ -26,8 +25,9 @@
 }
 
 
-.section_aboutUs .section_header {
-    margin-bottom: 20px;
+.section_aboutUs .header_container,
+.section_contact .header_container {
+    margin-bottom: 0px;
 }
 
 

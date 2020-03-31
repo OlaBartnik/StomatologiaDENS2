@@ -303,7 +303,7 @@
 
 @media (max-width:760px) {
     .contact_nav {
-        width: calc(100% - 60px);
+        max-width: calc(100% - 60px);
     }
 
     .contact_nav_list li {
