@@ -154,6 +154,27 @@
 
 }
 
+@include bp(850px, 'max') {
+    .page_nav_list a {
+        font-size: 17px;
+
+    }
+
+    .page_nav_list li {
+        padding: 15px 5px;
+    }
+
+
+    .contact_nav_list li {
+        padding: 10px 10px;
+        font-size: 11px;
+    }
+
+
+
+
+}
+
 // sublist uslugi
 
 
@@ -181,13 +202,15 @@
 // menu hamburger
 .toggle-main-nav {
     display: none;
+    position: fixed;
     right: 10px;
-    top: 7px;
+    top: 0px;
     width: 60px;
-    height: 60px;
+    height: auto;
     background: none;
     border: 0;
     cursor: pointer;
+    z-index: 10000;
 
 
     span {
@@ -279,13 +302,19 @@
 // }
 
 @media (max-width:760px) {
+    .contact_nav {
+        width: calc(100% - 60px);
+    }
+
+    .contact_nav_list li {
+        padding: 10px 5px;
+        font-size: 8px;
+    }
+
 
     .toggle-main-nav {
         display: block;
-        position: fixed;
-        right: 0;
-        top: 0;
-        z-index: 10000;
+
     }
 
     .toggle-main-nav:hover span {
@@ -392,4 +421,26 @@
     }
 
 
+}
+
+
+
+@media (max-width:600px) {
+
+    .contact_nav,
+    .contact_menu::after {
+        display: none;
+    }
+
+
+    .toggle-main-nav {
+        top: 16px;
+    }
+}
+
+
+@media (max-width:390px) {
+    .NFZ_logo {
+        display: none;
+    }
 }
