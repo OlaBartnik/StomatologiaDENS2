@@ -60,7 +60,11 @@
 
 
 @media (max-width: 768px) {
-    .single_page_box {
+
+
+    .row .col-8-12.single_page_box {
         border-right: none;
+        padding-right: 15px;
     }
+
 }

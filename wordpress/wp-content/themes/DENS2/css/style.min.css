@@ -483,7 +483,7 @@ textarea {
   margin-bottom: 30px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .row {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -544,11 +544,6 @@ html {
 section {
   padding-top: 35px;
   padding-bottom: 20px;
-}
-
-.p-main,
-.footer {
-  overflow: hidden;
 }
 
 .page-center.container {
@@ -1839,6 +1834,19 @@ aside h2 {
   margin-top: 5px;
 }
 
+@media (max-width: 1020px) {
+  aside {
+    padding-left: 0;
+  }
+  .sidebar_tittle {
+    font-size: 12px;
+  }
+  .sidebar_box img {
+    max-width: 90px;
+    margin-right: 10px;
+  }
+}
+
 @media (max-width: 768px) {
   aside {
     display: none;
@@ -1886,8 +1894,9 @@ aside h2 {
 }
 
 @media (max-width: 768px) {
-  .single_page_box {
+  .row .col-8-12.single_page_box {
     border-right: none;
+    padding-right: 15px;
   }
 }
 
@@ -1897,11 +1906,11 @@ aside h2 {
 }
 
 .gallery.first_row {
-  margin-top: 110px;
+  margin-top: 50px;
 }
 
 .gallery.last_row {
-  margin-bottom: 80px;
+  margin-bottom: 50px;
 }
 
 .slick-list.draggable .slick-track a {
@@ -1914,6 +1923,67 @@ aside h2 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media (max-width: 1120px) {
+  .slick-slide img {
+    max-width: 180px;
+    height: auto;
+  }
+}
+
+@media (max-width: 990px) {
+  .slick-slide img {
+    max-width: 150px;
+    height: auto;
+  }
+}
+
+@media (max-width: 850px) {
+  .slick-slide img {
+    max-width: 140px;
+    height: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .slick-slide img {
+    max-width: 180px;
+  }
+}
+
+@media (max-width: 670px) {
+  .slick-slide img {
+    max-width: 160px;
+  }
+}
+
+@media (max-width: 600px) {
+  .slick-track {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .slick-track a {
+    width: auto !important;
+  }
+  .slick-slide img {
+    max-width: 200px;
+    margin-bottom: 25px;
+  }
+}
+
+@media (max-width: 375px) {
+  .aboutUs_media {
+    font-size: 1.4em;
+  }
 }
 
 .single.section_header h3 {

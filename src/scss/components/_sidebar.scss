@@ -60,8 +60,22 @@ aside h2 {
     margin-top: 5px;
 }
 
+@media (max-width: 1020px) {
+    aside {
+        padding-left: 0;
+    }
 
-@media (max-width :768px) {
+    .sidebar_tittle {
+        font-size: 12px;
+    }
+
+    .sidebar_box img {
+        max-width: 90px;
+        margin-right: 10px;
+    }
+}
+
+@media (max-width:768px) {
     aside {
         display: none;
     }
