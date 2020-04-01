@@ -44,7 +44,7 @@ get_header(); ?>
 
 <div class="accordion_tab">
      <div class="accordion_tab_title">
-     <h3>Endodoncja <br>specjalistyczne leczenie kanałowe pod mikroskopem</h3>
+     <h3>Endodoncja</h3>
      <div class="accordion_tab_arrow"><div class="arrow-down"></div></div>
      </div>
 

@@ -12,7 +12,7 @@
     margin-bottom: 50px;
 }
 
-.slick-list.draggable .slick-track a {
+.section_aboutUs_gallery .slick-list.draggable .slick-track a {
 
     display: flex;
     justify-content: center;
@@ -21,7 +21,7 @@
 
 
 @media (max-width: 1120px) {
-    .slick-slide img {
+    .section_aboutUs_gallery .slick-slide img {
         max-width: 180px;
         height: auto;
     }
@@ -29,21 +29,21 @@
 
 
 @media (max-width: 990px) {
-    .slick-slide img {
+    .section_aboutUs_gallery .slick-slide img {
         max-width: 150px;
         height: auto;
     }
 }
 
 @media (max-width: 850px) {
-    .slick-slide img {
+    .section_aboutUs_gallery .slick-slide img {
         max-width: 140px;
         height: auto;
     }
 }
 
 @media (max-width: 768px) {
-    .slick-slide img {
+    .section_aboutUs_gallery .slick-slide img {
         max-width: 180px;
 
     }
@@ -52,7 +52,7 @@
 }
 
 @media (max-width: 670px) {
-    .slick-slide img {
+    .section_aboutUs_gallery .slick-slide img {
         max-width: 160px;
 
     }
@@ -63,7 +63,7 @@
 
 @media (max-width: 600px) {
 
-    .slick-track {
+    .section_aboutUs_gallery .slick-track {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -76,7 +76,7 @@
 
     }
 
-    .slick-slide img {
+    .section_aboutUs_gallery .slick-slide img {
         max-width: 200px;
         margin-bottom: 25px;
 

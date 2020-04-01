@@ -1744,7 +1744,7 @@ div.wpcf7-acceptance-missing {
 }
 
 .accordion_tab_title {
-  max-width: 700px;
+  max-width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1756,7 +1756,7 @@ div.wpcf7-acceptance-missing {
           align-items: center;
   text-transform: uppercase;
   border: 1px solid #DDD;
-  padding: 10px 20px;
+  padding: 10px 10px;
 }
 
 .accordion_tab_title h3 {
@@ -1765,12 +1765,60 @@ div.wpcf7-acceptance-missing {
 
 .accordion_tab table {
   display: none;
-  width: 693px;
 }
 
 .price_descritpion {
   margin-top: 60px;
   padding-left: 5px;
+}
+
+@media (max-width: 1100px) {
+  .accordion_tab_title h3 {
+    font-size: 16px;
+  }
+  .accordion_tab_arrow {
+    width: 25px;
+    height: 25px;
+  }
+  .arrow-down {
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-top: 8px solid #333333;
+  }
+}
+
+@media (max-width: 960px) {
+  .accordion_tab_title {
+    padding: 10px 8px;
+  }
+  .accordion_tab_title h3,
+  .accordion table {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 768px) {
+  .accordion_tab_title h3,
+  .accordion table {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 525px) {
+  .accordion_tab_title h3,
+  .accordion table {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 465px) {
+  .accordion_tab_title {
+    padding: 8px 4px;
+  }
+  .accordion_tab_title h3,
+  .accordion table {
+    font-size: 13px;
+  }
 }
 
 aside {
@@ -1913,7 +1961,7 @@ aside h2 {
   margin-bottom: 50px;
 }
 
-.slick-list.draggable .slick-track a {
+.section_aboutUs_gallery .slick-list.draggable .slick-track a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1926,40 +1974,40 @@ aside h2 {
 }
 
 @media (max-width: 1120px) {
-  .slick-slide img {
+  .section_aboutUs_gallery .slick-slide img {
     max-width: 180px;
     height: auto;
   }
 }
 
 @media (max-width: 990px) {
-  .slick-slide img {
+  .section_aboutUs_gallery .slick-slide img {
     max-width: 150px;
     height: auto;
   }
 }
 
 @media (max-width: 850px) {
-  .slick-slide img {
+  .section_aboutUs_gallery .slick-slide img {
     max-width: 140px;
     height: auto;
   }
 }
 
 @media (max-width: 768px) {
-  .slick-slide img {
+  .section_aboutUs_gallery .slick-slide img {
     max-width: 180px;
   }
 }
 
 @media (max-width: 670px) {
-  .slick-slide img {
+  .section_aboutUs_gallery .slick-slide img {
     max-width: 160px;
   }
 }
 
 @media (max-width: 600px) {
-  .slick-track {
+  .section_aboutUs_gallery .slick-track {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1971,10 +2019,10 @@ aside h2 {
         -ms-flex-align: center;
             align-items: center;
   }
-  .slick-track a {
+  .section_aboutUs_gallery .slick-track a {
     width: auto !important;
   }
-  .slick-slide img {
+  .section_aboutUs_gallery .slick-slide img {
     max-width: 200px;
     margin-bottom: 25px;
   }
