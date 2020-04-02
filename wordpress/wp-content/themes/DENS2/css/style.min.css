@@ -927,21 +927,21 @@ nav {
   }
 }
 
-.page_nav_sublist {
+.page_nav_toggle .page_nav_sublist {
   display: none;
   z-index: 10000;
 }
 
-.page_nav_list_button {
+.page_nav_toggle .page_nav_list_button {
   display: none;
   font-size: 20px;
 }
 
-.page_nav_list_button_link {
+.page_nav_toggle .page_nav_list_button_link {
   padding-left: 20px;
 }
 
-.page_nav_list_button_link span {
+.page_nav_toggle .page_nav_list_button_link span {
   padding-left: 2px;
 }
 
@@ -974,11 +974,37 @@ nav {
   outline: none;
 }
 
-.page_nav.home {
+.page_nav_toggle {
   display: none;
 }
 
-@media (max-width: 760px) {
+.page_nav_toggle {
+  position: fixed;
+  top: 0;
+  left: -320px;
+  width: 300px;
+  height: 100vh;
+  background: white;
+  -webkit-transition: 1s left;
+  -o-transition: 1s left;
+  transition: 1s left;
+  -webkit-box-shadow: 1px 0 10px rgba(0, 0, 0, 0.4);
+          box-shadow: 1px 0 10px rgba(0, 0, 0, 0.4);
+  z-index: 1000000;
+  overflow: auto;
+}
+
+.page_nav_toggle.show {
+  left: 0;
+}
+
+.page_nav_toggle li {
+  display: block;
+  text-align: center;
+  border-bottom: 1px solid #b3b3b3;
+}
+
+@media (max-width: 768px) {
   .contact_nav {
     max-width: calc(100% - 60px);
   }
@@ -995,13 +1021,19 @@ nav {
   .header_logo {
     margin: 0 auto;
   }
+  .page_nav {
+    display: none;
+  }
+  .page_nav_toggle {
+    display: block;
+  }
   .page_nav_sublist.show {
     display: block;
-    padding: 20px 0 0 20px;
-    z-index: 10000;
+    padding: 10px 0 0 15px;
   }
   .page_nav_sublist.show li {
     border-bottom: none;
+    padding: 10px 5px 5px 5px;
   }
   .page_nav_sublist.show a {
     font-size: 14px;
@@ -1009,35 +1041,6 @@ nav {
   }
   .page_nav_list_button {
     display: inline-block;
-  }
-  .page_hero .page_nav {
-    display: none;
-  }
-  .page_nav.home {
-    display: block;
-  }
-  .page_nav {
-    position: fixed;
-    top: 0;
-    left: -320px;
-    width: 300px;
-    height: 100vh;
-    background: white;
-    -webkit-transition: 1s left;
-    -o-transition: 1s left;
-    transition: 1s left;
-    -webkit-box-shadow: 1px 0 10px rgba(0, 0, 0, 0.4);
-            box-shadow: 1px 0 10px rgba(0, 0, 0, 0.4);
-    z-index: 1000000;
-    overflow: auto;
-  }
-  .page_nav.show {
-    left: 0;
-  }
-  .page_nav li {
-    display: block;
-    text-align: center;
-    border-bottom: 1px solid #b3b3b3;
   }
   .page_nav_list {
     -webkit-box-orient: vertical;
@@ -1063,9 +1066,36 @@ nav {
   }
 }
 
+@media (max-width: 400px) {
+  .page_nav_toggle {
+    width: 260px;
+  }
+  .page_nav_sublist.show {
+    padding: 10px 0 0 5px;
+  }
+}
+
 @media (max-width: 390px) {
   .NFZ_logo {
     display: none;
+  }
+}
+
+@media (max-width: 375px) {
+  .page_nav_toggle {
+    width: 220px;
+  }
+  .page_nav_sublist.show a {
+    font-size: 12px;
+  }
+  .page_nav_sublist.show li {
+    padding: 10px 0px 0px 2px;
+  }
+}
+
+@media (max-width: 315px) {
+  .page_nav_toggle {
+    width: 200px;
   }
 }
 
@@ -2259,7 +2289,7 @@ a.single_link {
 
 @media only screen and (max-width: 768px) {
   .notfound .notfound-404 {
-    height: 200px;
+    height: 210px;
   }
   .notfound .notfound-404 h1 {
     font-size: 200px;
@@ -2267,9 +2297,6 @@ a.single_link {
 }
 
 @media only screen and (max-width: 480px) {
-  .notfound .notfound-404 {
-    height: 162px;
-  }
   .notfound .notfound-404 h1 {
     font-size: 162px;
     height: 150px;

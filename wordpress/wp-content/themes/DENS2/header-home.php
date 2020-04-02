@@ -97,7 +97,7 @@
 
 
 
- <nav class="page_nav home">
+ <nav class="page_nav_toggle">
         <ul class="page_nav_list">
                             <li><a href="/">Strona główna</a></li>
                             <li><a href="http://localhost/klinika/">Klinika</a></li>

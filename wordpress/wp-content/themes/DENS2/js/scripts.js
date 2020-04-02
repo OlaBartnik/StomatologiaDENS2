@@ -219,11 +219,11 @@ __webpack_require__.r(__webpack_exports__);
 function showMenu() {
   $(".toggle-main-nav").on("click", function (event) {
     event.preventDefault();
-    $(".page_nav").toggleClass("show");
+    $(".page_nav_toggle").toggleClass("show");
   });
-  $(".page_nav_list_button_link").on("click", function (event) {
+  $(".page_nav_toggle .page_nav_list_button_link").on("click", function (event) {
     event.preventDefault();
-    $(".page_nav_sublist").toggleClass("show");
+    $(".page_nav_toggle .page_nav_sublist").toggleClass("show");
   });
 }
 
