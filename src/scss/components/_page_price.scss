@@ -72,6 +72,11 @@
 }
 
 
+td.column-2,
+th.column-2 {
+    width: 130px;
+}
+
 @media (max-width:1100px) {
     .accordion_tab_title h3 {
         font-size: 16px;
@@ -93,6 +98,11 @@
 
 @media (max-width:960px) {
 
+    td.column-2,
+    th.column-2 {
+        width: 120px;
+    }
+
     .accordion_tab_title {
         padding: 10px 8px;
     }
@@ -109,6 +119,11 @@
 
 @media (max-width:768px) {
 
+    td.column-2,
+    th.column-2 {
+        width: 130px;
+    }
+
     .accordion_tab_title h3,
     .accordion table {
         font-size: 16px;
@@ -121,6 +136,10 @@
 @media (max-width:525px) {
 
 
+    td.column-2,
+    th.column-2 {
+        width: 120px;
+    }
 
     .accordion_tab_title h3,
     .accordion table {
@@ -132,6 +151,10 @@
 
 @media (max-width:465px) {
 
+    td.column-2,
+    th.column-2 {
+        width: 110px;
+    }
 
     .accordion_tab_title {
         padding: 8px 4px;
@@ -143,15 +166,5 @@
     }
 
 
+
 }
-
-
-// @media (max-width:350px) {
-
-//     .accordion_tab_title h3,
-//     .accordion table {
-//         font-size: 12px;
-//     }
-
-
-// }
