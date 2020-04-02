@@ -47,24 +47,19 @@ nav {
 
 }
 
-// @media screen and (-ms-high-contrast: active),
-// (-ms-high-contrast: none) {
-//     .section_header::after {
-//         height: 1px;
-//     }
-// }
+
 
 .section_header h2 {
     font-size: 24px;
     margin: 0;
-    padding: 0;
+    padding: 0 10px;
 
 }
 
 
 .header_container {
     text-align: left;
-    margin-left: 14px;
+    // margin-left: 14px;
 
 }
 
@@ -76,19 +71,7 @@ nav {
 
 }
 
-// @include bp(767px, 'max') {
-//     .header_container {
-//         text-align: center;
 
-//     }
-
-//     .aboutUs_button_container {
-//         display: flex;
-//         justify-content: center;
-//         margin-top: 40px;
-//     }
-
-// }
 
 
 // button plus button sumbit z control form 7
@@ -108,7 +91,6 @@ nav {
     font-weight: 700;
     letter-spacing: 0.6px;
     box-shadow: inset 0 0 0 60px $color-background;
-    // box-shadow: inset 0 0 0 60px white;
     transition: 0.5s;
 
 }
@@ -116,9 +98,7 @@ nav {
 .button:hover,
 .wpcf7-form-control.wpcf7-submit:hover {
     box-shadow: inset 0 0 0 0px $color-background;
-    // box-shadow: inset 0 0 0 0px white;
     color: $color-background;
-    // color: white;
     outline: none;
 
 

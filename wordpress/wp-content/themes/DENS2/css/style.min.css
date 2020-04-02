@@ -1,7 +1,3 @@
-body {
-  background-color: #fafafa;
-}
-
 /*! normalize.css v4.1.1 | MIT License | github.com/necolas/normalize.css */
 /**
  * 1. Change the default font family in all browsers (opinionated).
@@ -466,8 +462,6 @@ textarea {
   padding-left: 15px;
   max-width: 1140px;
   margin: 0 auto;
-  border-left: 1px solid red;
-  border-right: 1px solid red;
 }
 
 .row {
@@ -534,7 +528,8 @@ textarea {
 
 body {
   font-family: 'Nunito Sans', sans-serif;
-  color: #383838;
+  color: #333333;
+  background-color: #faf9f9;
 }
 
 html {
@@ -584,12 +579,11 @@ nav {
 .section_header h2 {
   font-size: 24px;
   margin: 0;
-  padding: 0;
+  padding: 0 10px;
 }
 
 .header_container {
   text-align: left;
-  margin-left: 14px;
 }
 
 .header_container_main {
@@ -610,8 +604,8 @@ nav {
   font-size: 18px;
   font-weight: 700;
   letter-spacing: 0.6px;
-  -webkit-box-shadow: inset 0 0 0 60px #fafafa;
-          box-shadow: inset 0 0 0 60px #fafafa;
+  -webkit-box-shadow: inset 0 0 0 60px #faf9f9;
+          box-shadow: inset 0 0 0 60px #faf9f9;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
@@ -619,9 +613,9 @@ nav {
 
 .button:hover,
 .wpcf7-form-control.wpcf7-submit:hover {
-  -webkit-box-shadow: inset 0 0 0 0px #fafafa;
-          box-shadow: inset 0 0 0 0px #fafafa;
-  color: #fafafa;
+  -webkit-box-shadow: inset 0 0 0 0px #faf9f9;
+          box-shadow: inset 0 0 0 0px #faf9f9;
+  color: #faf9f9;
   outline: none;
 }
 
@@ -1062,7 +1056,7 @@ nav {
     display: none;
   }
   .toggle-main-nav {
-    top: 16px;
+    top: 15px;
   }
 }
 
@@ -1752,7 +1746,11 @@ div.wpcf7-acceptance-missing {
 .price .section_header h2 {
   font-size: 22px;
   margin: 0;
-  padding: 0;
+  padding: 0 10px;
+}
+
+.section_single_page.price .single_page_box .section_header {
+  margin-bottom: 45px;
 }
 
 .accordion_tab {
@@ -1905,6 +1903,10 @@ aside h2 {
   padding: 0;
 }
 
+aside .header_container {
+  margin-left: 14px;
+}
+
 .aside_nav_list {
   list-style: none;
   padding: 0;
@@ -1984,6 +1986,10 @@ aside h2 {
   padding-right: 50px;
 }
 
+.services_single_page.section_header {
+  margin-bottom: 35px;
+}
+
 .section_single_page {
   padding-top: 20px;
 }
@@ -1991,7 +1997,7 @@ aside h2 {
 .services_single_page.section_header h3 {
   font-size: 22px;
   margin: 0;
-  padding: 0;
+  padding: 0 10px;
 }
 
 .services_single_page.photo {
@@ -2137,13 +2143,12 @@ aside h2 {
 
 .single.section_header h3 {
   margin: 0;
-  padding: 0;
+  padding: 0 10px;
 }
 
 .single.section_header {
   margin-bottom: 20px;
   margin-top: 20px;
-  margin-left: 10px;
 }
 
 .single.section_header::after {
@@ -2153,7 +2158,11 @@ aside h2 {
 .single_page.section_header h3 {
   font-size: 22px;
   margin: 0;
-  padding: 0;
+  padding: 0 10px;
+}
+
+.single_page.section_header {
+  margin-bottom: 40px;
 }
 
 a.single_link {

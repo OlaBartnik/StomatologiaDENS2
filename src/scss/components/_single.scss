@@ -1,13 +1,12 @@
 .single.section_header h3 {
     margin: 0;
-    padding: 0;
+    padding: 0 10px;
 
 }
 
 .single.section_header {
     margin-bottom: 20px;
     margin-top: 20px;
-    margin-left: 10px;
 
     &::after {
         height: 1px;
@@ -19,7 +18,12 @@
 .single_page.section_header h3 {
     font-size: 22px;
     margin: 0;
-    padding: 0;
+    padding: 0 10px;
+}
+
+
+.single_page.section_header {
+    margin-bottom: 40px;
 }
 
 a.single_link {
