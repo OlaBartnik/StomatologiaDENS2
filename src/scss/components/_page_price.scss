@@ -119,6 +119,15 @@ th.column-2 {
 
 @media (max-width:768px) {
 
+
+    .section_single_page.price .section_header {
+        margin-bottom: 30px;
+    }
+
+    .section_single_page.price .banner_text.container {
+        margin-bottom: 55px;
+    }
+
     td.column-2,
     th.column-2 {
         width: 130px;

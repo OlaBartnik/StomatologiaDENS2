@@ -43,9 +43,19 @@
 }
 
 @media (max-width: 768px) {
+
+
+    .section_aboutUs_gallery .banner_text.container {
+        margin-bottom: 55px;
+    }
+
     .section_aboutUs_gallery .slick-slide img {
         max-width: 180px;
 
+    }
+
+    .section_aboutUs_gallery .section_header {
+        margin-bottom: 30px;
     }
 
 
@@ -86,14 +96,14 @@
 }
 
 
-@media (max-width: 375px) {
+// @media (max-width: 375px) {
 
-    .aboutUs_media {
-        font-size: 1.4em;
-    }
-
-
+//     .aboutUs_media {
+//         font-size: 1.4em;
+//     }
 
 
 
-}
+
+
+// }

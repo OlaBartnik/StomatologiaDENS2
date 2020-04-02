@@ -23,7 +23,7 @@ get_header(); ?>
      <div class="header_container">
 
  <header class="single_page section_header">
- <h3>Oferty pracy</h3>
+ <h3>Praca w naszym gabinecie</h3>
         </header>
 </div>
 
@@ -38,9 +38,9 @@ get_header(); ?>
 
 
                 <div class="col-4-12">
-                <aside>
+                <aside class="aside_job_offers">
   <div class="header_container">
-  <h2 class="section_header">Aktualne oferty pracy</h2>
+  <h2 class="section_header">Oferty pracy</h2>
     </div>
 
 

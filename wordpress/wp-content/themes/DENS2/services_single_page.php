@@ -9,7 +9,7 @@ get_header(); ?>
 <?php if (have_posts()): ?>
     <?php while (have_posts()) : the_post(); ?>
 
-    <section class="section_single_page">
+    <section class="section_single_page_services">
         <!-- <div class="banner"> -->
             <div class="banner_text container">
             Piękny uśmiech i zdrowe zęby to dobre samopoczucie każdego dnia.<br>

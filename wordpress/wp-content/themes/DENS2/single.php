@@ -22,7 +22,7 @@ get_header(); ?>
 
 
  <header class="single_page section_header">
- <h3>Oferty pracy</h3>
+ <h3>Praca w naszym gabinecie</h3>
         </header>
 
 
@@ -35,7 +35,7 @@ get_header(); ?>
 	<?php if (have_posts()): ?>
 				<?php while (have_posts()) : the_post(); ?>
 
-					<header class="single section_header">
+					<header class="single section_header job_tittle">
 					<h3> <?php the_title(); ?> </h3> </header>
 
 
@@ -56,9 +56,9 @@ W aplikacji prosimy zawrzeć klauzulę:
 
 
                 <div class="col-4-12">
-                <aside>
+                <aside class="aside_job_offers">
   <div class="header_container">
-  <h2 class="section_header">Aktualne oferty pracy</h2>
+  <h2 class="section_header">Oferty pracy</h2>
     </div>
 				<?php $page = (get_query_var('paged')) ? get_query_var('paged') : 1; query_posts("showposts=20&paged=$page"); while ( have_posts() ) : the_post() ?>
 

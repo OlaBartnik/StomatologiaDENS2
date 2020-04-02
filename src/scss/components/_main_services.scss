@@ -3,3 +3,17 @@
     margin-bottom: 0px;
 
 }
+
+
+@include bp(310px, 'max') {
+    .section_sevices .box {
+        max-width: 250px;
+
+        & .box_photo_container {
+            height: 150px;
+        }
+
+    }
+
+
+}
