@@ -27,8 +27,7 @@ get_header('home');
                 <div class="col-4-12">
                     <div class="box">
                         <a href="http://localhost/stomatologia-zachowacza" class="box_photo">
-                            <div class="box_photo_container"><img src="<?php echo get_template_directory_uri(); ?>/images/Stomat.zachow._AdobeStock_100506477_Preview.jpeg"
-                                    alt="Stomatologia Zachowawcza">
+                            <div class="box_photo_container"><img src="<?php echo get_template_directory_uri(); ?>/images/Stomat_AdobeStock_100506477.jpeg" alt="Stomatologia Zachowawcza">
                             </div>
 
                             <h3 class="box_tittle">Stomatologia Zachowawcza</h3>
@@ -41,7 +40,7 @@ get_header('home');
                     <div class="box">
                         <a href="http://localhost/ortodoncja" class="box_photo">
                             <div class="box_photo_container">
-                                <img src="<?php echo get_template_directory_uri(); ?>/images/Ortodoncja_AdobeStock_248841020_Preview.jpeg" alt="Ortodoncja">
+                                <img src="<?php echo get_template_directory_uri(); ?>/images/Ortodoncja_AdobeStock_248841020.jpeg" alt="Ortodoncja">
                             </div>
                             <h3 class="box_tittle">Ortodoncja</h3>
                         </a>
@@ -52,7 +51,7 @@ get_header('home');
                     <div class="box">
                         <a href="http://localhost/chirurgia_implantologia" class="box_photo">
                             <div class="box_photo_container">
-                                <img src="<?php echo get_template_directory_uri(); ?>/images/Implanty.jpg" alt="Chirurgia Stomatologiczna Implantologia">
+                                <img src="<?php echo get_template_directory_uri(); ?>/images/Implanty_AdobeStock_285654067.jpeg" alt="Chirurgia Stomatologiczna Implantologia">
                             </div>
                             <h3 class=" box_tittle">Chirurgia Stomatologiczna Implantologia</h3>
                         </a>
@@ -67,7 +66,7 @@ get_header('home');
                     <div class="box">
                         <a href="http://localhost/protetyka" class="box_photo">
                             <div class="box_photo_container">
-                                <img src="<?php echo get_template_directory_uri(); ?>/images/Protetyka_AdobeStock_269155967_Preview.jpeg" alt="Protetyka">
+                                <img src="<?php echo get_template_directory_uri(); ?>/images/Protetyka_AdobeStock_269155967.jpeg" alt="Protetyka">
                             </div>
                             <h3 class="box_tittle">Protetyka</h3>
                         </a>
@@ -78,7 +77,7 @@ get_header('home');
                     <div class="box">
                         <a href="http://localhost/zdjecia_rtg" class="box_photo">
                             <div class="box_photo_container">
-                                <img src="<?php echo get_template_directory_uri(); ?>/images/RTG_AdobeStock_206079798_Preview.jpeg" alt="Zdjęcia RTG">
+                                <img src="<?php echo get_template_directory_uri(); ?>/images/RTG_AdobeStock_206079798.jpeg" alt="Zdjęcia RTG">
                             </div>
                             <h3 class="box_tittle">Zdjęcia RTG</h3>
                         </a>
