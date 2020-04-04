@@ -57,9 +57,11 @@ W aplikacji prosimy zawrzeć klauzulę:
 
                 <div class="col-4-12">
                 <aside class="aside_job_offers">
-  <div class="header_container">
-  <h2 class="section_header">Oferty pracy</h2>
-    </div>
+                <div class="header_container">
+            <header class="section_header">
+                <h2>Oferty pracy</h2>
+            </header>
+        </div>
 				<?php $page = (get_query_var('paged')) ? get_query_var('paged') : 1; query_posts("showposts=20&paged=$page"); while ( have_posts() ) : the_post() ?>
 
 				<div class="single_link_container">

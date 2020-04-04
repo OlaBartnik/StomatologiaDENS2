@@ -25,28 +25,12 @@ nav {
 }
 
 .section_header {
-    position: relative;
     margin-bottom: 50px;
     text-transform: uppercase;
     color: $color-main;
     display: inline-block;
+    border-bottom: 1px solid $color-hover;
 }
-
-.section_header::after {
-    display: block;
-    content: "";
-    height: 1px;
-    width: 110%;
-    background-color: $color-hover;
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-
-
-
-}
-
 
 
 .section_header h2 {
@@ -57,9 +41,12 @@ nav {
 }
 
 
+
+
+
 .header_container {
     text-align: left;
-    // margin-left: 14px;
+
 
 }
 

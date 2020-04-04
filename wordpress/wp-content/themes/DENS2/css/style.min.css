@@ -555,25 +555,11 @@ nav {
 }
 
 .section_header {
-  position: relative;
   margin-bottom: 50px;
   text-transform: uppercase;
   color: #333333;
   display: inline-block;
-}
-
-.section_header::after {
-  display: block;
-  content: "";
-  height: 1px;
-  width: 110%;
-  background-color: #30aebe;
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-      -ms-transform: translateX(-50%);
-          transform: translateX(-50%);
+  border-bottom: 1px solid #30aebe;
 }
 
 .section_header h2 {
@@ -811,23 +797,8 @@ nav {
   height: auto;
 }
 
-.contact_menu::after {
-  display: block;
-  content: "";
-  height: 1px;
-  background-color: #999999;
-}
-
-@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
-  .contact_menu::after {
-    height: 0.6px;
-  }
-}
-
-@supports (-ms-ime-align: auto) {
-  .contact_menu::after {
-    height: 0.6px;
-  }
+.contact_menu {
+  border-bottom: 1px solid #999999;
 }
 
 .header_logo {
@@ -932,7 +903,7 @@ nav {
 }
 
 .page_nav_toggle .page_nav_list_button_link {
-  padding-left: 20px;
+  padding-left: 10px;
 }
 
 .page_nav_toggle .page_nav_list_button_link span {
@@ -1051,9 +1022,11 @@ nav {
 }
 
 @media (max-width: 600px) {
-  .contact_nav,
-  .contact_menu::after {
+  .contact_nav {
     display: none;
+  }
+  .contact_menu {
+    border-bottom: none;
   }
   .toggle-main-nav {
     top: 15px;
@@ -1153,11 +1126,9 @@ nav {
   margin-top: 10px;
 }
 
-@media screen and (max-width: 768px) {
-  .aboutUs.box {
-    margin: 0;
-    margin-bottom: 45px;
-  }
+.section_aboutUs .header_container,
+.section_contact .header_container {
+  margin-bottom: 0px;
 }
 
 .section_aboutUS_photo {
@@ -1166,17 +1137,22 @@ nav {
   display: block;
 }
 
-.section_aboutUs .header_container,
-.section_contact .header_container {
-  margin-bottom: 0px;
-}
-
 .section_aboutUs_text {
   line-height: 150%;
 }
 
 .section_aboutUs_text P:first-child {
   margin-top: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .aboutUs.box {
+    margin: 0;
+    margin-bottom: 45px;
+  }
+  .section_aboutUs .header_container {
+    text-align: center;
+  }
 }
 
 #contact {
@@ -1893,18 +1869,14 @@ th.column-2 {
   }
 }
 
-aside {
-  padding-left: 15px;
-}
-
-aside h2 {
+aside .section_header h2 {
   font-size: 22px;
   margin: 0;
-  padding: 0;
+  padding: 0 10px;
 }
 
 aside .header_container {
-  margin-left: 14px;
+  margin-left: 8px;
 }
 
 .aside_nav_list {
@@ -2151,10 +2123,6 @@ aside .header_container {
   margin-top: 20px;
 }
 
-.single.section_header::after {
-  height: 1px;
-}
-
 .single_page.section_header h3 {
   font-size: 22px;
   margin: 0;
@@ -2315,6 +2283,12 @@ a.single_link {
     padding: 7px 15px;
     font-size: 14px;
   }
+}
+
+.aside_job_offers .section_header h2 {
+  font-size: 22px;
+  margin: 0;
+  padding: 0 10px;
 }
 
 @media (max-width: 768px) {

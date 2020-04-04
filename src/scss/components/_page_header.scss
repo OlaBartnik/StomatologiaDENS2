@@ -54,27 +54,11 @@
 
 }
 
-.contact_menu::after {
-    display: block;
-    content: "";
-    height: 1px;
-    background-color: lighten($color-main, 40%);
+.contact_menu {
+    border-bottom: 1px solid lighten($color-main, 40%);
+
 }
 
-@media screen and (-ms-high-contrast: active),
-(-ms-high-contrast: none) {
-    .contact_menu::after {
-        height: 0.6px;
-
-    }
-}
-
-@supports (-ms-ime-align:auto) {
-    .contact_menu::after {
-        height: 0.6px;
-
-    }
-}
 
 .header_logo {
     display: flex;
@@ -191,7 +175,7 @@
 }
 
 .page_nav_toggle .page_nav_list_button_link {
-    padding-left: 20px;
+    padding-left: 10px;
 
     & span {
         padding-left: 2px;
@@ -349,11 +333,13 @@
 
 @media (max-width:600px) {
 
-    .contact_nav,
-    .contact_menu::after {
+    .contact_nav {
         display: none;
     }
 
+    .contact_menu {
+        border-bottom: none;
+    }
 
     .toggle-main-nav {
         top: 15px;

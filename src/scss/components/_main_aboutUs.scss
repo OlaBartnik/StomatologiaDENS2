@@ -5,14 +5,12 @@
     margin-top: 10px;
 }
 
-@include bp(768px, 'max') {
-    .aboutUs.box {
-        margin: 0;
-        margin-bottom: 45px;
-    }
 
+
+.section_aboutUs .header_container,
+.section_contact .header_container {
+    margin-bottom: 0px;
 }
-
 
 .section_aboutUS_photo {
     max-width: 100%;
@@ -21,10 +19,7 @@
 }
 
 
-.section_aboutUs .header_container,
-.section_contact .header_container {
-    margin-bottom: 0px;
-}
+
 
 
 
@@ -36,4 +31,17 @@
 
 .section_aboutUs_text P:first-child {
     margin-top: 0;
+}
+
+@include bp(768px, 'max') {
+    .aboutUs.box {
+        margin: 0;
+        margin-bottom: 45px;
+    }
+
+    .section_aboutUs .header_container {
+        text-align: center;
+    }
+
+
 }

@@ -216,7 +216,7 @@ get_header('home');
  <!-- Icons made by <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons">Smashicons</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a> -->
 </div>
 
-<div class="phone_box"">
+<div class="phone_box">
             <p class="address_phone">
                 <strong>Telefon:</strong><br>(22) 632 99 11 <br>664 474 996
             </p>
@@ -250,7 +250,7 @@ get_header('home');
 
 
             <div class="job_box">
-            <a href="http://localhost/oferty-pracy/" class="job_link" target ="_blank">
+            <a href="http://localhost/oferty-pracy/" class="job_link">
             <img src="<?php echo get_template_directory_uri(); ?>/images/hiring.svg" alt="ofety pracy" class="contact_address job">Oferty pracy</a>
              <!-- Icons made by <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons">Smashicons</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a> -->
             </div>

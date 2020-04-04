@@ -2,8 +2,11 @@
 
   <aside>
   <div class="header_container">
-  <h2 class="section_header">Nasze usługi</h2>
-</div>
+            <header class="section_header">
+                <h2>Nasze usługi</h2>
+            </header>
+        </div>
+
   <ul class="aside_nav_list">
                             <li><a href="http://localhost/stomatologia-zachowacza"  class="sidebar_box">
 
