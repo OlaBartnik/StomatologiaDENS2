@@ -106,14 +106,28 @@ __webpack_require__.r(__webpack_exports__);
 
 
 $(function () {
-  Object(_price_table__WEBPACK_IMPORTED_MODULE_0__["default"])();
-  Object(_slider__WEBPACK_IMPORTED_MODULE_3__["default"])();
-  Object(_gallery__WEBPACK_IMPORTED_MODULE_2__["default"])();
-  Object(_menu_hamburger__WEBPACK_IMPORTED_MODULE_4__["default"])();
-
-  if ($(".p-main").children().hasClass("map")) {
+  // showPriceDetails();
+  // slider();
+  // gallery();
+  // showMenu();
+  // map();
+  // front-page
+  if ($("body").hasClass("page-id-11")) {
+    Object(_slider__WEBPACK_IMPORTED_MODULE_3__["default"])();
+    Object(_gallery__WEBPACK_IMPORTED_MODULE_2__["default"])();
+    Object(_menu_hamburger__WEBPACK_IMPORTED_MODULE_4__["default"])();
     Object(_map__WEBPACK_IMPORTED_MODULE_1__["default"])();
-  }
+  } // aboutUs_gallery
+  else if ($("body").hasClass("page-id-15")) {
+      Object(_slider__WEBPACK_IMPORTED_MODULE_3__["default"])();
+      Object(_gallery__WEBPACK_IMPORTED_MODULE_2__["default"])();
+      Object(_menu_hamburger__WEBPACK_IMPORTED_MODULE_4__["default"])(); // price
+    } else if ($("body").hasClass("page-id-43")) {
+      Object(_price_table__WEBPACK_IMPORTED_MODULE_0__["default"])();
+      Object(_menu_hamburger__WEBPACK_IMPORTED_MODULE_4__["default"])();
+    } else {
+      Object(_menu_hamburger__WEBPACK_IMPORTED_MODULE_4__["default"])();
+    }
 });
 
 /***/ }),

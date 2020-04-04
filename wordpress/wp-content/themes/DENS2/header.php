@@ -19,7 +19,7 @@
 </head>
 
 <body <?php body_class(); ?>>
-<!-- <body> -->
+
 
  <header class="page_header">
             <div class="contact_menu">

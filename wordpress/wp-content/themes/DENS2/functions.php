@@ -45,9 +45,9 @@ function noma_blank_header_scripts()
 		wp_enqueue_script('scripts');
 	}
 
-	else  {
 
-		wp_deregister_script('jquery');
+ 	else if (is_page (15)){
+	wp_deregister_script('jquery');
 		wp_register_script('jquery', get_template_directory_uri() . '/js/vendor/jquery.min.js', array(), '3.4.1', false);
 		wp_enqueue_script('jquery');
 
@@ -58,6 +58,20 @@ function noma_blank_header_scripts()
 
 		wp_register_script('fancybox', '//cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"', array(), '3.5.7', false);
 		wp_enqueue_script('fancybox');
+
+
+		wp_register_script('scripts', get_template_directory_uri() . '/js/scripts.js', array(), '1.0.0', true);
+		wp_enqueue_script('scripts');
+	}
+
+
+
+
+	else  {
+
+		wp_deregister_script('jquery');
+		wp_register_script('jquery', get_template_directory_uri() . '/js/vendor/jquery.min.js', array(), '3.4.1', false);
+		wp_enqueue_script('jquery');
 
 
 		wp_register_script('scripts', get_template_directory_uri() . '/js/scripts.js', array(), '1.0.0', true);
