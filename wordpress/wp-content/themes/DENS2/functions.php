@@ -1,12 +1,8 @@
 <?php
 
 
-// add_theme_support( 'post-thumbnails' );
 
-include('php/theme.php');
-// include('php/admin.php');
-// include('php/acf.php');
-// include('php/clean-wp.php');
+
 
 add_action( 'wp_head', 'my_custom_function' );
 //-----------------------------------------------------------
@@ -120,24 +116,7 @@ function custome_styles()
 
 
 
-//-----------------------------------------------------------
-//disable search action
-//-----------------------------------------------------------
-// add_filter('get_search_form', create_function('$a', "return null;")); //disable search
-// add_action('parse_query', 'fb_filter_query'); //disable search
-// function fb_filter_query($query, $error = true)
-// {
 
-// 	if (is_search() && !is_admin()) {
-// 		$query->is_search = false;
-// 		$query->query_vars[s] = false;
-// 		$query->query[s] = false;
-
-// 		// to error
-// 		if ($error == true)
-// 			$query->is_404 = true;
-// 	}
-// }
 
 
 //-----------------------------------------------------------
@@ -147,6 +126,14 @@ function my_function_admin_bar(){ return false; }
 add_filter( 'show_admin_bar' , 'my_function_admin_bar');
 
 
-// wdidget
+// remove updates
+
+
+function remove_core_updates(){
+	global $wp_version;return(object) array('last_checked'=> time(),'version_checked'=> $wp_version,);
+}
+// add_filter('pre_site_transient_update_core','remove_core_updates');
+add_filter('pre_site_transient_update_plugins','remove_core_updates');
+add_filter('pre_site_transient_update_themes','remove_core_updates');
 
 ?>
