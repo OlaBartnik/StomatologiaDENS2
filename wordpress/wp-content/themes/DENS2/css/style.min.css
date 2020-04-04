@@ -532,10 +532,6 @@ body {
   background-color: #faf9f9;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
 section {
   padding-top: 35px;
   padding-bottom: 20px;
@@ -1073,7 +1069,7 @@ nav {
 }
 
 .page_hero {
-  height: 100vh;
+  max-height: 100vh;
   position: relative;
   overflow: hidden;
 }
@@ -1104,6 +1100,10 @@ nav {
   -webkit-transform: translate(-50%);
       -ms-transform: translate(-50%);
           transform: translate(-50%);
+}
+
+#services {
+  padding-bottom: 50px;
 }
 
 .section_sevices .header_container_main {
@@ -1157,9 +1157,14 @@ nav {
 
 #contact {
   margin-bottom: 60px;
+  padding-top: 80px;
 }
 
 #contact .section_header {
+  margin-bottom: 0px;
+}
+
+.section_contact .banner_text.container {
   margin-bottom: 0px;
 }
 

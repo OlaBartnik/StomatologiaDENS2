@@ -128,6 +128,10 @@ $(function () {
     } else {
       Object(_menu_hamburger__WEBPACK_IMPORTED_MODULE_4__["default"])();
     }
+
+  var scroll = new SmoothScroll('.page_nav a[href*="#"]', {
+    speed: 800
+  });
 });
 
 /***/ }),

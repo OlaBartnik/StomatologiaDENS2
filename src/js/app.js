@@ -37,7 +37,8 @@ $(function () {
     }
 
 
-
-
+    const scroll = new SmoothScroll('.page_nav a[href*="#"]', {
+        speed: 800
+    });
 
 });
