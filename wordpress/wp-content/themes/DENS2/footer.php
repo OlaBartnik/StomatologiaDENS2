@@ -15,9 +15,10 @@
                     <nav class="footer_nav">
                         <ul class="footer_nav_list">
                             <li><a href="/#contact">Kontakt</a></li>
+                            <li><a href="http://localhost/NFZ/">NFZ</a></li>
                             <li><a href="http://localhost/oferty-pracy/">Oferty pracy </a></li>
                             <li><a href="http://localhost/polityka-prywatnosci" target ="_blank">Polityka prywatności</a></li>
-                            <li><a href="/">Mapa strony</a></li>
+
 
                         </ul>
                     </nav>

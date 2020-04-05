@@ -3,24 +3,22 @@ import map from "./map";
 import gallery from "./gallery";
 import slider from "./slider";
 import showMenu from "./menu_hamburger";
-
+import vhResize from "./vhResize";
 
 
 $(function () {
 
-
-    // showPriceDetails();
-    // slider();
-    // gallery();
-    // showMenu();
-    // map();
-
     // front-page
     if ($("body").hasClass("page-id-11")) {
+        vhResize();
         slider();
         gallery();
         showMenu();
         map();
+
+        const scroll = new SmoothScroll('.page_nav a[href*="#"]', {
+            speed: 800
+        });
     }
     // aboutUs_gallery
     else if ($("body").hasClass("page-id-15")) {
@@ -37,8 +35,7 @@ $(function () {
     }
 
 
-    const scroll = new SmoothScroll('.page_nav a[href*="#"]', {
-        speed: 800
-    });
+
+
 
 });

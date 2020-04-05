@@ -100,23 +100,24 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _gallery__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./gallery */ "./src/js/gallery.js");
 /* harmony import */ var _slider__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./slider */ "./src/js/slider.js");
 /* harmony import */ var _menu_hamburger__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./menu_hamburger */ "./src/js/menu_hamburger.js");
+/* harmony import */ var _vhResize__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./vhResize */ "./src/js/vhResize.js");
+
 
 
 
 
 
 $(function () {
-  // showPriceDetails();
-  // slider();
-  // gallery();
-  // showMenu();
-  // map();
   // front-page
   if ($("body").hasClass("page-id-11")) {
+    Object(_vhResize__WEBPACK_IMPORTED_MODULE_5__["default"])();
     Object(_slider__WEBPACK_IMPORTED_MODULE_3__["default"])();
     Object(_gallery__WEBPACK_IMPORTED_MODULE_2__["default"])();
     Object(_menu_hamburger__WEBPACK_IMPORTED_MODULE_4__["default"])();
     Object(_map__WEBPACK_IMPORTED_MODULE_1__["default"])();
+    var scroll = new SmoothScroll('.page_nav a[href*="#"]', {
+      speed: 800
+    });
   } // aboutUs_gallery
   else if ($("body").hasClass("page-id-15")) {
       Object(_slider__WEBPACK_IMPORTED_MODULE_3__["default"])();
@@ -128,10 +129,6 @@ $(function () {
     } else {
       Object(_menu_hamburger__WEBPACK_IMPORTED_MODULE_4__["default"])();
     }
-
-  var scroll = new SmoothScroll('.page_nav a[href*="#"]', {
-    speed: 800
-  });
 });
 
 /***/ }),
@@ -291,6 +288,52 @@ function slider() {
 
 ;
 /* harmony default export */ __webpack_exports__["default"] = (slider);
+
+/***/ }),
+
+/***/ "./src/js/vhResize.js":
+/*!****************************!*\
+  !*** ./src/js/vhResize.js ***!
+  \****************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+// 100vh on mobile like  ios
+//zabezpiecznie by resize nie wywoływał się zbyt często i nie wywoływło blokady
+function vhResize() {
+  function debounced(delay, fn) {
+    var timerId;
+    return function () {
+      for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
+        args[_key] = arguments[_key];
+      }
+
+      if (timerId) {
+        clearTimeout(timerId);
+      }
+
+      timerId = setTimeout(function () {
+        fn.apply(void 0, args);
+        timerId = null;
+      }, delay);
+    };
+  }
+
+  var hero = document.querySelector(".page_hero "); //po wejściu na stronę
+
+  hero.style.height = window.innerHeight + "px"; //i po zmianie rozmiarów okna
+
+  function resizeContent() {
+    console.log("Rozmiar okna: ".concat(window.innerWidth, " x ").concat(window.innerHeight));
+    hero.style.height = window.innerHeight + "px";
+  }
+
+  window.addEventListener("resize", debounced(200, resizeContent));
+}
+
+/* harmony default export */ __webpack_exports__["default"] = (vhResize);
 
 /***/ })
 
