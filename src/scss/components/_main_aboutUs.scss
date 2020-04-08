@@ -35,13 +35,17 @@
 
 @include bp(768px, 'max') {
     .aboutUs.box {
-        margin: 0;
-        margin-bottom: 45px;
+        margin: 0 auto 45px auto;
+
     }
 
     .section_aboutUs .header_container {
         text-align: center;
     }
 
-
+    .aboutUs_button_container {
+        padding-top: 15px;
+        display: flex;
+        justify-content: center;
+    }
 }

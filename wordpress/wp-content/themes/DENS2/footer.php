@@ -45,9 +45,10 @@
 
             <div class="footer_contact">
                     <div class="footer_contact footer_phones">
-                    Skontaktuj się z nami:<br>
-                Tel. (22) 632 99 11 <br>Tel. 664 474 996 </div>
-
+                    Skontaktuj się z nami:
+                    <a href="tel: 22 632 99 11">Tel. (22) 632 99 11</a>
+                    <a href="tel: 664 474 996">Tel. 664 474 996 </a>
+</div>
                 <div class="footer_contact footer_email">
                 <a href="mailto:aleksandra.dadacz@gmail.com" class="footer_contact footer_email">
                     Email:<br>

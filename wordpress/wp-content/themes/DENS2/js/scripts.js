@@ -240,6 +240,9 @@ function showMenu() {
     event.preventDefault();
     $(".page_nav_toggle .page_nav_sublist").toggleClass("show");
   });
+  $(".toggle-main-nav").on("click", function (event) {
+    $(".toggle-main-nav span").toggleClass("click");
+  });
 }
 
 /* harmony default export */ __webpack_exports__["default"] = (showMenu);

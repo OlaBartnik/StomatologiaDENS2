@@ -210,6 +210,8 @@
     &:focus {
         outline: none;
     }
+
+
 }
 
 // dodatkowe menu
@@ -248,6 +250,10 @@
 
 }
 
+.click {
+    background: darken($color-hover, 2%) !important;
+}
+
 
 
 
@@ -269,9 +275,7 @@
 
     }
 
-    .toggle-main-nav:hover span {
-        background: darken($color-hover, 2%);
-    }
+
 
 
     .header_logo {

@@ -640,6 +640,9 @@ nav {
     font-size: 16px;
     padding-top: 65px;
   }
+  .header_container {
+    text-align: center;
+  }
 }
 
 @media screen and (max-width: 660px) {
@@ -972,6 +975,10 @@ nav {
   border-bottom: 1px solid #b3b3b3;
 }
 
+.click {
+  background: #2ea7b6 !important;
+}
+
 @media (max-width: 768px) {
   .contact_nav {
     max-width: calc(100% - 60px);
@@ -982,9 +989,6 @@ nav {
   }
   .toggle-main-nav {
     display: block;
-  }
-  .toggle-main-nav:hover span {
-    background: #2ea7b6;
   }
   .header_logo {
     margin: 0 auto;
@@ -1155,11 +1159,19 @@ nav {
 
 @media screen and (max-width: 768px) {
   .aboutUs.box {
-    margin: 0;
-    margin-bottom: 45px;
+    margin: 0 auto 45px auto;
   }
   .section_aboutUs .header_container {
     text-align: center;
+  }
+  .aboutUs_button_container {
+    padding-top: 15px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
@@ -1301,9 +1313,13 @@ span.wpcf7-not-valid-tip {
     margin: 0;
   }
   .submit_container {
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  div.wpcf7-form-control-wrap {
+    padding-left: 0px;
   }
   .recaptcha {
     margin-right: 35px;
@@ -1469,6 +1485,11 @@ div.wpcf7-acceptance-missing {
 
 .address_phone {
   margin-bottom: 20px;
+}
+
+.address_phone a {
+  text-decoration: none;
+  color: #333333;
 }
 
 .address_hours {
@@ -1678,6 +1699,11 @@ div.wpcf7-acceptance-missing {
 .footer_contact.footer_phones {
   margin-bottom: 14px;
   margin-top: 17px;
+}
+
+.footer_contact.footer_phones a {
+  text-decoration: none;
+  color: #333333;
 }
 
 .footer_contact.footer_address strong {
@@ -2319,6 +2345,9 @@ a.single_link {
         -ms-flex-direction: column;
             flex-direction: column;
     margin-top: 50px;
+  }
+  aside.aside_job_offers .header_container {
+    text-align: left;
   }
   .single_page_box {
     min-height: 50vh;

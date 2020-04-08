@@ -217,9 +217,10 @@ get_header('home');
 </div>
 
 <div class="phone_box">
-            <p class="address_phone">
-                <strong>Telefon:</strong><br>(22) 632 99 11 <br>664 474 996
-            </p>
+            <div class="address_phone">
+                <a href="tel: 22 632 99 11">Tel. (22) 632 99 11</a> <br>
+                <a href="tel: 664 474 996">Tel. 664 474 996 </a>
+            </div>
 
 
             <p class="address_hours"><strong>Godziny otwarcia:</strong><br>pon. - piąt.:  09:00 - 20:00

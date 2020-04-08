@@ -142,8 +142,13 @@ span.wpcf7-not-valid-tip {
     }
 
     .submit_container {
-        justify-content: flex-start;
+        flex-direction: column;
 
+
+    }
+
+    div.wpcf7-form-control-wrap {
+        padding-left: 0px;
     }
 
     .recaptcha {
@@ -336,6 +341,11 @@ div.wpcf7-acceptance-missing {
 
 .address_phone {
     margin-bottom: 20px;
+}
+
+.address_phone a {
+    text-decoration: none;
+    color: $color-main;
 }
 
 .address_hours {
