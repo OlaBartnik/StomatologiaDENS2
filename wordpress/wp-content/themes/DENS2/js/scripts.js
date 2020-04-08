@@ -284,6 +284,9 @@ function slider() {
     pauseOnFocus: false,
     pauseOnHover: false
   });
+  $('.autoplay').on('touchstart', function (e) {
+    $('.autoplay').slick('slickPlay');
+  });
 }
 
 ;
@@ -323,11 +326,22 @@ function vhResize() {
 
   var hero = document.querySelector(".page_hero "); //po wejściu na stronę
 
-  hero.style.height = window.innerHeight + "px"; //i po zmianie rozmiarów okna
+  hero.style.height = window.innerHeight + "px"; //
+  //i po zmianie rozmiarów okna
+
+  var windowWidth = window.innerWidth;
 
   function resizeContent() {
     console.log("Rozmiar okna: ".concat(window.innerWidth, " x ").concat(window.innerHeight));
     hero.style.height = window.innerHeight + "px";
+
+    if (window.innerWidth == windowWidth) {
+      hero.style.transition = "height 1s";
+    } else {
+      hero.style.transition = "height 0s";
+    }
+
+    windowWidth = window.innerWidth;
   }
 
   window.addEventListener("resize", debounced(200, resizeContent));

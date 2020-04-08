@@ -1,9 +1,4 @@
-
-
-
-
 function slider() {
-
 
     $('.autoplay').slick({
         slidesToShow: 1,
@@ -15,6 +10,13 @@ function slider() {
         pauseOnHover: false
 
     });
+
+    $('.autoplay').on('touchstart', e => {
+        $('.autoplay').slick('slickPlay');
+    });
+
+
+
 
 
 };

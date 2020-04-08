@@ -164,7 +164,7 @@
 
 .page_nav_toggle .page_nav_sublist {
     display: none;
-    z-index: 10000;
+    z-index: 100;
 
 }
 
@@ -194,7 +194,7 @@
     background: none;
     border: 0;
     cursor: pointer;
-    z-index: 10000;
+    z-index: 100;
 
 
     span {
@@ -227,7 +227,7 @@
     background: white;
     transition: 1s left;
     box-shadow: 1px 0 10px rgba(black, 0.4);
-    z-index: 1000000;
+    z-index: 100;
     overflow: auto;
 
 

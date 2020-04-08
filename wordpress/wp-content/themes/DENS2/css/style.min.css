@@ -526,10 +526,17 @@ textarea {
           box-sizing: border-box;
 }
 
+html {
+  height: 100%;
+}
+
 body {
+  height: 100%;
   font-family: 'Nunito Sans', sans-serif;
   color: #333333;
   background-color: #faf9f9;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
 }
 
 section {
@@ -890,7 +897,7 @@ nav {
 
 .page_nav_toggle .page_nav_sublist {
   display: none;
-  z-index: 10000;
+  z-index: 100;
 }
 
 .page_nav_toggle .page_nav_list_button {
@@ -916,7 +923,7 @@ nav {
   background: none;
   border: 0;
   cursor: pointer;
-  z-index: 10000;
+  z-index: 100;
 }
 
 .toggle-main-nav span {
@@ -951,7 +958,7 @@ nav {
   transition: 1s left;
   -webkit-box-shadow: 1px 0 10px rgba(0, 0, 0, 0.4);
           box-shadow: 1px 0 10px rgba(0, 0, 0, 0.4);
-  z-index: 1000000;
+  z-index: 100;
   overflow: auto;
 }
 
@@ -1082,6 +1089,7 @@ nav {
 }
 
 .main_banner_addon {
+  z-index: 10;
   position: absolute;
   bottom: -1px;
   left: 50%;
@@ -1092,9 +1100,10 @@ nav {
 }
 
 .main_banner_arrow {
+  z-index: 10;
   position: absolute;
   height: 20px;
-  bottom: 1.2%;
+  bottom: 1.5%;
   left: 50%;
   -webkit-transform: translate(-50%);
       -ms-transform: translate(-50%);
@@ -1955,7 +1964,6 @@ aside .header_container {
 
 .single_page_box {
   border-right: 1px solid #30aebe;
-  min-height: 70vh;
 }
 
 .row .col-8-12.single_page_box {

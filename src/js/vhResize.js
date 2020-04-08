@@ -21,15 +21,36 @@ function vhResize() {
 
     //po wejściu na stronę
     hero.style.height = window.innerHeight + "px";
+    //
+
+
 
 
     //i po zmianie rozmiarów okna
+
+    var windowWidth = window.innerWidth;
+
     function resizeContent() {
-        console.log(`Rozmiar okna: ${window.innerWidth} x ${window.innerHeight}`);
+
+        console.log(`Rozmiar okna: ${window.innerWidth} x ${window.innerHeight}`)
         hero.style.height = window.innerHeight + "px";
+
+        if (window.innerWidth == windowWidth) {
+
+            hero.style.transition = "height 1s";
+        } else {
+            hero.style.transition = "height 0s";
+        }
+        windowWidth = window.innerWidth;
     }
 
+
     window.addEventListener("resize", debounced(200, resizeContent));
+
+
+
+
+
 
 }
 

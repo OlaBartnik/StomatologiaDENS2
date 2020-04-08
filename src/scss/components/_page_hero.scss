@@ -15,9 +15,6 @@
 
 
 
-// .autoplay {
-//     height: 100vh;
-// }
 
 .slider {
     height: 100vh;
@@ -28,7 +25,10 @@
 }
 
 
+
+
 .main_banner_addon {
+    z-index: 10;
     position: absolute;
     bottom: -1px;
     left: 50%;
@@ -38,9 +38,14 @@
 }
 
 .main_banner_arrow {
+    z-index: 10;
     position: absolute;
     height: 20px;
-    bottom: 1.2%;
+    bottom: 1.5%;
     left: 50%;
     transform: translate(-50%);
 }
+
+// #cookie-notice {
+//     z-index: 10000;
+// }
