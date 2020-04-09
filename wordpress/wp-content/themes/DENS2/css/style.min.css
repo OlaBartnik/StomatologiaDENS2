@@ -1087,7 +1087,6 @@ nav {
 
 .slider {
   height: 100vh;
-  width: 100%;
   background-size: cover;
   background-position: center;
 }
@@ -1132,7 +1131,7 @@ nav {
 }
 
 .aboutUs.box {
-  max-width: 300px;
+  max-width: 260px;
   margin-left: auto;
   margin-right: auto;
   margin-top: 10px;
@@ -1155,6 +1154,14 @@ nav {
 
 .section_aboutUs_text P:first-child {
   margin-top: 0;
+}
+
+.aboutUs_button_container {
+  margin-top: 35px;
+}
+
+.aboutUs_button_container a {
+  display: inline-block;
 }
 
 @media screen and (max-width: 768px) {

@@ -1,5 +1,5 @@
 .aboutUs.box {
-    max-width: 300px;
+    max-width: 260px;
     margin-left: auto;
     margin-right: auto;
     margin-top: 10px;
@@ -31,6 +31,14 @@
 
 .section_aboutUs_text P:first-child {
     margin-top: 0;
+}
+
+.aboutUs_button_container {
+    margin-top: 35px;
+}
+
+.aboutUs_button_container a {
+    display: inline-block;
 }
 
 @include bp(768px, 'max') {

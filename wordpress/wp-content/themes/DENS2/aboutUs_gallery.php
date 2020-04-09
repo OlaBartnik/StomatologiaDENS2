@@ -47,33 +47,53 @@ get_header(); ?>
 
 
 
- <a class="group" rel="group1" href="<?php echo get_template_directory_uri(); ?>/images/slider.jpg"><img src="<?php echo get_template_directory_uri(); ?>/images/slider_smal.jpg" alt=""/></a>
+ <a class="group" rel="group1" href="<?php echo get_template_directory_uri(); ?>/images/gallery1.jpg"><img src="<?php echo get_template_directory_uri(); ?>/images/gallery1_small.jpg" alt=""/></a>
 
 
 
- <a class="group" rel="group1" href="<?php echo get_template_directory_uri(); ?>/images/slider2.jpg"><img src="<?php echo get_template_directory_uri(); ?>/images/slider2_smal.jpg" alt=""/></a>
+ <a class="group" rel="group1" href="<?php echo get_template_directory_uri(); ?>/images/gallery2.jpg"><img src="<?php echo get_template_directory_uri(); ?>/images/gallery2_small.jpg" alt=""/></a>
 
 
 
- <a class="group" rel="group1" href="<?php echo get_template_directory_uri(); ?>/images/slider3.jpg"><img src="<?php echo get_template_directory_uri(); ?>/images/slider3_smal.jpg" alt=""/></a>
+ <a class="group" rel="group1" href="<?php echo get_template_directory_uri(); ?>/images/gallery3.jpg"><img src="<?php echo get_template_directory_uri(); ?>/images/gallery3_small.jpg" alt=""/></a>
 
 
 
  </div>
 
+
+ <div class="gallery">
+
+
+
+ <a class="group" rel="group1" href="<?php echo get_template_directory_uri(); ?>/images/gallery4.jpg"><img src="<?php echo get_template_directory_uri(); ?>/images/gallery4_small.jpg" alt=""/></a>
+
+
+
+ <a class="group" rel="group1" href="<?php echo get_template_directory_uri(); ?>/images/gallery5.jpg"><img src="<?php echo get_template_directory_uri(); ?>/images/gallery5_small.jpg" alt=""/></a>
+
+
+
+ <a class="group" rel="group1" href="<?php echo get_template_directory_uri(); ?>/images/gallery6.jpg"><img src="<?php echo get_template_directory_uri(); ?>/images/gallery6_small.jpg" alt=""/></a>
+
+
+
+ </div>
+
+
  <div class="gallery last_row">
 
 
 
- <a class="group" rel="group1" href="<?php echo get_template_directory_uri(); ?>/images/slider.jpg"><img src="<?php echo get_template_directory_uri(); ?>/images/slider_smal.jpg" alt=""/></a>
+ <a class="group" rel="group1" href="<?php echo get_template_directory_uri(); ?>/images/gallery7.jpg"><img src="<?php echo get_template_directory_uri(); ?>/images/gallery7_small.jpg" alt=""/></a>
 
 
 
- <a class="group" rel="group1" href="<?php echo get_template_directory_uri(); ?>/images/slider2.jpg"><img src="<?php echo get_template_directory_uri(); ?>/images/slider2_smal.jpg" alt=""/></a>
+ <a class="group" rel="group1" href="<?php echo get_template_directory_uri(); ?>/images/gallery8.jpg"><img src="<?php echo get_template_directory_uri(); ?>/images/gallery8_small.jpg" alt=""/></a>
 
 
 
- <a class="group" rel="group1" href="<?php echo get_template_directory_uri(); ?>/images/slider3.jpg"><img src="<?php echo get_template_directory_uri(); ?>/images/slider3_smal.jpg" alt=""/></a>
+ <a class="group" rel="group1" href="<?php echo get_template_directory_uri(); ?>/images/gallery9.jpg"><img src="<?php echo get_template_directory_uri(); ?>/images/gallery9_small.jpg" alt=""/></a>
 
 
 

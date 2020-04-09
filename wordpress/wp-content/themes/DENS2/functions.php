@@ -84,6 +84,22 @@ function noma_blank_header_scripts()
 
 
 
+//add defer to scripts
+
+// function add_defer_attribute($tag, $handle) {
+// 	// add script handles to the array below
+// 	$scripts_to_defer = array('mapbox', 'slick', 'fancybox', 'smoothScroll', 'jquery');
+
+// 	foreach($scripts_to_defer as $defer_script) {
+// 	   if ($defer_script === $handle) {
+// 		  return str_replace(' src', ' defer src', $tag);
+// 	   }
+// 	}
+// 	return $tag;
+//  }
+
+
+//  add_filter('script_loader_tag', 'add_defer_attribute', 10, 2);
 
 //-----------------------------------------------------------
 // Load custome_styles
@@ -118,7 +134,6 @@ function custome_styles()
 
 
 
-
 //-----------------------------------------------------------
 //hide admin bar margin 32px
 //-----------------------------------------------------------
@@ -132,7 +147,7 @@ add_filter( 'show_admin_bar' , 'my_function_admin_bar');
 function remove_core_updates(){
 	global $wp_version;return(object) array('last_checked'=> time(),'version_checked'=> $wp_version,);
 }
-// add_filter('pre_site_transient_update_core','remove_core_updates');
+add_filter('pre_site_transient_update_core','remove_core_updates');
 add_filter('pre_site_transient_update_plugins','remove_core_updates');
 add_filter('pre_site_transient_update_themes','remove_core_updates');
 

@@ -27,7 +27,7 @@ get_header('home');
                 <div class="col-4-12">
                     <div class="box">
                         <a href="http://localhost/stomatologia-zachowacza" class="box_photo">
-                            <div class="box_photo_container"><img src="<?php echo get_template_directory_uri(); ?>/images/Stomatologia_100506477.jpg" alt="Stomatologia Zachowawcza">
+                            <div class="box_photo_container"><img src="<?php echo get_template_directory_uri(); ?>/images/Stomatologia.jpg" alt="Stomatologia Zachowawcza">
                             </div>
 
                             <h3 class="box_tittle">Stomatologia Zachowawcza</h3>
@@ -40,7 +40,7 @@ get_header('home');
                     <div class="box">
                         <a href="http://localhost/ortodoncja" class="box_photo">
                             <div class="box_photo_container">
-                                <img src="<?php echo get_template_directory_uri(); ?>/images/Ortodoncja_AdobeStock_248841020.jpg" alt="Ortodoncja">
+                                <img src="<?php echo get_template_directory_uri(); ?>/images/Ortodoncja.jpg" alt="Ortodoncja">
                             </div>
                             <h3 class="box_tittle">Ortodoncja</h3>
                         </a>
@@ -51,7 +51,7 @@ get_header('home');
                     <div class="box">
                         <a href="http://localhost/chirurgia_implantologia" class="box_photo">
                             <div class="box_photo_container">
-                                <img src="<?php echo get_template_directory_uri(); ?>/images/Implanty_AdobeStock_285654067.jpg" alt="Chirurgia Stomatologiczna Implantologia">
+                                <img src="<?php echo get_template_directory_uri(); ?>/images/Implanty.jpg" alt="Chirurgia Stomatologiczna Implantologia">
                             </div>
                             <h3 class=" box_tittle">Chirurgia Stomatologiczna Implantologia</h3>
                         </a>
@@ -66,7 +66,7 @@ get_header('home');
                     <div class="box">
                         <a href="http://localhost/protetyka" class="box_photo">
                             <div class="box_photo_container">
-                                <img src="<?php echo get_template_directory_uri(); ?>/images/Protetyka_AdobeStock_269155967.jpg" alt="Protetyka">
+                                <img src="<?php echo get_template_directory_uri(); ?>/images/Protetyka.jpg" alt="Protetyka">
                             </div>
                             <h3 class="box_tittle">Protetyka</h3>
                         </a>
@@ -77,7 +77,7 @@ get_header('home');
                     <div class="box">
                         <a href="http://localhost/zdjecia_rtg" class="box_photo">
                             <div class="box_photo_container">
-                                <img src="<?php echo get_template_directory_uri(); ?>/images/RTG_AdobeStock_206079798.jpg" alt="Zdjęcia RTG">
+                                <img src="<?php echo get_template_directory_uri(); ?>/images/RTG.jpg" alt="Zdjęcia RTG">
                             </div>
                             <h3 class="box_tittle">Zdjęcia RTG</h3>
                         </a>
@@ -112,7 +112,7 @@ get_header('home');
 
         </div>
 
-        <div class="container">
+        <!-- <div class="container">
             <div class="row">
                 <div class="col-6-12">
 
@@ -127,37 +127,50 @@ get_header('home');
 
                 </div>
             </div>
-        </div>
+        </div> -->
 
 
         <div class="container">
             <div class="row">
                 <div class="col-6-12">
                     <div class="aboutUs box">
-                        <img src="<?php echo get_template_directory_uri(); ?>/images/gabinet.jpg" alt="Dens2 Klinika" class="section_aboutUS_photo"></div>
+                        <img src="<?php echo get_template_directory_uri(); ?>/images/wizytowka.jpg" alt="Dens2 Klinika" class="section_aboutUS_photo"></div>
                 </div>
 
                 <div class="col-6-12">
+
+                <div class="header_container">
+                    <header class="section_header">
+                    <h2>Nasza Klinika</h2>
+                    </header>
+                </div>
+
                     <div class="section_aboutUs_article">
                         <div class="section_aboutUs_text">
                             <p>W trosce o satysfakcję i komfort naszych pacjentów oferujemy pełen zakres zabiegów stomatologicznych. Zaczynając od stomatologii zachowawczej, stomatologii estetycznej, poprzez, endodoncję implantologię, protetykę, ortodoncję nie zapominając o stomatologii dziecięcej.</p>
                             <p>Dysponujemy nowocześnie wyposażonymi gabinetami oraz wykwalifikowanym personelem  </p>
                             <p>Świadczymy usługi z zakresu stomatologi zachowawczej, stomatologi dziecięcej, endodoncji, chirurgi, protetyki i ortodoncji.</p>
+                        </div>
+
+
+                    <div class="aboutUs_button_container">
+                        <a href="http://localhost/klinika/" class="button">Więcej</a>
                     </div>
 
-                    </div>
+
+                </div>
 
                 </div>
             </div>
 
 
-            <div class="row">
+            <!-- <div class="row">
                 <div class="col-6-12">
                 </div>
                 <div class="col-6-12 aboutUs_button_container">
 <a href="http://localhost/klinika/" class="button">Więcej</a>
                 </div>
-            </div>
+            </div> -->
 
         </div>
 
