@@ -66,8 +66,9 @@
          <div class="row">
             <div class="col-12-12">
                 <div class="footer_copyright">
-                   <p>&copy; 2020 DENS2 Wszelkie prawa zastrzeżone. Projekt i wykonanie
-                   <a href="http://internetowekreacje.pl" target="_blank">internetowekreacje.pl</a></p>
+                   <p>&copy; 2020 DENS2 Wszelkie prawa zastrzeżone.
+                       <!-- Projekt i wykonanie<a href="http://internetowekreacje.pl" target="_blank">internetowekreacje.pl</a> -->
+                </p>
                 </div>
 
             </div>

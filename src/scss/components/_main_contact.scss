@@ -1,6 +1,11 @@
+.section_contact {
+    background-color: white
+}
+
 #contact {
     margin-bottom: 60px;
-    padding-top: 80px;
+    padding-top: 65px;
+
 }
 
 #contact .section_header {
@@ -35,16 +40,23 @@ label {
     font-family: inherit;
     border-radius: 7px;
 
-    background-color: #F9F9F9;
+
 
     &:focus {
-        border-color: #333;
-        outline: none;
 
+        outline: none;
 
     }
 }
 
+input#name,
+input#phone,
+input#email,
+textarea {
+    &:focus {
+        background-color: $color-background;
+    }
+}
 
 
 .message {
@@ -62,6 +74,7 @@ label {
 div.wpcf7-form-control-wrap {
     max-width: 220px;
 }
+
 
 .submit_container {
     display: flex;
@@ -224,7 +237,7 @@ input:-webkit-autofill,
 input:-webkit-autofill:hover,
 input:-webkit-autofill:focus,
 input:-webkit-autofill:active {
-    -webkit-box-shadow: 0 0 0 30px #EBECF1 inset !important;
+    -webkit-box-shadow: 0 0 0 30px $color-background inset !important;
 
 
 }

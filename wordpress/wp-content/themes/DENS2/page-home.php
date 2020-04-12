@@ -4,7 +4,7 @@
  */
 
 get_header('home');
-// get_header();
+
  ?>
 
 
@@ -104,48 +104,27 @@ get_header('home');
 
 
 <section id="aboutUs" class="section_aboutUs">
-        <div class="banner">
-            <div class="banner_text container">
-                Piękny uśmiech i zdrowe zęby to dobre samopoczucie każdego dnia.<br>
-                Nasi specjaliści sprawią że poczujesz się pewnie i komfortowo.
-            </div>
 
-        </div>
-
-        <!-- <div class="container">
+<div class="container">
             <div class="row">
-                <div class="col-6-12">
 
-                </div>
 
-                <div class="col-6-12 header_container">
-
-                    <header class="section_header">
+                <div class="col-12-12 header_container_main">
+                     <header class="section_header">
                         <h2>Nasza Klinika</h2>
                     </header>
-
-
                 </div>
             </div>
-        </div> -->
 
 
-        <div class="container">
+
             <div class="row">
-                <div class="col-6-12">
+                <div class="col-4-12">
                     <div class="aboutUs box">
                         <img src="<?php echo get_template_directory_uri(); ?>/images/wizytowka.jpg" alt="Dens2 Klinika" class="section_aboutUS_photo"></div>
                 </div>
 
-                <div class="col-6-12">
-
-                <div class="header_container">
-                    <header class="section_header">
-                    <h2>Nasza Klinika</h2>
-                    </header>
-                </div>
-
-                    <div class="section_aboutUs_article">
+                <div class="col-8-12 section_aboutUs_article">
                         <div class="section_aboutUs_text">
                             <p>W trosce o satysfakcję i komfort naszych pacjentów oferujemy pełen zakres zabiegów stomatologicznych. Zaczynając od stomatologii zachowawczej, stomatologii estetycznej, poprzez, endodoncję implantologię, protetykę, ortodoncję nie zapominając o stomatologii dziecięcej.</p>
                             <p>Dysponujemy nowocześnie wyposażonymi gabinetami oraz wykwalifikowanym personelem  </p>
@@ -156,34 +135,16 @@ get_header('home');
                     <div class="aboutUs_button_container">
                         <a href="http://localhost/klinika/" class="button">Więcej</a>
                     </div>
-
-
                 </div>
-
-                </div>
-            </div>
-
-
-            <!-- <div class="row">
-                <div class="col-6-12">
-                </div>
-                <div class="col-6-12 aboutUs_button_container">
-<a href="http://localhost/klinika/" class="button">Więcej</a>
-                </div>
-            </div> -->
 
         </div>
+</div>
 
 </section>
 
 
 <section class="section_contact">
-        <div class="banner">
-            <div class="banner_text container single">
-                U nas możesz skorzystać z wizyty również w ramach NFZ
-            </div>
 
-        </div>
 
 <div id="contact" class="container" >
         <div class="row">

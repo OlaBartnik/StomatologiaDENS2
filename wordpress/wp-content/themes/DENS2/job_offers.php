@@ -9,11 +9,8 @@ get_header(); ?>
     <?php while (have_posts()) : the_post(); ?>
 
     <section class="section_single_page">
-        <div class="banner">
-            <div class="banner_text container">
-            Piękny uśmiech i zdrowe zęby to dobre samopoczucie każdego dnia.<br>
-                Nasi specjaliści sprawią że poczujesz się pewnie i komfortowo.
-            </div>
+        <div class="banner_img">
+
         </div>
 
 <div class="container">
