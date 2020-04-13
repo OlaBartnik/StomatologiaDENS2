@@ -32,7 +32,7 @@ function vhResize() {
 
     function resizeContent() {
 
-        console.log(`Rozmiar okna: ${window.innerWidth} x ${window.innerHeight}`)
+        // console.log(`Rozmiar okna: ${window.innerWidth} x ${window.innerHeight}`)
         hero.style.height = window.innerHeight + "px";
 
         if (window.innerWidth == windowWidth) {

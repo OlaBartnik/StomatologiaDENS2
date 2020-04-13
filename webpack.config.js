@@ -7,7 +7,7 @@ module.exports = {
         path: path.resolve(__dirname, "wordpress/wp-content/themes/DENS2/js")
     },
     watch: true,
-    mode: 'development',
+    mode: 'production',
     devtool: "source-map",
     module: {
         rules: [{
